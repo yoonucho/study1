@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	tab1();
-	tab2();
+	//tab2();
 });
 
 function tab1() {
