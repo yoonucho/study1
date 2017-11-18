@@ -12,253 +12,300 @@
 	<meta property="og:description" content="LS ecampus">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
-  
 <body>
 	<div class="wrap">
 		<!-- 헤더 --> 
-		<div class="header">
-			<div class="top_menu of_h">
+		<div class="header_wrap">
+			<div class="header">
+				<div class="top_menu">
 				 	<!-- 사용자정보 -->
-					 
-					<dl class="fl">
+					<dl class="user_info">
 						<dt class="blind">사용자정보</dt>
-						<dd class="fl">
+						<dd>
 							<span>홍길동님 안녕하세요</span>
 						</dd>
-						<dd class="fr">
-							<select class="sel">
+						<dd>
+							<select>
 								<option value="학습자">학습자</option>
 								<option value="팀장">팀장</option>
 								<option value="임원">임원</option>
 							</select>
-
 						</dd>
-							
 					</dl>
-					
-					
 					<!-- 사용자메뉴 -->
-					<dl class="fl user_menu">
+					<dl class="user_menu">
 						<dt class="blind">사용자메뉴</dt>
-						<dd class="fl">
-							<ul class="of_h">
-								<li class="fl"><a href="#">마이페이지</a></li>
-								<li class="fl"><a href="#">시설신청</a></li>
-								<li class="fl"><a href="#">교육도우미</a></li>
+						<dd>
+							<ul>
+								<li><a href="#">마이페이지</a></li>
+								<li><a href="#">시설신청</a></li>
+								<li><a href="#">교육도우미</a></li>
 							</ul>
 						</dd>
-						<dd class="fr">
-							<a href="#">학점안내</a>
-							<a href="#">로그아웃</a>
-							<select class="sel">
+						<dd>
+							<a href="#" class="user_btn">학점안내</a>
+							<a href="#" class="user_btn">로그아웃</a>
+							<select>
 								<option value="Language">Language</option>
 							</select>
 						</dd>
-					</dl>
-						
+					</dl>						
 						<!-- 검색  -->
 					<dl class="fr">
 						<dt class="blind">검색</dt>
-						<dd class=""><a href="#" class="search_icon"></a></dd>
+						<dd class="search"><a href="#" class="search_icon"></a></dd>
 					</dl>		
-
-			</div>
-			<h1> 
-				<a href="/" class="logo">ecampus 로고</a>
-			</h1>
-			<div class="gnb"> 
-				<h2 class="blind">글로벌 네비게이션 메뉴</h2>
-				<ul>
-					<li><a href="#">진단및계획수립</a></li>
-					<li><a href="#">수강신청</a></li>
-					<li><a href="#">학습방</a></li>
-					<li><a href="#">학습커뮤니티</a></li>
-					<li><a href="#">교육통계</a></li>
-				</ul>
+				</div>
+				<h1> 
+					<a href="/" class="logo">ecampus 로고</a>
+				</h1>
+				<div class="gnb"> 
+					<h2 class="blind">공통 네비게이션</h2>
+					<ul>
+						<li><a href="#">진단및계획수립</a></li>
+						<li><a href="#">수강신청</a></li>
+						<li><a href="#">학습방</a></li>
+						<li><a href="#">학습커뮤니티</a></li>
+						<li><a href="#">교육통계</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!-- 컨테이너 --> 
 		<div class="container">
-			<!-- 메인 컨텐츠-->
-			<div>
-				<div class="main_top">
+			<!-- 메인 컨텐츠-->			
+			<div class="main_top_wrap">
+				<div class="bg_shadow"></div>
+				<div class="main_con main_top">
 					<div class="con_left">
-						<h3>나의 학습현황</h3>
-						<h3>금년도 교육이력</h3>
-						<ul>
-							<li>
-								<a href="#">
-									<span>미래원/ 집합</span>
-									영업 Academy - Professional
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span>엠트론/ 온라인</span>
-									프로젝트 리더 양성과정 
-								</a>
-								
-							</li>
-							<li>
-								<a href="#">
-									<span>전선/ 집합</span>
-									기획 전문과정 : 사업타당사업타당
-								</a>
-							</li>
-						</ul>
-						<a href="#" class="view_more blind">더보기</a>
-						<div>
+						<div class="status">
+							<h3>나의 <br />학습현황</h3>
+						</div>
+						<div class="edu_his">
+							<h3>금년도 교육이력</h3>
+							<ul>
+								<li>
+									<a href="#">
+										<span>미래원/ 집합</span>
+										영업 Academy - Professional
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>엠트론/ 온라인</span>
+										프로젝트 리더 양성과정 
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>전선/ 집합</span>
+										기획 전문과정 : 사업타당사업타당
+									</a>
+								</li>
+							</ul>
+							<a href="#" class="view_more">더보기</a>
+						</div>
+						<div class="con test">
 							<h3>진단 및 IDP</h3>
 							<dl>
 								<dt>진단실시</dt>
 								<dd>1</dd>
+							</dl>
+							<dl>
 								<dt>IDP</dt>
 								<dd>미수립</dd>
 							</dl>
 						</div>
-						<div>
-						
+						<div class="con community">
 							<h3>커뮤니티 활동</h3>
 							<dl>
 								<dt>컨텐츠등록</dt>
 								<dd>3</dd>
+							</dl>
+							<dl>
 								<dt>CoP가입</dt>
 								<dd>1</dd>
 							</dl>
 						</div>
-						<div>
+						<div class="con edu_request">
 							<h3>교육신청</h3>
 							<dl>
 								<dt>사내(집합/온라인)</dt>
 								<dd>3</dd>
+							</dl>
+							<dl>
 								<dt>외부위탁</dt>
 								<dd>1</dd>
 							</dl>
-					
 						</div>
-							
 					</div>
 					<div class="con_right">
 						<h3>금주의 학습 컨텐츠</h3>
-						<img src="img/right_con_img.png" alt="컨텐츠이미지1">
-						<p class="title">능력에 따른 성과보상 시스템 <br />
-						관리자 편견 깰 시스템은  <br />
-						갖췄나
-						</p>
-						<p class="dec">
-							Article at a Glance 질문 어떻게 해야 <br />기업 내 능력주의를 강화할 수 <br />있을까? 연구를 통해 얻은 해답 - <br />회사가 능력주의를 따른다고 믿는 
-						</p>
+						<div class="con_wrap">
+							<img class="fl" src="img/right_con_img.png" alt="컨텐츠이미지1">
+							<div class="con_text">
+								<p class="title">능력에 따른 성과보상 시스템 <br />
+								관리자 편견 깰 시스템은  <br />
+								갖췄나
+								</p>
+								<p class="desc">
+									Article at a Glance 질문 어떻게 해야 <br />기업 내 능력주의를 강화할 수 <br />있을까? 연구를 통해 얻은 해답 - <br />회사가 능력주의를 따른다고 믿는 
+								</p>
+							</div>
+						</div>
 						<ul>
-							<li><a href="#"><span>[마케팅]</span> 노트 3권의 비밀</a><span class="new_icon"><img src="img/new_icon.png" alt="새글표시 아이콘<"></span></li>
-							<li><a href="#"><span>[마케팅]</span> 노트 3권의 비밀</a></li>
-							<li><a href="#"><span>[마케팅]</span> 노트 3권의 비밀</a></li>
+							<li>
+								<a href="#">
+									<span>[마케팅]</span> 노트 3권의 비밀 
+								</a>
+								<img src="img/new_icon.png" alt="새글표시 아이콘">
+							</li>
+							<li>
+								<a href="#">
+									<span>[마케팅]</span> 노트 3권의 비밀
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span>[마케팅]</span> 
+								노트 3권의 비밀노트 3권의 비밀
+								</a>
+							</li>
 						</ul>
-						<a href="#" class="view_more" ><span class="blind">더보기</span></a>
+						<a href="#" class="view_more" >더보기</a>
 					</div>			
 				</div>
-				<div class="main_bottom">
-					<div class="con1">
+			</div>
+			<div class="main_bottom_wrap">
+				<div class="main_con main_bottom">
+					<div class="con process_request">
 						<h3>과정신청</h3>
-						<ul class="tab">
-							<li class="tab_menu1 on">
-								<a href="#">이달의 과정</a>
-								<ul>
-									<li><a href="#">[Excel 실습] 원가정보를 활용한 기업경영관리실무(온라인) <span>각사</span></a></li>
-									<li><a href="#">LS 그룹 임원 세미나 (집합교육) <span>그룹 </span> <span>임원 </span></a></li>
-									<li><a href="#">특약점 영업사원이 알아야 할 회계 및 손익관리 실무</a></li>
-									<li><a href="#">과정명이 길경우 줄임 표시 됩니다.</a></li>
-								</ul>
+						<ul id="tab1" class="tab">
+							<li>
+								<a class="on" href="#none">이달의 과정</a>
+								<div>
+									<ul class="lst">
+										<li>
+											<a href="#">[Excel 실습] 원가정보를 활용한 기업경영관리실무(온라인) </a>
+											<span class="tag">각사</span>
+										</li>
+										<li>
+											<a href="#">LS 그룹 임원 세미나 (집합교육)</a>
+											<span class="tag">그룹 </span> <span class="tag v1">임원 </span>
+										</li>
+										<li><a href="#">특약점 영업사원이 알아야 할 회계 및 손익관리 실무</a></li>
+										<li><a href="#">과정명이 길경우 줄임 표시 됩니다.</a></li>
+									</ul>
+								</div>
 							</li>
-							<li class="tab_menu2">
-								<a href="#">필수/ 추천/ GP 과정</a>
-								<ul>
-									<li><a href="#">[Excel 실습] 원가정보를 활용한 기업경영관리실무(온라인) <span>각사</span></a></li>
-									<li><a href="#">LS 그룹 임원 세미나 (집합교육) <span>그룹 </span> <span>임원 </span></a></li>
-									<li><a href="#">특약점 영업사원이 알아야 할 회계 및 손익관리 실무</a></li>
-									<li><a href="#">과정명이 길경우 줄임 표시 됩니다.</a></li>
-								</ul>
+							<li>
+								<a href="#none">필수/ 추천/ GP 과정</a>
+								<div>
+									<ul class="lst">
+										<li>
+											<a href="#">[Excel 실습2] 원가정보를 활용한 기업경영관리실무(온라인) </a>
+											<span class="tag">각사</span>
+										</li>
+										<li>
+											<a href="#">LS 그룹 임원 세미나 (집합교육)</a>
+											<span class="tag">그룹 </span><span class="tag v1">임원</span>
+										</li>
+										<li><a href="#">특약점 영업사원이 알아야 할 회계 및 손익관리 실무</a></li>
+										<li><a href="#">과정명이 길경우 줄임 표시 됩니다.</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 						<a href="#" class="view_more">더보기</a>
 					</div>
-					<div class="con2">
+					<div class="con edu_process">
 						<h3>나의 교육과정</h3>
-						<ul class="tab2">
-							<li class="tab_menu1 on">
-								<a href="#">나의추천과정</a>
-								<ul>
-									<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
-									<li><a href="#"><span>미래원/ 집합</span> 재경기본과정 : 재무</a></li>
-									<li><a href="#"><span>전선/ 온라인</span> LS Techno-MBA</a></li>
-									<li><a href="#"><span>미래원/ 집합과정</span> 성과창출을 위한 조직심리의 이해</a></li>
-								</ul>
+						<ul id="tab2" class="tab v1">
+							<li class="v1">
+								<a class="on" href="#none">나의추천과정</a>
+								<div>
+									<ul class="lst v1">
+										<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
+										<li><a href="#"><span>미래원/ 집합</span> 재경기본과정 : 재무</a></li>
+										<li><a href="#"><span>전선/ 온라인</span> LS Techno-MBA</a></li>
+										<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
+									</ul>
+								</div>
 							</li>
-							<li class="tab_menu2">
-								<a href="#">학습중인 과정</a>
-								<ul>
-									<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
-									<li><a href="#"><span>미래원/ 집합</span> 재경기본과정 : 재무</a></li>
-									<li><a href="#"><span>전선/ 온라인</span> LS Techno-MBA</a></li>
-									<li><a href="#"><span>미래원/ 집합과정</span> 성과창출을 위한 조직심리의 이해</a></li>
-								</ul>
+							<li class="v1">
+								<a href="#none">학습중인 과정</a>
+								<div>
+									<ul class="lst v1">
+										<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
+										<li><a href="#"><span>미래원/ 집합</span> 재경기본과정 : 재무</a></li>
+										<li><a href="#"><span>전선/ 온라인</span> LS Techno-MBA</a></li>
+										<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
+									</ul>
+								</div>
 							</li>
-							<li class="tab_menu3">
-								<a href="#">관심 과정</a>
-								<ul>
-									<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
-									<li><a href="#"><span>미래원/ 집합</span> 재경기본과정 : 재무</a></li>
-									<li><a href="#"><span>전선/ 온라인</span> LS Techno-MBA</a></li>
-									<li><a href="#"><span>미래원/ 집합과정</span> 성과창출을 위한 조직심리의 이해</a></li>
-								</ul>
+							<li class="v1">
+								<a href="#none">관심 과정</a>
+								<div>
+									<ul class="lst v1">
+										<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
+										<li><a href="#"><span>미래원/ 집합</span> 재경기본과정 : 재무</a></li>
+										<li><a href="#"><span>전선/ 온라인</span> LS Techno-MBA</a></li>
+										<li><a href="#"><span>미래원/ 집합</span> 성과창출을 위한 조직심리의 이해</a></li>
+									</ul>	
+								</div>
 							</li>
 						</ul>
 						<a href="#" class="view_more">더보기</a>
 					</div>
-
-					<div class="con3">
+				</div>
+				<div class="main_con main_bottom">
+					<div class="con notice">
 						<h3>공지사항</h3>
-						<ul class="notice">
-							<li><a href="#">과제제출시, 주의 사항<span class="date">2016.04.15</span></a></li>
-							<li><a href="#">시스템 점검일정 알려드립니다.<span class="date">2016.03.15</span></a></li>
-							<li><a href="#">1월 온라인 입과를 환영합니다.<span class="date">2016.01.05</span></a></li>
-							<li><a href="#">12월 온라인 입과를 환영합니다.<span class="date">2015.12.15</span></a></li>
-							<li><a href="#">12월 온라인 입과를 환영합니다.<span class="date">2015.12.15</span></a></li>
+						<ul class="lst">
+							<li><a href="#">과제제출시, 주의 사항</a><span class="date">2016.04.15</span></li>
+							<li><a href="#">시스템 점검일정 알려드립니다.</a><span class="date">2016.03.15</span></li>
+							<li><a href="#">1월 온라인 입과를 환영합니다.</a><span class="date">2016.01.05</span></li>
+							<li><a href="#">12월 온라인 입과를 환영합니다.</a><span class="date">2015.12.15</span></li>
+							<li><a href="#">12월 온라인 입과를 환영합니다.</a><span class="date">2015.12.15</span></li>
 						</ul>
 						<a href="#" class="view_more">더보기</a>
-						
 					</div>
-
-					<div class="con4">
-						<h2>English 클래스</h2>
-						<p>I am writing to ask about~</p>
-						<p>~를 문의하기 위해 글을 씁니다.</p>
-						<a href="#">내용보기</a>
+					<div class="con eng_class">
+						<h3>English 클래스</h3>
+						<div class="lst">
+							<p class="en">I am writing to ask about~</p>
+							<p class="kr">~를 문의하기 위해 글을 씁니다.</p>
+							<a class="con_view" href="#">내용보기</a>
+						</div>
 						<a href="#" class="view_more">더보기</a>	
 					</div>
 				</div>
 			</div>
-			<!-- 배너모음 -->
-			<div class="banner_wrap">
+		<!-- 배너모음 -->
+			<div class="main_con banner_wrap">
 				<a href="#"><img src="img/banner1.png" alt="열린학습 열정, 공감, 소통으로 나누는 지식공간"></a>
 				<a href="#"><img src="img/banner2.png" alt="Book Cafe 최신간, 베스트, 분야별 도서를 만나는 공간"></a>
-				<a href="#"><img src="img/banner3.png" alt="DBR 핵심 인재 양성을 위한 경영 지식 서비스"></a>
+				<a class="last" href="#"><img src="img/banner3.png" alt="DBR 핵심 인재 양성을 위한 경영 지식 서비스"></a>
 			</div> 
 		</div>	
 		<!-- 푸터 -->
 		<div class="footer">
-			<span class="footer_logo">ecampus 로고 </span>
-			<div class="address_wrap">
-				<address>435-845 경기도 군포시 엘에스로 163 (산본동, 중산빌딩 5층)</address>
-				<p class="warning">
-					부당한 방법으로 전산망에 접속하거나 정보를 삭제∙변경 ∙유출 하는자는 관계법령에 따라 처벌을 받게 됩니다. <br />
-					본 홈페이지에 게시된 이메일 주소가 자동수집 되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다. 
-				</p>
-				<p class="copyright">COPYRIGHT © 2016 LS Future Center. ALL RIGHTS RESERVED.</p>
-			</div>
-			<a href="mailto:name@email.com"><span class="mailto_icon">메일보내</span>Mail to Webmaster</a>
+			<div class="footer_in">
+				<div class="footer_logo_wrap"><span class="footer_logo">ecampus 로고</span> </div>
+				<div class="address_wrap">
+					<address>435-845 경기도 군포시 엘에스로 163 (산본동, 중산빌딩 5층)</address>
+					<p class="warning">
+						부당한 방법으로 전산망에 접속하거나 정보를 삭제∙변경 ∙유출 하는자는 관계법령에 따라 처벌을 받게 됩니다. <br />
+						본 홈페이지에 게시된 이메일 주소가 자동수집 되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다. 
+					</p>
+					<p class="copyright">COPYRIGHT © 2016 LS Future Center. ALL RIGHTS RESERVED.</p>
+				</div>
+				<a class="mail_to" href="mailto:name@email.com"><span class="mailto_icon">메일보내기 </span>Mail to Webmaster</a>
+			</div>	
 		<div>
-		
 	</div>
 </body>
 </html>

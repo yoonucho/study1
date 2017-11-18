@@ -1,32 +1,195 @@
 
-/*layout*/
-.wrap{width:990px;margin:0 auto}
-.header{width:100%;height:124px}
-.top_menu{margin:20px 0 20px 138px}
-.top_menu span{margin-right:12px;font-size:12px;color:#1e1f21}
-.top_menu .sel{min-width:122px;height:27px;color:#808080}
-
-.user_menu{margin:0 20px}
-.user_menu .fr>a{color:#7f4014}
-.user_menu .fr>a:last-child{margin:0 18px 0 12px}
-.user_menu li>a{display:block;padding-right:21px;color:#808080}
-.user_menu li:last-child>a{margin-right:20px}
-.container{}
-.footer{}
+.wrap{width:100%}
 
 /*sprite css*/
-.logo,.footer_logo,.search_icon,.view_more,.mail_to{display:block;background: url(../img/sprites.png) no-repeat}
+.logo,.footer_logo,.search_icon,.view_more,.mailto_icon{display:block;background:url(../img/sprites.png)no-repeat}
 
-.logo{width:145px;height:35px;background-position:0 0;text-indent:-9999em}
+/*헤더*/
+.header_wrap {width:100%;min-width:990px;border-bottom:1px solid #7f9bba}
+/*.header *{box-sizing:border-box}*/
+.header{overflow:hidden;width:990px;height:122px;margin:0 auto}
+
+/*유틸 메뉴*/
+.top_menu{overflow:hidden;margin:20px 0 20px 138px}
+.top_menu span{margin-left:5px;font-size:12px;color:#1e1f21}
+.top_menu select{min-width:122px;height:27px;padding:1px 0 1px 15px;font-size:15px;color:#808080;vertical-align:top}
+
+.user_info,.user_menu{float:left}
+.user_info{width:246px}
+.user_info dd,.user_menu dd{float:left}
+.user_info dd:last-child,.user_menu dd:last-child{float:right}
+.user_menu dd:last-child{text-align:center}
+.user_menu ul{overflow:hidden}
+.user_menu li{float:left;margin-left:10px;padding-right:10px;border-right:1px solid #d7d7d7}
+.user_menu li:first-child{margin-left:20px}
+.user_menu li:last-child{padding-right:20px;border:none}
+.user_menu li>a{display:block;color:#808080}
+.user_menu .user_btn{display:inline-block;min-width:74px;height:25px;margin-right:12px;color:#7f4014;border:1px solid #edc02c;border-radius:3px}
+.user_menu .user_btn:first-child{margin-right:8px}
+
+/*검색*/
+.search_icon{display:inline-block;width:20px;height:20px;background-position:-9px -116px;vertical-align:middle}
+
+/*로고*/
+h1{float:left;width:147px}
+.logo{width:145px;height:35px;background-position:0 0;text-indent:-999em}
+
+/*gnb메뉴 */
+.gnb{float:right;margin:10px 0}
+.gnb li{float:left;margin-right:82px}
+.gnb li:last-child{margin-right:46px}
+.gnb li>a{display:block;font-size:18px;color:#444;font-weight:600;line-height:18px}
+
+/*컨테이너*/
+.container{border-bottom:1px solid #d0d0d0}
+
+/*공통*/
+.view_more{position:absolute;top:0;right:0;width:17px;height:16px;background-position:-59px -117px;text-indent:-999em}
+/*메인컨텐츠*/
+.main_con>div:first-child{float:left}
+.main_con>div:last-child{float:right}
+/*main_top*/
+.main_top_wrap{position:relative;height:414px;padding:25px 0;background:url(../img/bg_main.png)repeat #dfe2e4}
+.bg_shadow{position:absolute;top:0;left:0;z-index:99;width:100%;height:12px;background:url(../img/bg_shadow.png)repeat-x;background-size:100% 2px}
+.main_con{width:990px;margin:0 auto}
+.main_top{overflow:hidden;margin:20px auto}
+.main_top .con_left{overflow:hidden;width:530px;height:366px}
+
+/*나의 학습현황*/
+.status,.edu_his{height:152px;padding:20px;box-shadow:0 2px #b4b6b8}
+.status{float:left;width:133px;border:1px solid #c8232b;background:url(../img/bg_main.png)repeat rgba(222,46,54,0.9)}
+.status h3{font-size:26px;color:#fff;line-height:30px}
+
+/*금년도 교육이력*/
+.edu_his{position:relative;float:right;width:286px;padding:20px 32px;border:1px solid #374a81;background:#475c9b}
+.edu_his h3{width:280px;padding-bottom:12px;border-bottom:1px solid #374a81;font-size:20px;color:#fff}
+.edu_his li>a{display:inline-block;overflow:hidden;width:280px;font-size:16px;color:#fff;line-height:35px;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis}
+
+.edu_his span{overflow:hidden;display:inline-block;width:89px;font-size:12px;color:#c7d0df;vertical-align:middle;text-overflow:ellipsis;line-height:33px}
+.edu_his .view_more{position:absolute;top:0;right:0;margin:25px 35px}
+
+/*메인탑 하단콘텐츠*/
+
+.con_left .con{overflow:hidden;float:left;width:173px;height:96px;margin:2px 3px 0 0;padding-top:68px;border:1px solid #cac7c0;box-shadow: 0 2px #b4b6b8;text-align:center}
+.con_left .con dt{font-size:13px}
+.con_left .con dl{float:left;width:60%;margin-top:10px;padding:5px 0 7px;background:url(../img/bg_con.png)repeat #faf4e4;color:#997c68}
+.con_left .con dl:last-child{float:right;width:40%}
+.con_left .con dd{font-size:22px}
+
+/*진단 및 IDP*/
+.con_left .con.test{background:url(../img/bg_con1.png)no-repeat 50% 10% #fff}
+.con_left .con.test dl:last-child dd{padding-bottom:10px;font-size:17px}
+/*커뮤니티 활동*/
+.con_left .con.community{background:url(../img/bg_con2.png)no-repeat 50% 10% #fff}
+
+/*교육신청*/
+.con_left .con.edu_request{width:172px;margin-right:0;background:url(../img/bg_con3.png)no-repeat 50% 10% #fff}
+.con_left .con.edu_request dl{width:65%}
+.con_left .con.edu_request dl:last-child {width:35%}
 
 
-.search_icon{width:20px;height:20px;background-position:-9px -116px}
+ /*금주의 학습 컨텐츠*/
+.main_top .con_right{position:relative;float:right;width:353px;height:320px;padding:20px 36px;border:1px solid #cac7c0;background:#fff;box-shadow: 0 2px #b4b6b8}
+.con_right h3{padding-bottom:12px;border-bottom:1px solid #d8dadb;font-size:20px;color:#444}
+.con_right .con_wrap{overflow:hidden;margin:18px 0 10px}
 
-.view_more{width:17px;height:16px;background-position:-59px -117px;text-indent:-9999em}
+.con_right .con_text{overflow:hidden;float:right;width:216px;height:155px}
+.con_text p{overflow:hidden}
+.con_right .title{height:60px;font-size:15px;font-weight:600;color:#003875;line-height:20px}
+.con_right .desc{height:74px;margin-top:13px;color:#626262;line-height:18px}
+.con_right li{border-bottom:1px solid #ededed}
+.con_right li:last-child{border-bottom:none}
+.con_right li a{display:inline-block;overflow:hidden;max-width:320px;color:#626262;line-height:30px;vertical-align:middle;white-space:nowrap;text-overflow:ellipsis}
 
-/*.new_icon{width:15px;height:15px;background-position: -106px -120px ;}*/
+.con_right li>img{margin-left:8px;vertical-align:middle}
+.con_right .view_more{margin:25px 36px}
 
-.footer_logo{display:inline-block;width:92px;height:22px;background-position:-236px -13px;text-indent:-9999em}
+/*main_bottom*/
+/*과정신청*/
+.main_bottom{overflow:hidden;margin:20px auto}
+.main_bottom *{box-sizing:border-box}
+.main_bottom .con{position:relative;margin-bottom:10px;padding:16px 0 26px;border:1px solid #dcdcdc;box-shadow: 0 2px #f2f2f2}
+/*.main_bottom .con:first-child{float:left}
+.main_bottom .con:last-child{float:right}*/
+.main_bottom .con .view_more{margin:25px 36px}
+.con.process_request,.con.notice{width:530px}
+.con.edu_process,.con.eng_class{width:426px}
+.con.process_request,.con.edu_process{height:287px}
+.con.notice,.con.eng_class{height:282px;background:#f9f9f9}
+.main_bottom .con h3{margin-left:36px;margin-bottom:16px;font-size:23px;color:#444}
 
-.mailto_icon{width:30px;height:15px;background-position:-154px -120px;text-indent:-9999em;}
+/*탭메뉴*/
+.main_bottom .con .tab{overflow:hidden;margin:0 36px}
+.main_bottom .con .tab>li{float:left;width:50%}
+
+.main_bottom .con .tab>li>a{display:block;height:40px;background:#d7dee6;font-size:16px;color:#6a7a8a;font-weight:600;line-height:33px;text-decoration:none;text-align:center}
+.main_bottom .con .tab>li>a.on{border:3px solid #475c9b;border-bottom:none;background:#fff;color:#475c9b;line-height:30px;text-decoration:none}
+.main_bottom .con .tab>li>a.on:before{content:'';display:inline-block;width:6px;height:10px;margin-right:10px;background:url(../img/arrow_on.png)no-repeat}
+
+/*컨텐츠 리스트*/
+.main_bottom .con .tab>li div{display:none;width:200%;padding:14px 0}
+.main_bottom .con .tab>li:first-child div{display:block}
+.main_bottom .con .tab>li:nth-child(2) div{margin-left:-100%}
+.main_bottom .con .tab>li:nth-child(3) div{margin-left:-201%}
+/*.main_bottom .con .tab div.on{display:block}*/
+
+.main_bottom .con .lst{background:#fff}
+.main_bottom .con .lst>li{margin-bottom:8px}
+.main_bottom .con .lst>li:last-child{margin-bottom:0}
+.main_bottom .con .lst>li:before{content:'';display:inline-block;width:3px;height:3px;margin-right:10px;background: url(../img/dot.png)no-repeat left center;vertical-align:middle}
+.main_bottom .con .lst li>a{display:inline-block;max-width:85%;font-size:15px;color:#444;line-height:30px;text-decoration:none;letter-spacing:-1px;vertical-align:middle;white-space:nowrap;text-overflow:ellipsis}
+.main_bottom .con .lst .tag{display:inline-block;font-size:13px;width:43px;height:20px;margin:0 0 0 10px;border:1px solid #dc5656;color:#ca5a5a;line-height:15px;vertical-align:middle;text-align:center}
+.main_bottom .con .lst .tag.v1{border:1px solid #ac4dbd;color:#9859a3}
+
+/*나의 교육과정*/
+.con.edu_process{background:#f8fafb}
+/*탭메뉴 v1*/
+.main_bottom .con .tab.v1{overflow:visible;position:relative;margin:0}
+.main_bottom .con .tab>li.v1{position:relative;left:36px;width:129px;border-left:1px solid #fff}
+.main_bottom .con .tab>li.v1>a{font-size:15px;line-height:35px;text-align:center}
+.main_bottom .con .tab>li.v1>a.on{border:none;background:#eaeef2;color:#444;line-height:35px}
+.main_bottom .con .tab>li.v1>a.on:before{content:'';display:inline-block;width:6px;height:10px;margin-right:7px;background:url(../img/arrow_v1_on.png)no-repeat}
+
+/*컨텐츠 리스트*/
+.main_bottom .con .tab.v1 div{position:absolute;left:-36px;width:330%;margin:0;padding:0}
+.main_bottom .con .lst.v1{background:#eaeef2}
+.main_bottom .con .lst.v1:first-child{padding-top:14px}
+.main_bottom .con .lst.v1:last-child{padding-bottom:17px}
+.main_bottom .con .lst.v1>li{padding-left:36px}
+.main_bottom .con .lst.v1>li:before{content:'';display:none}
+.main_bottom .con .lst.v1 a>span{overflow:hidden;display:inline-block;width:85px;font-size:13px;color:#818181;vertical-align:bottom;text-overflow:ellipsis}
+
+/*공지사항*/
+/*컨텐츠 리스트*/
+.main_bottom .con.notice h3{margin-bottom:26px}
+.main_bottom .con.notice .lst{position:relative;padding:0 36px 12px;background:#f9f9f9}
+.main_bottom .con.notice .lst>li{margin-bottom:0}
+.main_bottom .con.notice .lst a{color:#666;line-height:36px}
+.main_bottom .con.notice .lst .date{position:absolute;right:36px;margin-top:8px;font-size:15px;color:#aaa;vertical-align:middle}
+
+/*English 클래스*/
+.main_bottom .con.eng_class h3{margin-bottom:26px}
+.main_bottom .con.eng_class p{text-align:center}
+.main_bottom .con.eng_class .en{font-size:26px;color:#269c36}
+.main_bottom .con.eng_class .kr{font-size:16px;color:#505055;font-weight:600}
+.main_bottom .con.eng_class .lst{overflow-y:auto;height:136px;padding:0 36px 12px;background:#f9f9f9}
+.main_bottom .con.eng_class .con_view{display:block;position:absolute;left:50%;bottom:30px;width:90px;height: 27px;margin-left:-45px;border-radius:3px;background:#666a75;font-size:12px;color:#fff;line-height:25px;text-align:center}
+
+/*.배너*/
+.banner_wrap{margin:30px auto 80px}
+.banner_wrap a{display:inline-block;margin-right:10px}
+.banner_wrap a.last{margin-right:0}
+/*푸터*/
+.footer{position:relative;width:990px;height:100px;margin:0 auto;padding:30px 0 40px}
+.footer *{box-sizing:border-box}
+.footer_in{overflow:hidden}
+/*푸터로고*/
+.footer_logo_wrap{float:left;width:115px}
+.footer_logo{width:92px;height:22px;background-position:-236px -13px;text-indent:-999em}
+/*어드레스*/
+.address_wrap{float:left}
+.address_wrap address{margin-top:0}
+.address_wrap p{margin:10px 0}
+.footer .mail_to{position:absolute;right:0;width:168px;height:29px;border-radius:20px;background:#909090;font-size:13px;color:#fff;line-height:25px;text-decoration:none;text-align:center}
+.footer .mailto_icon{display:inline-block;width:30px;height:15px;background-position:-154px -120px;text-indent:-999em;vertical-align:middle}
 
