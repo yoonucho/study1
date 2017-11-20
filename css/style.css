@@ -9,7 +9,7 @@
 .header_wrap {overflow:hidden;position:absolute;z-index:99;width:100%;min-width:990px;height:122px;border-bottom:1px solid #7f9bba;background:#fff}
 
 /*.header *{box-sizing:border-box}*/
-.header_wrap:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:12px;background:url(../img/bg_shadow.png)repeat-x;background-size:100% 2px}
+.header_wrap:after{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background:url(../img/bg_shadow.png)repeat-x;background-size:100% 2px}
 
 .header{position:relative;width:990px;margin:0 auto}
 
@@ -42,22 +42,19 @@ h1{float:left;width:147px}
 .logo{width:145px;height:35px;background-position:0 0;text-indent:-999em}
 
 /*gnb메뉴 */
-.nav{float:right;margin:10px 35px}
+.nav{float:right;margin:10px 37px 10px 0}
 
-.gnb{}
-.gnb>li{position:relative;float:left;margin:0 33px 0 10px;padding-left:10px}
-.gnb>.lst_item2{width:162px;margin-right:10px}
-.gnb>.lst_item3{width:84px;margin-right:30px}
-.gnb>.lst_item4{width:150px;margin-right:10px}
-.gnb>.lst_item5{width:70px;margin-right:0}
-.gnb>li:last-child{}
+.gnb>li:first-child{margin-left:0}
+.gnb>li{position:relative;float:left;margin-left:80px}
 .gnb>li>a{display:inline-block;padding-bottom:8px;font-size:18px;color:#444;font-weight:600;line-height:18px}
 .gnb>li:hover>a{border-bottom:2px solid #ed164b;color:#ed164b;text-decoration:none}
 /*sub*/
-.gnb .sub_wrap{overflow:hidden;position:absolute;z-index:99;left:0;top:40px;height:174px;padding-left:10px;background:url(../img/sub_line.png)repeat-y 0 0 #fff;text-align:left}
-/*.gnb.on .sub_wrap{display:block}*/
+.gnb .sub_wrap{overflow:hidden;position:absolute;z-index:99;left:-10px;top:60px;height:174px;padding-left:10px;background:url(../img/sub_line.png)repeat-y 0 0 #fff;text-align:left}
+.gnb .sub_wrap.v1{left:-48px;width:190px}
+.gnb .sub_wrap.v2{width:122px}
+
 .sub_wrap .sub{float:left}
-.gnb>li:first-child .sub_wrap{background:none}
+.gnb>li:first-child .sub_wrap{left:0;padding-left:0;background:none}
 .sub li{line-height:30px}
 .sub li a{color:#777}
 .sub li a:hover {color:#ed164b;font-weight:600;text-decoration:none}
@@ -79,7 +76,7 @@ h1{float:left;width:147px}
 .main_top .con_left{overflow:hidden;width:530px;height:366px}
 
 /*나의 학습현황*/
-.status,.edu_his{height:152px;padding:20px;box-shadow:0 2px #b4b6b8}
+.status,.edu_his{height:152px;padding:20px;box-shadow:0 2px #b4b6b8;-ms-box-shadow:0 2px #b4b6b8}
 .status{float:left;width:133px;border:1px solid #c8232b;background:url(../img/bg_main.png)repeat rgba(222,46,54,0.9)}
 .status h3{font-size:26px;color:#fff;line-height:30px}
 
@@ -90,7 +87,7 @@ h1{float:left;width:147px}
 .edu_his li>a{display:inline-block;overflow:hidden;width:280px;font-size:16px;color:#fff;line-height:35px;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis}
 .edu_his span{overflow:hidden;display:inline-block;width:89px;font-size:12px;color:#c7d0df;vertical-align:middle;text-overflow:ellipsis;line-height:33px}
 
-.con_left .con{overflow:hidden;float:left;width:173px;height:96px;margin:2px 3px 0 0;padding-top:68px;border:1px solid #cac7c0;box-shadow: 0 2px #b4b6b8;text-align:center}
+.con_left .con{overflow:hidden;float:left;width:173px;height:96px;margin:2px 3px 0 0;padding-top:68px;border:1px solid #cac7c0;box-shadow: 0 2px #b4b6b8;-ms-box-shadow:0 2px #b4b6b8;text-align:center}
 .con_left .con dt{font-size:13px}
 .con_left .con dl{float:left;width:60%;margin-top:10px;padding:5px 0 7px;background:url(../img/bg_con.png)repeat #faf4e4;color:#997c68}
 .con_left .con dl:last-child{float:right;width:40%}
@@ -110,7 +107,7 @@ h1{float:left;width:147px}
 
 
  /*금주의 학습 컨텐츠*/
-.con_right{position:relative;float:right;width:353px;height:320px;padding:20px 35px;border:1px solid #cac7c0;background:#fff;box-shadow: 0 2px #b4b6b8}
+.con_right{position:relative;float:right;width:353px;height:320px;padding:20px 35px;border:1px solid #cac7c0;background:#fff;box-shadow: 0 2px #b4b6b8;-ms-box-shadow:0 2px #b4b6b8}
 .con_right h3{padding-bottom:5px;border-bottom:1px solid #d8dadb;font-size:20px;color:#444}
 .con_right .con_wrap{overflow:hidden;margin:18px 0 10px}
 .con_right .con_text{overflow:hidden;float:right;width:216px;height:155px}
@@ -124,7 +121,7 @@ h1{float:left;width:147px}
 
 /*main_bottom*/
 /*과정신청*/
-.main_bottom .con{position:relative;margin-bottom:10px;padding:16px 0 26px;border:1px solid #dcdcdc;box-shadow: 0 2px #f2f2f2}
+.main_bottom .con{position:relative;margin-bottom:10px;padding:16px 0 26px;border:1px solid #dcdcdc;box-shadow: 0 2px #f2f2f2;-ms-box-shadow:0 2px #f2f2f2}
 .main_bottom .con h3{margin:0 35px;margin-bottom:16px;font-size:23px;color:#444}
 
 .process_request,.notice{width:530px}
