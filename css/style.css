@@ -40,6 +40,13 @@
 .search_icon.change{background:url(../img/close_icon.png)no-repeat}
 .search_wrap{display:none;position:absolute;z-index:100;top:37px;right:0;width:320px;height: 50px;background:#a1acb8}
 .search_wrap.on{display:block}
+.search_box{position:relative}
+.search_box input{position:absolute;width:230px;height:17px;padding:16px 20px 16px;border:none;background:#a1acb8;font-size:16px;color:#fff;line-height:17px}
+.search_box input:-ms-input-placeholder {color:#fff}
+.search_box input::placeholder {color:#fff}
+.search_box .btn_search{position:absolute;right:0;width:50px;height:50px;background:url(../img/search_icon_w.png)50% 50% no-repeat #7a8693}
+
+
 /*로고*/
 h1{float:left;width:147px}
 .logo{width:145px;height:35px;background-position:0 0;text-indent:-999em}
@@ -55,7 +62,6 @@ h1{float:left;width:147px}
 .gnb .sub_wrap{overflow:hidden;position:absolute;z-index:99;left:-10px;top:60px;height:174px;padding-left:10px;background:url(../img/sub_line.png)repeat-y 0 0 #fff;text-align:left}
 .gnb .sub_wrap.v1{left:-48px;width:190px}
 .gnb .sub_wrap.v2{width:122px}
-
 .sub_wrap .sub{float:left}
 .gnb>li:first-child .sub_wrap{left:0;padding-left:0;background:none}
 .sub li{line-height:30px}
