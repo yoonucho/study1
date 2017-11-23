@@ -10,9 +10,6 @@ function gnbOpen() {
       
   $(".gnb >li>a").on("mouseenter focusin",function(){
     $(".header_wrap").stop().animate( {height:355},500);
-  // var currentHeight =  $(".header_wrap").height(),
-  //     autoHeight =  $(".header_wrap").css('height', 'auto').height();
-   // $(".header_wrap").height(currentHeight).animate({height: autoHeight}, 500)
    
   })
 
