@@ -1,0 +1,25 @@
+/*카테고리 공통*/
+.category_lst{width:180px;height:99px}
+
+/*sprite.css*/
+.btn_back,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,
+.category_lst_02_01,.category_lst_02_02,.category_lst_02_03,.category_lst_02_04{background:url(../img/m_sprites.png)no-repeat}
+.btn_back{width:40px;height:40px;background-position:-81px -307px}
+.icon_search{width:51px;height:51px;background-position:-10px -307px}
+.arrow_down{width:23px;height:14px;background-position:-314px -248px}
+
+/*북마크저장*/
+.icon_bookmark.on{width:24px;height:30px;background-position:-130px -248px}
+.icon_bookmark{width:24px;height:30px;background-position:-174px -248px}
+
+/*컨텐츠 아이콘*/
+.icon_audio{width:28px;height:23px;background-position:-266px -248px}
+.icon_video{width:28px;height:24px;background-position:-218px -248px}
+/*별점주기*/
+.star_rating{width:100px;height:39px;background-position:-10px -248px}
+
+/*하단 메뉴*/
+.category_lst_02_01{background-position:-210px -129px}
+.category_lst_02_02{background-position:-10px -129px}
+.category_lst_02_03{background-position:-210px -10px}
+.category_lst_02_04{background-position:-10px -10px}
