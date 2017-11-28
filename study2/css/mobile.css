@@ -1,3 +1,9 @@
+/*레이아웃*/
+#wrap{width:100%;max-width:640px}
+
+
+
+
 /*카테고리 공통*/
 .category_lst{width:180px;height:99px}
 
