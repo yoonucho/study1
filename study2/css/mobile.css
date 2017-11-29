@@ -1,32 +1,61 @@
-/*레이아웃*/
-.wrap{position:relative;z-index:1;width:100%;max-width:640px;background:url(../img/bg.png)no-repeat}
-.header{position:fixed;width:100%;height:52px;padding:0 10px}
-.sub_nav{position:fixed} 
-.container{margin:20px 0;padding-top:52px}
+/*sprite.css*/
+.btn_back,.arrow_down,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,
+.category_lst_02_01,.category_lst_02_02,.category_lst_02_03,.category_lst_02_04{display:block;background:url(../img/m_sprites.png)no-repeat;background-size:200px 184px;text-indent:-999em}
+
+
+
+
+.wrap{position:relative;z-index:1;width:100%;height:100%;min-width:320px;margin:auto;background:url(../img/bg.png)no-repeat;background-size:cover}
+
+
+/*헤더*/
+.header{width:100%;height:50px}
+.header h1{padding:12px 0;font-size:20px;color:#fff;font-weight:600;text-align:center}
+.arrow_down{display:inline-block;width:11.5px;height:7px;background-position:-157px -124px}
+.sub_lst{display:none}
+
+.btn_back{position:absolute;top:12px;left:10px;width:20px;height:20px;background-position:-40.5px -153.5px}
+.icon_search{position:absolute;top:12px;right:10px;width:25.5px;height:25.5px;background-position:-5px -153.5px}
+
+
 
 
 /*gnb 공통 네비게이션.*/
-.category_lst{width:90px;height:49.5px}
+.sub_nav{position:fixed;z-index:99;bottom:0;left:0;width:100%;height:55px;box-shadow: 0px -5px 5px #d5d5d5;background:#fff}
 
-/*sprite.css*/
-.btn_back,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,
-.category_lst_02_01,.category_lst_02_02,.category_lst_02_03,.category_lst_02_04{background:url(../img/m_sprites.png)no-repeat}
-.btn_back{width:40px;height:40px;background-position:-81px -307px}
-.icon_search{width:51px;height:51px;background-position:-10px -307px}
-.arrow_down{width:23px;height:14px;background-position:-314px -248px}
+.sub_nav .gnb {overflow:hidden}
+.sub_nav .gnb>li{float:left;width:25%;padding:5px 0;text-align:center}
+.category_lst{display:inline-block;width:90px;height:49.5px}
+.category_lst_02_01{background-position:-105px -64.5px}
+.category_lst_02_02{background-position:-5px -64.5px}
+.category_lst_02_03{background-position:-105px -5px}
+.category_lst_02_04{background-position:-5px -5px}
 
+/*컨테이너*/
+.container{position:relative;padding-top:15px}
+
+/*tab*/
+.sub_tab{margin-bottom:18.5px;overflow:hidden;text-align:center}
+.sub_tab>li{float:left;width:33.33%;padding:10px 0}
+.sub_tab>li>a{font-size:14px;color:#fff}
+.sub_tab>li.on>a{padding-bottom:6px;border-bottom:2px solid #32c183}
+
+/*컨텐츠*/
+.sub_tab_lst_wrap{margin-left:20px;background:#fff}
+.sub_tab_lst_wrap{display:none}
+.sub_tab_lst_wrap.on{display:block}
+.tab_lst{}
+.img_wrap{display:block;}
+.img_wrap img{max-height:120px}
 /*북마크저장*/
-.icon_bookmark.on{width:24px;height:30px;background-position:-130px -248px}
-.icon_bookmark{width:24px;height:30px;background-position:-174px -248px}
+.icon_bookmark.on{width:12px;height:15px;background-position:-65px -124px}
+.icon_bookmark{width:12px;height:15px;background-position:-87px -124px}
 
 /*컨텐츠 아이콘*/
-.icon_audio{width:28px;height:23px;background-position:-266px -248px}
-.icon_video{width:28px;height:24px;background-position:-218px -248px}
+.icon_audio{width:14px;height:11.5px;background-position:-133px -124px}
+.icon_video{width:14px;height:12px;background-position:-109px -124px}
 /*별점주기*/
-.star_rating{width:100px;height:39px;background-position:-10px -248px}
+.star_rating{width:50px;height:19.5px;background-position:-5px -124px}
 
-/*하단 메뉴*/
-.category_lst_02_01{background-position:-210px -129px}
-.category_lst_02_02{background-position:-10px -129px}
-.category_lst_02_03{background-position:-210px -10px}
-.category_lst_02_04{background-position:-10px -10px}
+
+
