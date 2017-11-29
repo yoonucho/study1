@@ -33,20 +33,20 @@ function subClose(){
 
 // 검색이벤트
 function searchOpen() {
-  $(".search .search_icon").on("click keyup", function () {
-     //$(this).toggleClass("change").next().slideToggle();
+  $(".search .search_icon").on("click focusin", function () {
+     $(this).toggleClass("change").next().slideToggle();
      
      
-     if($(this).hasClass("change")){
-        $(this).removeClass("change").next().slideUp();
-     //    $(this).next().slideUp();
-     //    $(this).removeClass("change");
-     }
-     else{
-        $(this).addClass("change").next().slideDown();
-     //     $(this).next().slideDown();
-     //     $(this).addClass("change");
-     }
+     // if($(this).hasClass("change")){
+     //    $(this).removeClass("change").next().slideUp();
+     // //    $(this).next().slideUp();
+     // //    $(this).removeClass("change");
+     // }
+     // else{
+     //    $(this).addClass("change").next().slideDown();
+     // //     $(this).next().slideDown();
+     // //     $(this).addClass("change");
+     // }
 
   });
 }

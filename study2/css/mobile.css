@@ -1,11 +1,12 @@
 /*레이아웃*/
-.wrap{width:100%;max-width:640px}
+.wrap{position:relative;z-index:1;width:100%;max-width:640px;background:url(../img/bg.png)no-repeat}
+.header{position:fixed;width:100%;height:52px;padding:0 10px}
+.sub_nav{position:fixed} 
+.container{margin:20px 0;padding-top:52px}
 
 
-
-
-/*카테고리 공통*/
-.category_lst{width:180px;height:99px}
+/*gnb 공통 네비게이션.*/
+.category_lst{width:90px;height:49.5px}
 
 /*sprite.css*/
 .btn_back,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,
