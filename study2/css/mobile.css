@@ -12,11 +12,12 @@
 .header{width:100%;height:50px}
 .header h1{padding:12px 0;font-size:20px;color:#fff;font-weight:600;text-align:center}
 .arrow_down{display:inline-block;width:11.5px;height:7px;background-position:-157px -124px}
-.sub_lst{display:none}
-
+.sub_lst{display:none;position:absolute;z-index:100;width:100%;padding:22px 0;background:#25222b;text-align:center}
+.sub_lst li{line-height:40px}
+.sub_lst.on{display:block;}
+.sub_lst.on a{color:#fff;font-weight:600}
 .btn_back{position:absolute;top:12px;left:10px;width:20px;height:20px;background-position:-40.5px -153.5px}
-.icon_search{position:absolute;top:12px;right:10px;width:25.5px;height:25.5px;background-position:-5px -153.5px}
-
+.icon_search{position:absolute;top:8px;right:10px;width:25.5px;height:25.5px;background-position:-5px -153.5px}
 
 
 
@@ -37,16 +38,19 @@
 /*tab*/
 .sub_tab{margin-bottom:18.5px;overflow:hidden;text-align:center}
 .sub_tab>li{float:left;width:33.33%;padding:10px 0}
-.sub_tab>li>a{font-size:14px;color:#fff}
+.sub_tab>li>a{font-size:14px;color:#fff;font-weight:600}
 .sub_tab>li.on>a{padding-bottom:6px;border-bottom:2px solid #32c183}
 
 /*컨텐츠*/
 .sub_tab_lst_wrap{margin-left:20px;background:#fff}
-.sub_tab_lst_wrap{display:none}
+.sub_tab_lst_wrap{display:none;border:1px solid #000}
 .sub_tab_lst_wrap.on{display:block}
-.tab_lst{}
-.img_wrap{display:block;}
+.tab_lst{overflow:hidden;width:100%;height:120px;border-bottom:1px solid #000}
+.tab_lst:last-child{border-bottom:none}
+
+.img_wrap{position:relative;display:block;float:left}
 .img_wrap img{max-height:120px}
+.img_wrap .play_time{position:absolute;left:0;bottom:12px;padding:0 16px;font-family:'Gotham Book';color:#fff;font-weight:600}
 /*북마크저장*/
 .icon_bookmark.on{width:12px;height:15px;background-position:-65px -124px}
 .icon_bookmark{width:12px;height:15px;background-position:-87px -124px}
