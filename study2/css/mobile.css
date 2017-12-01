@@ -60,6 +60,7 @@
 .tab_lst dl>dd{float:left}
 .tab_lst dl>dd:nth-child(2){float:none;width:auto}
 .tab_lst dl>dd>div{padding-top:30px}
+.tab_lst dl>dd>div>span{display:inline-block;font-size:14px;vertical-align:middle}
 .tab_lst .bookmark{position:absolute;right:12px}
 
 /*북마크저장*/
