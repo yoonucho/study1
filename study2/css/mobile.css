@@ -1,5 +1,5 @@
 /*sprite.css*/
-.btn_back,.arrow_down,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,
+.btn_back,.arrow_down,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,.star_rating span,
 .category_lst_02_01,.category_lst_02_02,.category_lst_02_03,.category_lst_02_04{display:block;background:url(../img/m_sprites.png)no-repeat;background-size:200px 184px;text-indent:-999em}
 
 
@@ -53,13 +53,14 @@
 .tab_lst .img_wrap .play_time{position:absolute;left:0;bottom:12px;padding:0 16px;font-family:'Gotham Book';color:#fff;font-weight:600}
 
 .tab_lst>div{position:relative;float:left;width:71%;height:100%}
-.tab_lst h3{padding:14px 0 8.5px}
+.tab_lst h3{padding:14px 0 8.5px;font-weight:600}
 .tab_lst h3>a{font-size:18px;color:#000}
 .tab_lst .author{font-size:14px;color:#626262}
 .tab_lst dl{overflow:hidden}
 .tab_lst dl>dd{float:left}
 .tab_lst dl>dd:nth-child(2){float:none;width:auto}
 .tab_lst dl>dd>div{padding-top:30px}
+.tab_lst .bookmark{position:absolute;right:12px}
 
 /*북마크저장*/
 .icon_bookmark{width:12px;height:15px;background-position:-87px -124px;text-indent:-999em}
@@ -68,8 +69,8 @@
 /*컨텐츠 아이콘*/
 .icon_audio{width:14px;height:11.5px;background-position:-133px -124px}
 .icon_video{width:14px;height:12px;background-position:-109px -124px}
+
 /*별점주기*/
-.star_rating{width:50px;height:19.5px;background-position:-5px -124px}
-
-
-
+.star_rating{width:50px;height:9.75px;background-position:-5px -124px;vertical-align:middle}
+.star_rating span{font-size:0;line-height:0;background-position:-5px -134.5px;vertical-align:top}
+.star_rating,.star_rating span{overflow:hidden;height:9.75px}
