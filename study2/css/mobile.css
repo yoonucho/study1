@@ -45,20 +45,22 @@
 .sub_tab_lst_wrap{margin-left:20px;background:#fff}
 .sub_tab_lst_wrap{display:none;border:1px solid #000}
 .sub_tab_lst_wrap.on{display:block}
-.tab_lst{overflow:hidden;width:100%;min-height:120px;border-bottom:1px solid #000}
+.tab_lst{overflow:hidden;width:100%;border-bottom:1px solid #000}
 .tab_lst:last-child{border-bottom:none}
 
-.tab_lst .img_wrap{position:relative;display:block;float:left;width:25%}
-.tab_lst .img_wrap img{}
+.tab_lst .img_wrap{position:relative;display:block;float:left;width:85px}
+.tab_lst .img_wrap img{height:120px}
 .tab_lst .img_wrap .play_time{position:absolute;left:0;bottom:8px;padding:0 16px;font-family:'Gotham Book';color:#fff;font-weight:600}
 
-.tab_lst>div{position:relative;float:left;width:75%;height:100%}
-.tab_lst h3{padding:14px 0 8.5px;font-weight:600}
-.tab_lst h3>a{font-size:18px;color:#000}
-.tab_lst .author{font-size:14px;color:#626262}
+.tab_lst>div{position:relative;float:left;width:calc(100% - 85px);height:100%}
+.tab_lst h3{}
+.tab_lst h3>a{display:block;padding:14px 12px 8.5px;font-size:18px;color:#000;font-weight:600;letter-spacing:-1px}
+.tab_lst .author{margin-left:13px;font-size:14px;color:#626262}
 .tab_lst dl{overflow:hidden}
-.tab_lst dl>dd{float:left}
-.tab_lst dl>dd:nth-child(2){float:none;width:auto}
+.tab_lst dl>dd{position:relative;float:left}
+.tab_lst dl>dd:nth-child(2){position:static;float:none;width:auto}
+.tab_lst dl>dd:nth-child(3){margin-left:13px}
+.tab_lst dl>dd:last-child{position:static}
 .tab_lst dl>dd>div{padding-top:30px;margin-right:8px}
 .tab_lst dl>dd>div>span{display:inline-block;font-size:14px;vertical-align:middle}
 .tab_lst .bookmark{position:absolute;right:12px}
