@@ -33,7 +33,7 @@ function subClose(){
 
 // 검색이벤트
 function searchOpen() {
-  $(".search .search_icon").on("click focusin", function () {
+  $(".search .search_icon").on("click keyup", function () {
      $(this).toggleClass("change").next().slideToggle();
      
      

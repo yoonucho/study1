@@ -95,7 +95,7 @@ h1{float:left;width:147px}
 .edu_his h3{padding-bottom:5px;border-bottom:1px solid #374a81;font-size:20px;color:#fff}
 .edu_his ul{margin-top:5px}
 .edu_his li>a{display:inline-block;overflow:hidden;width:280px;font-size:16px;color:#fff;line-height:35px;letter-spacing:-1px;white-space:nowrap;text-overflow:ellipsis}
-.edu_his span{overflow:hidden;display:inline-block;width:89px;font-size:12px;color:#c7d0df;vertical-align:middle;text-overflow:ellipsis;line-height:33px}
+.edu_his span{display:inline-block;overflow:hidden;width:89px;font-size:12px;color:#c7d0df;vertical-align:middle;text-overflow:ellipsis;line-height:33px}
 
 .con_left .con{overflow:hidden;float:left;width:173px;height:96px;margin:2px 3px 0 0;padding-top:68px;border:1px solid #cac7c0;box-shadow: 0 2px #b4b6b8;-ms-box-shadow:0 2px #b4b6b8;text-align:center}
 .con_left .con dt{font-size:13px}
