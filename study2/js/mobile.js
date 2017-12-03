@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	
-  selectMenu();
+	selectMenu();
   bookmarkToggle();
 	//tab();
 });
@@ -10,10 +9,10 @@ $(document).ready(function(){
 // 검색이벤트
 function selectMenu() {
   $(".header h1").on("click", function () {
-     $(this).next().slideToggle();
+     $(this).next().stop().slideToggle();
      $(".sub_lst li").on("click",function(){
          $(".header h1>.keywords").html($(this).html());
-          $(".sub_lst").slideUp();
+          $(".sub_lst").stop().slideUp();
      })
       
   });
