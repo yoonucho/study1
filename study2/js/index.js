@@ -1,3 +1,5 @@
+// 탭 플러그인
+
 $(function () {
 	'use strict';
 

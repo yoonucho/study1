@@ -7,9 +7,6 @@ $(document).ready(function(){
 
 
 
-
-
-
 // 검색이벤트
 function selectMenu() {
   $(".header h1").on("click", function () {
@@ -32,14 +29,14 @@ function bookmarkToggle() {
 
 
 // 탭
-function tab() {
-	$(".sub_tab>li>a").on("click", function () {
-    $(this).parent().addClass("on").siblings().removeClass("on");
-     var activeTab = $(this).attr('href');
-    $(".lst_wrap>.sub_tab_lst:visible").hide().css({"transition": "all .75s ease"});
-    $(activeTab).show();
-    return false;	
-	});
+// function tab() {
+// 	$(".sub_tab>li>a").on("click", function () {
+//     $(this).parent().addClass("on").siblings().removeClass("on");
+//      var activeTab = $(this).attr('href');
+//     $(".lst_wrap>.sub_tab_lst:visible").hide().css({"transition": "all .75s ease"});
+//     $(activeTab).show();
+//     return false;	
+// 	});
 
-}
+// }
 
