@@ -1,8 +1,9 @@
 /*sprite.css*/
 .sp_img {display:block;background:url(../img/m_sprites.png)no-repeat;background-size:200px 184px;text-indent:-999em}
+.sp_img2 {display:block;background:url(../img/m_sprites2.png)no-repeat;background-size:340.5px 41.5px;text-indent:-999em}
 
 
-.wrap{position:relative;z-index:1;width:100%;height:100%;min-width:320px;margin:auto;background:url(../img/bg.png)no-repeat;background-size:cover}
+.wrap{position:relative;z-index:1;width:100%;height:100%;margin:auto;background:url(../img/bg.png)no-repeat;background-size:cover}
 
 
 /*헤더*/
@@ -26,12 +27,17 @@
 .sub_nav{position:fixed;z-index:99;bottom:0;left:0;width:100%;height:55px;box-shadow: 0px -2px 2px #d5d5d5;background:#fff}
 
 .sub_nav .gnb {overflow:hidden}
-.sub_nav .gnb>li{float:left;width:25%;padding:5px 0;text-align:center}
-.category_lst{display:inline-block;width:90px;height:49.5px}
-.category_lst_02_01{background-position:-105px -64.5px}
-.category_lst_02_02{background-position:-5px -64.5px}
-.category_lst_02_03{background-position:-105px -5px}
-.category_lst_02_04{background-position:-5px -5px}
+.sub_nav .gnb>li{float:left;width:25%;padding:5px 0;background:#fff;text-align:center}
+.category_lst{display:inline-block;height:41.5px}
+.category_lst_02_01{width:29.5px;background-position:-98px 0}
+.category_lst_02_01.on{background-position:-127.5px 0}
+.category_lst_02_02{width:48.5px;background-position:-157px 0}
+.category_lst_02_02.on{width:49px;background-position:-205.5px 0}
+.category_lst_02_03{width:43px;background-position:-254.5px 0}
+.category_lst_02_03.on{background-position:-297.5px 0}
+.category_lst_02_04{width:49px;background-position:0 0px}
+.category_lst_02_04.on{width:49px;background-position:-49px 0px}
+
 
 /*컨테이너*/
 .container{position:relative;min-height:560px;padding-top:65px}
@@ -105,10 +111,10 @@
 /* Slider */
 .slick-slider{display:block;position:relative;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
 .slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
-.slick-list:focus{outline:none;}
+.slick-list:focus{outline:none}
 .slick-list.dragging{cursor:pointer;cursor:hand}
 .slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
-.slick-track{position:relative;top:0;left:0;display:block;}
+.slick-track{position:relative;top:0;left:0;display:block}
 .slick-track:before,.slick-track:after{display:table;content:''}
 .slick-track:after{clear:both}
 .slick-loading .slick-track{visibility:hidden}
@@ -120,3 +126,8 @@
 .slick-initialized .slick-slide{display:block}
 .slick-loading .slick-slide{visibility:hidden}
 .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+
+/*아이폰5*/
+@media only screen and (max-width : 320px) {
+	.tab_lst{height: 120px}
+}

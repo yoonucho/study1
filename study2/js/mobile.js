@@ -19,6 +19,8 @@ function selectMenu() {
       
   });
 }
+// 문제점 온상태에서 아무것도 하지 않고 클릭할때 화살표도 바뀌어야 한다
+// 다른 컨텐츠를 선택했을때 자동으로 닫혀야 한다.
      
 // 북마크 토글클래스
 function bookmarkToggle() {
