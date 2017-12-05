@@ -1,6 +1,5 @@
 /*sprite.css*/
-.btn_back,.arrow_down,.icon_search,.icon_bookmark.on,.icon_bookmark,.icon_audio,.icon_video,.star_rating,.star_rating span,
-.category_lst_02_01,.category_lst_02_02,.category_lst_02_03,.category_lst_02_04{display:block;background:url(../img/m_sprites.png)no-repeat;background-size:200px 184px;text-indent:-999em}
+.sp_img {display:block;background:url(../img/m_sprites.png)no-repeat;background-size:200px 184px;text-indent:-999em}
 
 
 
@@ -13,7 +12,8 @@
 .header h1{padding:12px 0;font-size:20px;color:#fff;font-weight:600;text-align:center}
 .header h1>span{display:inline-block;vertical-align:middle}
 .header h1>.keywords>a{color:#fff}
-.arrow_down{display:inline-block;width:11.5px;height:7px;background-position:-157px -124px}
+.arrow{display:inline-block;width:13.5px;height:7px;background-position:-157px -124px}
+h1.on .arrow{background:url(../img/arrow_up.png)no-repeat;background-position:center top}
 .sub_lst{display:none;position:absolute;z-index:100;top:50px;width:100%;padding:22px 0;background:#25222b;text-align:center}
 .sub_lst.on{display:block}
 .sub_lst li{line-height:40px}

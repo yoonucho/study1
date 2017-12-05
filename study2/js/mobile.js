@@ -6,10 +6,11 @@ $(document).ready(function(){
 
 
 
-// 검색이벤트
+// 셀렉트박스 이벤트
 function selectMenu() {
   $(".header h1").on("click", function () {
      $(this).next().stop().slideToggle();
+     // $(this).children().
      $(".sub_lst li").on("click",function(){
          $(".header h1>.keywords").html($(this).html());
           $(".sub_lst").stop().slideUp();
