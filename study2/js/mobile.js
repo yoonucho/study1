@@ -10,10 +10,11 @@ $(document).ready(function(){
 function selectMenu() {
   $(".header h1").on("click", function () {
      $(this).next().stop().slideToggle();
-     // $(this).children().
+     $(this).children(".arrow").addClass("on");
      $(".sub_lst li").on("click",function(){
          $(".header h1>.keywords").html($(this).html());
           $(".sub_lst").stop().slideUp();
+          $("h1 .arrow").removeClass("on");
      })
       
   });
