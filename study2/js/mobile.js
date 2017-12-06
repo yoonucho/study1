@@ -24,17 +24,18 @@ function selectMenu() {
   });
 }
 
-// 다른 컨텐츠를 선택했을때  닫아줘라
-// function lstClose() {
-//   $(document).mouseup(function (e){
-//     var $sub_lst = $(".sub_lst");
-//     if( $sub_lst.has(e.target).length === 0)
-//       $sub_lst.stop().slideUp();
-//      $("h1").removeClass("on");
-//   });
-// }
+// 다른 영역을 선택했을때  닫아줘라
+function lstClose() {
+  $(document).mouseup(function (e){
+    var $header = $(".header");
+    if( $header.has(e.target).length === 0){
+      $(".sub_lst").stop().slideUp();
+     $("h1").removeClass("on");
+   }else{
 
-
+   }
+  });
+}
 
 
 // 북마크 토글클래스
