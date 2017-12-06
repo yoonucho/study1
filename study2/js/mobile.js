@@ -31,9 +31,7 @@ function lstClose() {
     if( $header.has(e.target).length === 0){
       $(".sub_lst").stop().slideUp();
      $("h1").removeClass("on");
-   }else{
-
-   }
+    }
   });
 }
 
