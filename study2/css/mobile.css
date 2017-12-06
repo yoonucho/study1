@@ -12,7 +12,7 @@
 .header h1>span{display:inline-block;vertical-align:middle}
 .header h1>.keywords>a{color:#fff}
 .arrow{display:inline-block;width:13.5px;height:7px;background-position:-157px -124px}
-.arrow.on {background:url(../img/arrow_up.png)no-repeat;background-position:center top}
+h1.on .arrow{background:url(../img/arrow_up.png)no-repeat;background-position:center top}
 .sub_lst{display:none;position:absolute;z-index:100;top:50px;width:100%;padding:22px 0;background:#25222b;text-align:center}
 .sub_lst.on{display:block}
 .sub_lst li{line-height:40px}

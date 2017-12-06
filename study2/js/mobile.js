@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	selectMenu();
+  selectMenu();
+	
   bookmarkToggle();
 	//tab();
 });
@@ -9,18 +10,27 @@ $(document).ready(function(){
 // 셀렉트박스 이벤트
 function selectMenu() {
   $(".header h1").on("click", function () {
-     $(this).next().stop().slideToggle();
-     $(this).children(".arrow").addClass("on");
+    if($(this).hasClass("on")){
+        $(this).removeClass("on").next().slideUp();
+     }
+     else{
+        $(this).addClass("on").next().slideDown();
+     } 
      $(".sub_lst li").on("click",function(){
          $(".header h1>.keywords").html($(this).html());
           $(".sub_lst").stop().slideUp();
-          $("h1 .arrow").removeClass("on");
+          $("h1").removeClass("on");
      })
       
   });
 }
-// 문제점 온상태에서 아무것도 하지 않고 클릭할때 화살표도 바뀌어야 한다
+
+
+// 문제점 온상태에서 아무것도 하지 않고 클릭할때 닫히면서 화살표도 바뀌어야 한다
 // 다른 컨텐츠를 선택했을때 자동으로 닫혀야 한다.
+// modalP.on( "click", function() {
+//     gnb.removeClass('on').stop().animate({left:-260},500);
+//     modalP.fadeOut(500);
      
 // 북마크 토글클래스
 function bookmarkToggle() {
