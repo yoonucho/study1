@@ -1,6 +1,7 @@
 $(document).ready(function(){
     selectMenu();
   	bookmarkToggle();
+    lstClose();
 });
 
 // 셀렉트박스 이벤트
@@ -23,13 +24,18 @@ function selectMenu() {
   });
 }
 
+// 다른 컨텐츠를 선택했을때  닫아줘라
+// function lstClose() {
+//   $(document).mouseup(function (e){
+//     var $sub_lst = $(".sub_lst");
+//     if( $sub_lst.has(e.target).length === 0)
+//       $sub_lst.stop().slideUp();
+//      $("h1").removeClass("on");
+//   });
+// }
 
 
-// 다른 컨텐츠를 선택했을때 자동으로 닫혀야 한다.
-// modalP.on( "click", function() {
-//     gnb.removeClass('on').stop().animate({left:-260},500);
-//     modalP.fadeOut(500);
-     
+
 
 // 북마크 토글클래스
 function bookmarkToggle() {
