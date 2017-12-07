@@ -1,9 +1,9 @@
 $(document).ready(function(){
     selectMenu();
-  	bookmarkToggle();
-    lstClose();
+    bookmarkToggle();
+    //lstClose();
 });
-
+ 
 // 셀렉트박스 이벤트
 function selectMenu() {
   $(".header h1").on("click", function () {
@@ -23,8 +23,9 @@ function selectMenu() {
      }) 
   });
 }
-
+ 
 // 다른 영역을 선택했을때  닫아줘라
+/*
 function lstClose() {
   $(document).mouseup(function (e){
     var $header = $(".header");
@@ -34,15 +35,20 @@ function lstClose() {
     }
   });
 }
-
-
+*/
+ 
 // 북마크 토글클래스
 function bookmarkToggle() {
   $(".bookmark .icon_bookmark").on("click", function () {
      $(this).toggleClass("on");
   });
 }
-
-
-
-
+ 
+ 
+var test = $('.header h1');
+$(function(){
+  $(document).on('mouseup',function(){
+    $(".sub_lst").stop().slideUp();
+      $(test).removeClass("on");
+  });
+});
