@@ -1,29 +1,20 @@
 /*sprite.css*/
 .sp_img{display:block;background:url(../img/m_sprites.png)no-repeat;background-size:200px 184px;text-indent:-999em}
 .sp_img2{display:block;background:url(../img/m_sprites2.png)no-repeat;background-size:340.5px 41.5px;text-indent:-999em}
-.sp_img3{display:block;background:url(../img/m_sprites3.png)no-repeat;background-size:}
+.sp_img3{display:block;background:url(../img/m_sprites3.png)no-repeat;background-size:112px 78.5px;text-indent:-999em}
 .wrap{position:relative;z-index:1;width:100%;height:100%;margin:auto;background:url(../img/bg.png)no-repeat;background-size:cover}
 
 
-.icon_cart.on{width:75px;height:57px;background-position:-0 -100px}
-
-.icon_credit_card{width:64px;height:40px;background-position:-75px -100px}
-
-.icon_list_play.on{width:100px;height:100px;background-position:-0 -0}
-
-.icon_list_download{width:76px;height:76px;background-position:-100px -0}
-
-.icon_ul{width:48px;height:36px;background-position:-176px -0}
-
-.info_add{width:16px;height:20px;background-position:-176px -113px}
-
-.icon_star{width:20px;height:19px;background-position:-201px -75px}
-
-.info_view{width:20px;height:19px;background-position: -201px -94px}
-
-.icon_gift{width:34px;height:39px;background-position:-176px -36px}
-
-.icon_share2{width:25px;height:38px;background-position: -176px -75px}
+.icon_cart.on{width:37.5px;height:28.5px;background-position:0 -50px}
+.icon_credit_card{width:32px;height:20px;background-position:-37.5px -50px}
+.icon_list_play.on{width:50px;height:50px;background-position:0 0}
+.icon_list_download{width:38px;height:38px;background-position:-50px 0}
+.icon_ul{width:24px;height:18px;background-position:-88px 0}
+.info_add{width:8px;height:10px;background-position:-88px -56.5px}
+.icon_star{width:10px;height:9.5px;background-position:-100.5px -37.5px}
+.info_view{width:10px;height:9.5px;background-position: -100.5px -47px}
+.icon_gift{width:17px;height:19.5px;background-position:-88px -18px}
+.icon_share2{width:12.5px;height:19px;background-position: -88px -37.5px}
 
 
 
