@@ -45,10 +45,20 @@ function bookmarkToggle() {
 }
  
  
-var test = $('.header h1');
 $(function(){
-  $(document).on('mouseup',function(){
-    $(".sub_lst").stop().slideUp();
-      $(test).removeClass("on");
-  });
+   $('.sub_nav,.container').on('click',function(){
+      var test = $('.header h1.on');
+      $('.sub_lst').stop().slideUp();
+        $(test).removeClass('on');
+   });
 });
+
+
+// $(function(){
+//    $(".wrap:not(.header)").on('click',function(){
+//       var test = $('.header h1.on');
+//       $('.sub_lst').stop().slideUp();
+//         $(test).removeClass('on');
+//    });
+// });
+
