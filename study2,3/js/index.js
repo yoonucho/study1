@@ -19,6 +19,7 @@ $(function () {
 	});
 
 	$swipeTabsContainer.slick({
+		 slide: 'li',
 		//slidesToShow: 3.25,
 		slidesToShow: 3,
 		slidesToScroll: 1,
