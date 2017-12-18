@@ -38,7 +38,7 @@
 .side_menu .nav{position:relative;margin-top:18px;background:url(../img/nav_bar.png)0% 50% no-repeat;background-size:contain}
 .side_menu .nav .gnb>li{margin-left:-1px;margin-bottom:11px;background:url(../img/dot.png)0% 50% no-repeat;background-size:4px 4px}
 .side_menu .nav li.on{background:none;text-shadow:1px 1px 10px #fff,1px 1px 10px #ccc}
-.side_menu .nav span{display:inline-block;text-align:center;vertical-align:middle;}
+.side_menu .nav span{display:inline-block;text-align:center;vertical-align:middle}
 .side_menu .nav .circle{width:28px;height:28px;margin-right:9px;border:1px solid rgba(255,255,255,0.2);border-radius:50%}
 .side_menu .nav li>a{margin-left:20px;font-size:17px;color:#c1c1c1;vertical-align:middle}
 .side_menu .nav li.on>a{color:#fff}
@@ -75,18 +75,33 @@
 .icon_airplane{position:absolute;left:-18px;top:-4px;width:38px;height:39px;background-position:-143px -102px}
 
 /*컨테이너*/
+.main_top{position:relative}
 /*title_wrap*/
-.icon_mark{width:40px;height:40px;background-position:0 -137px}
+.title_wrap{margin-top:32px}
+.title_wrap p{height:40px;padding-left:16px;font-size:30px;color:#fff}
+.title_wrap .en{height:30px;font-size:20px;color:#0ff3fe}
+.icon_mark{display:inline-block;width:40px;height:40px;margin-top:-5px;background-position:0 -137px;vertical-align:middle}
 /*today_wrap*/
-.icon_weather{width:49px;height:40px;background-position:-93px -222px}
+.today_wrap p{padding-left:16px;color:#fff}
+.today_wrap .temp{width:137px;border-top:1px solid #a7e6f3;font-size:40px;line-height:35px}
+.today_wrap p>span{font-size:25px}
+.today_wrap .date{font-size:14px}
+.icon_weather{display:inline-block;width:49px;height:40px;background-position:-93px -222px;vertical-align:top;text-indent:0}
 
 /*메인01*/
 /*status_wrap*/
-.icon_before_entry{width:44px;height:36px;background-position:-32px -65px}
-.left_arrow{width:22px;height:33px;background-position:-136px 0}
-.right_arrow{width:22px;height:33px;background-position:-174px -63px}
+.status_wrap{position:absolute;bottom:0;width:100%;height:97px;margin:20px 0;padding:20px 0;background:rgba(7,132,188,0.9);box-sizing:border-box}
+.status_wrap .status{padding-left:45px;font-size:22px;color:#fff}
+.status_wrap .circle{display:inline-block;width:50px;height:50px;margin-right:17px;border-radius:50%;background:#0ff3fe;vertical-align:top}
+.status_wrap .msg{position:absolute;left:122px;bottom:32px;font-size:14px;color:rgba(255,255,255,0.5)}
+.icon_before_entry{display:inline-block;width:44px;height:36px;margin-top:5px;background-position:-32px -65px}
+/*화살표*/
+.arrow{position:absolute;top:50%;margin-top:-16px}
+.left_arrow{left:10px;width:22px;height:33px;background-position:-136px 0}
+.right_arrow{right:20px;width:22px;height:33px;background-position:-174px -63px}
 
 /*nav*/
+.main_top+.nav{padding-top:97px}
 .icon_flight_info{width:31px;height:32px;background-position:-76px -86px}
 
 .icon_transport_guide{width:38px;height:26px;background-position:-44px -236px}
