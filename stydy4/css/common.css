@@ -1,10 +1,10 @@
 @charset "utf-8";
-@import url(fonts.css);
+
 /* Malgun Web Standard Team KKS 161122 */
 /* Malgun Web Standard Team PSJ 161215 Custom */
 /* Common */
 body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,a,button,select{margin:0;padding:0}
-body,input,textarea,select,button,table{font-family:"Spoqa Han Sans", "돋움", Helvetica, Arial, sans-serif;color:#4a4a4a;-webkit-text-size-adjust:none}
+body,input,textarea,select,button,table{font-family:'맑은 고딕','돋움',dotum,sans-serif;color:#4a4a4a;-webkit-text-size-adjust:none}
 h1,h2,h3,h4,h5,h6{font-weight:normal}
 body{overflow-x:hidden;font-size:15px;line-height:20px;word-break:break-all;letter-spacing:-0.5px}
 img,fieldset,iframe{border:0}

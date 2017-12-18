@@ -1,7 +1,7 @@
  /*공통*/
 /*sprite css*/
 .sp_img{display:block;background:url(../img/sprite.png)no-repeat;background-size:265px 263px;text-indent:-999em}
-.wrap{background:#000}
+.wrap{background:url(../img/main_bg.png)no-repeat;background-size:contain}
 
 /*헤더*/
 .logo{width:74px;height:30px;background-position:-135px -33px}
@@ -70,32 +70,32 @@
 .icon_check_lst{width:36px;height:31px;background-position:-99px 0px}
 .icon_ticketing_info{width:36px;height:36px;background-position:-221px -53px}
 
-/*
-.sprite-tel-info { width: 66px; height: 70px; background-position: -255px -368px;}
-.sprite-my-plan { width: 63px; height: 61px; background-position: -130px -284px;}
-.sprite-ticketing-info { width: 73px; height: 73px; background-position: -441px -106px;}
-*/
+/*메인02*/
+/*status_wrap*/
+.icon_airport_arrival{width:36px;height:43px;background-position:-26px -22px}
 
+/*nav*/
+.icon_route_map{width:39px;height:29px;background-position:-123px -155px}
+.icon_shopping{width:31px;height:32px;background-position:-96px -190px}
+.icon_food{width:35px;height:28px;background-position:-109px -73px}
+.icon_tea{width:35px;height:32px;background-position:-163px -141px}
+.icon_service{width:33px;height:34px;background-position:-181px -96px}
 
+/*메인03*/
+/*status_wrap*/
+.icon_destination_arrival{width:35px;height:33px;background-position:0px -101px;}
 
+/*nav*/
+.icon_airport_guide{width:37px;height:33px;background-position:-62px -23px}
+.icon_tourist_info{width:33px;height:33px;background-position:-232px -20px}
+.icon_mytrip{width:29px;height:36px;background-position:-145px -63px}
 
 
 
 .℃{width:15px;height:15px;background-position:0px 0px}
-.icon_airport_arrival{width:36px;height:43px;background-position:-26px -22px;}
-.icon_airport_guide{width:37px;height:33px;background-position:-62px -23px;}
-.icon_destination_arrival{width:35px;height:33px;background-position:0px -101px;}
-.icon_food{width:35px;height:28px;background-position:-109px -73px}
-.icon_mytrip{width:29px;height:36px;background-position:-70px -141px;}
 
 
 
 
-.icon_route_map{width:39px;height:29px;background-position:-27px -193px;}
-.icon_service{width:33px;height:34px;background-position:-99px -172px;}
 
-.icon_shopping{width:31px;height:32px;background-position:-186px -88px;}
-.icon_tea{width:35px;height:32px;background-position:-66px -206px;}
-
-.icon_tourist_info{width:33px;height:33px;background-position:-101px -207px;}
 
