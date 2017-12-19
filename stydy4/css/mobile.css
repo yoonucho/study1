@@ -11,10 +11,9 @@
 .btn_all{position:absolute;right:7px;top:50%;width:33px;height:29px;margin-top:-14.5px;background-position:-76px -56px}
 
 /*사이드 전체메뉴*/
-.side_wrap{overflow-y:auto;position:fixed;z-index:99;margin-left:34%;width:66%;min-width:220px;height:100%;background:url(../img/side_bg.png)no-repeat;color:#c1c1c1}
-/*.side_wrap.on{display:block}*/
-/*.side_wrap{display:none}*/
-.main_menu{position:absolute;top:20px;right:0;padding:0 12px}
+.side_wrap{overflow-y:auto;display:none;position:fixed;z-index:99;margin-left:34%;width:66%;min-width:220px;height:100%;background:url(../img/side_bg.png)no-repeat;color:#c1c1c1}
+.side_wrap.on{display:block}
+.main_menu{position:absolute;top:20px;right:0;padding:0 17px}
 
 /*유틸메뉴*/
 /*검색*/
@@ -25,10 +24,10 @@
 
 .util_menu{padding-bottom:10px;border-bottom:1px solid #0ff3fe}
 .util_lst{overflow:hidden}
-.util_menu>li{position:relative;float:left;width:50%;height:40px;margin:8px 0;text-align:center;box-sizing:border-box}
-.util_menu>li:first-child:after{display:block;position:absolute;right:0;top:50%;width:1px;height:37px;margin-top:-15px;background:url(../img/list_bar.png)no-repeat;content:""}
-.util_menu>li>a{color:#0ff3fe;font-size:14px}
-/*.util_menu>li:first-child>a{display:block}*/
+.util_lst dd{position:relative;float:left;width:50%;height:40px;margin:8px 0;text-align:center;box-sizing:border-box}
+.util_lst dd:first-of-type:after{display:block;position:absolute;right:0;top:50%;width:1px;height:37px;margin-top:-15px;background:url(../img/list_bar.png)no-repeat;content:""}
+.util_lst dd>a{color:#0ff3fe;font-size:14px}
+
 /*홈으로*/
 .icon_home{width:54px;height:24px;margin:0 auto;background-position:-63px -117px;vertical-align:middle}
 .icon_home+span{color:#0ff3fe;font-size:14px}
@@ -38,13 +37,18 @@
 
 /*nav*/
 .main_menu .nav{position:relative;margin-top:18px;background:url(../img/nav_bar.png)0% 50% no-repeat;background-size:contain}
-.main_menu .nav .gnb>li{margin-left:-1px;margin-bottom:11px;background:url(../img/dot.png)0% 50% no-repeat;background-size:4px 4px}
-.main_menu .nav li.on{background:none;text-shadow:1px 1px 10px #fff,1px 1px 10px #ccc}
+.main_menu .nav .gnb>li{position:relative;margin-left:-1px;margin-bottom:11px;background:url(../img/dot.png)0% 50% no-repeat;background-size:4px 4px}
+.main_menu .nav li.on{text-shadow:1px 1px 10px #fff,1px 1px 10px #ccc}
+/*이동*/
+.icon_airplane{display:none;position:absolute;left:-18px;top:-4px;width:38px;height:39px;background-position:-143px -102px}
+
+.main_menu .nav li.on .icon_airplane{display:block}
+.main_menu .nav li.sub_have{background:url(../img/dot.png)0% 20% no-repeat;background-size:4px 4px}
 .main_menu .nav span{display:inline-block;text-align:center;vertical-align:middle}
 .main_menu .nav .circle{width:28px;height:28px;margin-right:9px;border:1px solid rgba(255,255,255,0.2);border-radius:50%}
 .main_menu .nav li>a{margin-left:20px;font-size:17px;color:#c1c1c1;vertical-align:middle}
 .main_menu .nav li.on>a{color:#fff}
-.main_menu .nav .sub{margin-left:40px}
+.main_menu .nav .sub{margin-left:38px}
 .main_menu .nav .sub>li>a{font-size:14px;color:#fefefe;text-shadow:none}
 
 .icon_myplan_s.on{width:22px;height:23px;background-position:-158px 0;}
@@ -73,8 +77,6 @@
 .icon_tel_info_s{width:22px;height:25px;background-position:0px -216px}
 .icon_setting_s.on{width:24px;height:23px;background-position:-196px -63px}
 .icon_setting_s{width:24px;height:23px;background-position:-207px -30px}
-/*이동*/
-.icon_airplane{position:absolute;left:-18px;top:-4px;width:38px;height:39px;background-position:-143px -102px}
 
 /*컨테이너*/
 .container{margin-top:-48px}
@@ -85,13 +87,13 @@
 .title_wrap .en{display:block;height:30px;padding-left:16px;font-size:21px;color:#0ff3fe}
 .icon_mark{display:inline-block;width:40px;height:40px;margin-top:-5px;background-position:0 -137px;vertical-align:middle}
 /*today_wrap*/
-.today_wrap{margin-top:16px}
+/*.today_wrap{margin-top:16px}*/
 .today_wrap p{padding-left:16px;color:#fff}
 .today_wrap p>span{font-size:25px}
 .today_wrap .temp{width:137px;padding-top:4px;border-top:1px solid #a7e6f3;font-size:40px;font-weight:600;line-height:35px}
 .today_wrap .temp span{margin-left:-9px}
-.today_wrap .date{font-size:14px}
-.today_wrap .temp .icon_weather{display:inline-block;width:49px;height:40px;margin-left:0;background-position:-93px -222px;vertical-align:top;text-indent:0}
+.today_wrap .date{padding-left:16px;color:#fff;font-size:14px}
+.today_wrap .temp .icon_weather{display:inline-block;width:49px;height:40px;margin:-3px 0 0;background-position:-93px -222px;vertical-align:top;text-indent:0}
 
 /*메인01*/
 /*status_wrap*/
