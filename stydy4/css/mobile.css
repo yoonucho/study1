@@ -1,7 +1,7 @@
  /*공통*/
 /*sprite css*/
 .sp_img{display:block;background:url(../img/m_sprite.png)no-repeat;background-size:265px 263px;text-indent:-999em}
-.wrap{background:url(../img/main_bg.png)no-repeat;background-size:contain}
+.wrap{}
 
 /*.center { position: absolute; left: 50%; transform: translateX(-50%)}*/
 
@@ -10,11 +10,11 @@
 .logo{position:absolute;left:50%;top:50%;width:74px;height:30px;margin-top:-15px;background-position:-135px -33px;transform: translateX(-50%)}
 .btn_all{position:absolute;right:7px;top:50%;width:33px;height:29px;margin-top:-14.5px;background-position:-76px -56px}
 
-/*사이드 메뉴*/
-.side_menu_wrap{overflow-y:auto;position:fixed;z-index:99;margin-left:34%;width:66%;min-width:220px;height:100%;background:url(../img/side_bg.png)no-repeat;color:#c1c1c1}
-.side_menu_wrap.on{display:block}
-/*.side_menu_wrap{display:none}*/
-.side_menu{position:absolute;top:20px;right:0;padding:0 12px}
+/*사이드 전체메뉴*/
+.side_wrap{overflow-y:auto;position:fixed;z-index:99;margin-left:34%;width:66%;min-width:220px;height:100%;background:url(../img/side_bg.png)no-repeat;color:#c1c1c1}
+/*.side_wrap.on{display:block}*/
+/*.side_wrap{display:none}*/
+.main_menu{position:absolute;top:20px;right:0;padding:0 12px}
 
 /*검색*/
 .search_wrap{position:relative;width:176px;height:33px;margin-bottom:18px;border:1px solid #10c4d0;border-radius:20px;box-sizing:border-box}
@@ -35,15 +35,15 @@
 .icon_airport_moving+span{padding-top:25px;color:#0ff3fe;font-size:14px}
 
 /*nav*/
-.side_menu .nav{position:relative;margin-top:18px;background:url(../img/nav_bar.png)0% 50% no-repeat;background-size:contain}
-.side_menu .nav .gnb>li{margin-left:-1px;margin-bottom:11px;background:url(../img/dot.png)0% 50% no-repeat;background-size:4px 4px}
-.side_menu .nav li.on{background:none;text-shadow:1px 1px 10px #fff,1px 1px 10px #ccc}
-.side_menu .nav span{display:inline-block;text-align:center;vertical-align:middle}
-.side_menu .nav .circle{width:28px;height:28px;margin-right:9px;border:1px solid rgba(255,255,255,0.2);border-radius:50%}
-.side_menu .nav li>a{margin-left:20px;font-size:17px;color:#c1c1c1;vertical-align:middle}
-.side_menu .nav li.on>a{color:#fff}
-.side_menu .nav .sub{margin-left:40px}
-.side_menu .nav .sub>li>a{font-size:14px;color:#fefefe;text-shadow:none}
+.main_menu .nav{position:relative;margin-top:18px;background:url(../img/nav_bar.png)0% 50% no-repeat;background-size:contain}
+.main_menu .nav .gnb>li{margin-left:-1px;margin-bottom:11px;background:url(../img/dot.png)0% 50% no-repeat;background-size:4px 4px}
+.main_menu .nav li.on{background:none;text-shadow:1px 1px 10px #fff,1px 1px 10px #ccc}
+.main_menu .nav span{display:inline-block;text-align:center;vertical-align:middle}
+.main_menu .nav .circle{width:28px;height:28px;margin-right:9px;border:1px solid rgba(255,255,255,0.2);border-radius:50%}
+.main_menu .nav li>a{margin-left:20px;font-size:17px;color:#c1c1c1;vertical-align:middle}
+.main_menu .nav li.on>a{color:#fff}
+.main_menu .nav .sub{margin-left:40px}
+.main_menu .nav .sub>li>a{font-size:14px;color:#fefefe;text-shadow:none}
 
 .icon_myplan_s.on{width:22px;height:23px;background-position:-158px 0;}
 .icon_myplan_s{width:22px;height:23px;background-position:-97px -142px}
@@ -75,11 +75,12 @@
 .icon_airplane{position:absolute;left:-18px;top:-4px;width:38px;height:39px;background-position:-143px -102px}
 
 /*컨테이너*/
-.main_top{position:relative;min-height:263px}
+.container{margin-top:-48px}
+.main_top{position:relative;width:100%;height:48vh;background:url(../img/main_bg.png)no-repeat;background-size:100% 100%}
 /*title_wrap*/
-.title_wrap{margin-top:27px}
+.title_wrap{padding-top:27px}
 .title_wrap p{height:40px;padding-left:16px;font-size:30px;color:#fff;font-weight:600}
-.title_wrap .en{height:30px;font-size:21px;color:#0ff3fe}
+.title_wrap .en{display:block;height:30px;padding-left:16px;font-size:21px;color:#0ff3fe}
 .icon_mark{display:inline-block;width:40px;height:40px;margin-top:-5px;background-position:0 -137px;vertical-align:middle}
 /*today_wrap*/
 .today_wrap{margin-top:16px}
@@ -103,15 +104,15 @@
 .right_arrow{right:0;width:22px;height:33px;background-position:-174px -63px}
 
 /*nav*/
-.main_nav{overflow:hidden;margin:22px}
-.main_nav .gnb>li{float:left;width:25%;margin-bottom:18px;text-align:center}
-.main_nav .gnb>li>a{font-size:14px;color:#414141;}
-.main_nav span{display:inline-block;vertical-align:middle}
-.main_nav .border{display:block;position:relative;width:52px;height:52px;margin:0 auto;padding:6px;border:1px solid #32afce;border-radius:50%;background:#fff;box-sizing:border-box}
-.main_nav .circle{width:100%;height:100%;border-radius:50%;background:#d3e9f4;box-sizing:border-box}
+.quick_nav{overflow:hidden;margin:22px}
+.quick_nav .gnb>li{float:left;width:25%;margin-bottom:18px;text-align:center}
+.quick_nav .gnb>li>a{font-size:14px;color:#414141;}
+.quick_nav span{display:inline-block;vertical-align:middle}
+.quick_nav .border{display:block;position:relative;width:52px;height:52px;margin:0 auto;padding:6px;border:1px solid #32afce;border-radius:50%;background:#fff;box-sizing:border-box}
+.quick_nav .circle{width:100%;height:100%;border-radius:50%;background:#d3e9f4;box-sizing:border-box}
 .icon_flight_info{width:31px;height:32px;background-position:-76px -86px}
 
-.main_nav .icon_transport_guide{display:block;position:absolute;top:50%;width:38px;height:26px;margin-top:-13px;background-position:-44px -236px}
+.quick_nav .icon_transport_guide{display:block;position:absolute;top:50%;width:38px;height:26px;margin-top:-13px;background-position:-44px -236px}
 .icon_parking_guide{width:32px;height:39px;background-position:-64px -172px}
 .icon_tel_info{width:33px;height:35px;background-position:-127px -184px}
 .icon_myplan{width:31px;height:30px;background-position:-65px -142px}
