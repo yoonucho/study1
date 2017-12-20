@@ -1,7 +1,7 @@
  /*공통*/
 /*sprite css*/
 .sp_img{display:block;background:url(../img/m_sprite.png)no-repeat;background-size:265px 263px;text-indent:-999em}
-.wrap{}
+/*.wrap{position:absolute;left:-124%}*/
 
 /*.center { position: absolute; left: 50%; transform: translateX(-50%)}*/
 
