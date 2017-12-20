@@ -79,8 +79,8 @@
 .icon_setting_s{width:24px;height:23px;background-position:-207px -30px}
 
 /*컨테이너*/
-.container{margin-top:-48px}
-.main_top{position:relative;width:100%;height:48vh;background:url(../img/main_bg.png)no-repeat;background-size:100% 100%}
+.container{}
+.main_top{position:relative;width:100%;height:56vh;background:url(../img/main_bg.png)no-repeat;background-size:100% 100%}
 /*title_wrap*/
 .title_wrap{padding-top:27px}
 .title_wrap p{height:40px;padding-left:16px;font-size:30px;color:#fff;font-weight:600}
