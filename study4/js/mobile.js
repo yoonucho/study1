@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    selectMenu();
-    bookmarkToggle();
+    //bxSlider();
+    //selectMenu();
+   
     //lstClose();
 });
  
-// 셀렉트박스 이벤트
+// 사이드랩 메인메뉴  클릭이벤트
 function selectMenu() {
   $(".header h1").on("click", function () {
     // 만약 h1이 on클래스를 가지고 있으면  on클래스를 없애주고 슬라이드를 올려줘라
@@ -15,14 +16,13 @@ function selectMenu() {
       else{
           $(this).addClass("on").next().slideDown();
       } 
-     $(".sub_lst li").on("click",function(){
-      //.keywords에 .sub_lst li내용을 담아줘라.(ex:<a href="#">트렌드</a>)
-         $(".header h1>.keywords").html($(this).html());
-          $(".sub_lst").stop().slideUp();
-          $("h1").removeClass("on");
-     }) 
+    
   });
 }
+
+//btn_all을 클릭했을때 사이드랩을 보여줘라
+  //바로 하단에 있으니 .next()
+//해당 리스트를 클릭했을때 on클래스를 추가해주고 텍스트효과와 비행기를 보여줘라
  
 // 다른 영역을 선택했을때  닫아줘라
 /*
@@ -37,28 +37,5 @@ function lstClose() {
 }
 */
  
-// 북마크 토글클래스
-function bookmarkToggle() {
-  $(".bookmark .icon_bookmark").on("click", function () {
-     $(this).toggleClass("on");
-  });
-}
+
  
- 
-$(function(){
-   $('.sub_nav,.container').on('click',function(){
-      var test = $('.header h1.on');
-      $('.sub_lst').stop().slideUp();
-        $(test).removeClass('on');
-   });
-});
-
-
-// $(function(){
-//    $(".wrap:not(.header)").on('click',function(){
-//       var test = $('.header h1.on');
-//       $('.sub_lst').stop().slideUp();
-//         $(test).removeClass('on');
-//    });
-// });
-
