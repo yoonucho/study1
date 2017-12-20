@@ -39,7 +39,7 @@
 .main_menu .nav{position:relative;margin-top:18px;background:url(../img/nav_bar.png)0% 50% no-repeat;background-size:contain}
 .main_menu .nav .gnb>li{position:relative;margin-left:-1px;margin-bottom:11px;background:url(../img/dot.png)0% 50% no-repeat;background-size:4px 4px}
 .main_menu .nav li.on{text-shadow:1px 1px 10px #fff,1px 1px 10px #ccc}
-/*이동*/
+/*비행기 이동*/
 .icon_airplane{display:none;position:absolute;left:-18px;top:-4px;width:38px;height:39px;background-position:-143px -102px}
 
 .main_menu .nav li.on .icon_airplane{display:block}
@@ -87,66 +87,75 @@
 .title_wrap .en{display:block;height:30px;padding-left:16px;font-size:21px;color:#0ff3fe}
 .icon_mark{display:inline-block;width:40px;height:40px;margin-top:-5px;background-position:0 -137px;vertical-align:middle}
 /*today_wrap*/
-/*.today_wrap{margin-top:16px}*/
 .today_wrap p{padding-left:16px;color:#fff}
 .today_wrap p>span{font-size:25px}
 .today_wrap .temp{width:137px;padding-top:4px;border-top:1px solid #a7e6f3;font-size:40px;font-weight:600;line-height:35px}
 .today_wrap .temp span{margin-left:-9px}
 .today_wrap .date{padding-left:16px;color:#fff;font-size:14px}
 .today_wrap .temp .icon_weather{display:inline-block;width:49px;height:40px;margin:-3px 0 0;background-position:-93px -222px;vertical-align:top;text-indent:0}
-
-/*메인01*/
 /*status_wrap*/
 .status_wrap{position:absolute;bottom:0;width:100%;height:97px;padding:20px 0;background:rgba(7,132,188,0.9);box-sizing:border-box}
 .status_wrap .status{padding-left:45px;font-size:22px;color:#fff}
-.status_wrap .circle{display:inline-block;width:50px;height:50px;border-radius:50%;background:#0ff3fe;vertical-align:top}
-.status_wrap .msg{position:absolute;left:106px;bottom:32px;font-size:14px;color:rgba(255,255,255,0.5)}
-.icon_before_entry{display:inline-block;width:44px;height:36px;margin-top:5px;background-position:-32px -65px}
+.status_wrap .circle{display:inline-block;position:relative;width:50px;height:50px;border-radius:50%;background:#0ff3fe;vertical-align:top}
+.status_wrap .msg{position:absolute;left:100px;bottom:32px;font-size:14px;color:rgba(255,255,255,0.5)}
 /*화살표*/
 .arrow{position:absolute;top:50%;margin-top:-16px}
 .left_arrow{left:0;width:22px;height:33px;background-position:-136px 0}
 .right_arrow{right:0;width:22px;height:33px;background-position:-174px -63px}
-
 /*nav*/
 .quick_nav{overflow:hidden;margin:22px}
 .quick_nav .gnb>li{float:left;width:25%;margin-bottom:18px;text-align:center}
-.quick_nav .gnb>li>a{font-size:14px;color:#414141;}
-.quick_nav span{display:inline-block;vertical-align:middle}
-.quick_nav .border{display:block;position:relative;width:52px;height:52px;margin:0 auto;padding:6px;border:1px solid #32afce;border-radius:50%;background:#fff;box-sizing:border-box}
+.quick_nav .gnb>li>a{font-size:14px;color:#414141}
+.quick_nav span{display:block;vertical-align:middle}
+.quick_nav .border{position:relative;width:52px;height:52px;margin:0 auto;padding:6px;border:1px solid #32afce;border-radius:50%;background:#fff;box-sizing:border-box}
 .quick_nav .circle{width:100%;height:100%;border-radius:50%;background:#d3e9f4;box-sizing:border-box}
-.icon_flight_info{width:31px;height:32px;background-position:-76px -86px}
+.quick_nav .sp_img{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
 
-.quick_nav .icon_transport_guide{display:block;position:absolute;top:50%;width:38px;height:26px;margin-top:-13px;background-position:-44px -236px}
-.icon_parking_guide{width:32px;height:39px;background-position:-64px -172px}
-.icon_tel_info{width:33px;height:35px;background-position:-127px -184px}
-.icon_myplan{width:31px;height:30px;background-position:-65px -142px}
-.icon_entry{width:28px;height:35px;background-position:-35px -101px}
-.icon_check_lst{width:36px;height:31px;background-position:-99px 0px}
+/*메인01*/
+/*status_wrap*/
+.icon_before_entry{display:inline-block;width:44px;height:36px;margin-top:5px;background-position:-32px -65px}
+/*nav*/
+.icon_flight_info{width:30px;height:32px;background-position:-76px -86px}
+.icon_transport_guide{width:38px;height:26px;background-position:-44px -236px}
+.icon_parking_guide{width:32px;height:38px;background-position:-64px -172px}
+.icon_tel_info{width:32px;height:34px;background-position:-127px -184px}
+.icon_myplan{width:30px;height:30px;background-position:-65px -142px}
+.icon_entry{width:28px;height:34px;background-position:-35px -101px}
+.icon_check_lst{width:36px;height:30px;background-position:-99px 0px}
 .icon_ticketing_info{width:36px;height:36px;background-position:-221px -53px}
 
 /*메인02*/
 /*status_wrap*/
-.icon_airport_arrival{width:36px;height:43px;background-position:-26px -22px}
-
+.airport{background:#74cb30}
+.airport .circle{background:#c6f662}
+.icon_airport_arrival{position:absolute;left:50%;margin-left:-18px;width:36px;height:43px;background-position:-26px -22px}
 /*nav*/
-.icon_route_map{width:39px;height:29px;background-position:-123px -155px}
-.icon_shopping{width:31px;height:32px;background-position:-96px -190px}
-.icon_food{width:35px;height:28px;background-position:-109px -73px}
-.icon_tea{width:35px;height:32px;background-position:-163px -141px}
-.icon_service{width:33px;height:34px;background-position:-181px -96px}
+.icon_route_map{width:38px;height:28px;background-position:-123px -155px}
+.icon_shopping{width:30px;height:32px;background-position:-96px -190px}
+.icon_food{width:34px;height:28px;background-position:-109px -73px}
+.icon_tea{width:34px;height:32px;background-position:-163px -141px}
+.icon_service{width:32px;height:34px;background-position:-181px -96px}
 
 /*메인03*/
 /*status_wrap*/
-.icon_destination_arrival{width:35px;height:33px;background-position:0px -101px;}
+.destination{background:#10c3b8}
+.destination .circle{background:#87f8dc}
+.destination .msg{bottom:12px}
 
+.icon_destination_arrival{position:absolute;top:50%;left:50%;width:35px;height:33px;margin-top:-20px;margin-left:-17px;background-position:0px -101px}
 /*nav*/
-.icon_airport_guide{width:37px;height:33px;background-position:-62px -23px}
-.icon_tourist_info{width:33px;height:33px;background-position:-232px -20px}
-.icon_mytrip{width:29px;height:36px;background-position:-145px -63px}
+.icon_airport_guide{width:36px;height:32px;background-position:-62px -23px}
+.icon_tourist_info{width:32px;height:32px;background-position:-232px -20px}
+.icon_mytrip{width:28px;height:36px;background-position:-145px -63px}
 
 
+/*미디어쿼리*/
+/*해상도 412이상*/
+@media only screen and (min-width : 412px) {
+	.destination .msg{bottom:32px}
+}
 
-.℃{width:15px;height:15px;background-position:0px 0px}
+/*.℃{width:15px;height:15px;background-position:0px 0px}*/
 
 
 
