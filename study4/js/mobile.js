@@ -32,48 +32,23 @@ function menuOpen() {
 function airplaneGo(){
   $(".nav .gnb>li>a").on("click",function (){
 
-    // if($(this).parent().hasClass("on")){
-       $(".nav .gnb>li").parent().children().removeClass("on");
-       // $(this).find("[class$='s']").removeClass("on");
-       $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
-       // $(".nav .gnb>li>a").find("[class^='icon_']").css('background-color', 'red')
-         
    
-     // }
-     // else{
+       // $(".nav .gnb>li").parent().children().removeClass("on");
+       // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
+         
+ 
+       //   $(this).parent().addClass("on");
+
+       //    $(this).find(".sp_img").addClass("on");
+
+
+      $(".nav .gnb>li").parent().children().removeClass("on");
+       $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
+         
+ 
          $(this).parent().addClass("on");
 
           $(this).find(".sp_img").addClass("on");
-     
-  
-     // }
-
-    // $(this).parent().addClass("on");
-    //   // $(this).parent().addClass("on");
-    //    $(".nav .gnb>li").removeClass("on")
-    //     // $(this).children().children().addClass("on").siblings().children().children().children().removeClass("on")
-
-
-       // if문 사용시
-
-     
-     // if($(this).hasClass("on")){
-     //     $(".nav .gnb>li").removeClass("on");
-     //     $(this).find("[class$='s']").removeClass("on");
-     //     $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
-     //     $(".nav .gnb>li>a").find("[class^='icon_']").css('background-color', 'red')
-         
-   
-     // }
-     // else{
-     // //    // $(this).parent().addClass("on");
-     //    $(this).find(".sp_img").addClass("on");
-     
-  
-     // }
-
-   
-    // $(this).find("[class$='s']").addClass("on").siblings().removeClass("on")
 
   })
 }
