@@ -81,7 +81,7 @@
 .icon_setting_s{width:24px;height:23px;background-position:-207px -30px}
 
 /*main_top*/
-.main_top{position:relative;width:100%;height:56vh;background:url(../img/main_bg.png)no-repeat;background-size:100% 100%}
+.main_top{position:relative;width:100%;height:40vh;background:url(../img/main_bg.png)no-repeat;background-size:100% 100%}
 /*title_wrap*/
 .title_wrap{padding-top:27px}
 .title_wrap p{height:40px;padding-left:16px;font-size:30px;color:#fff;font-weight:600}
@@ -94,8 +94,10 @@
 .today_wrap .temp span{margin-left:-9px}
 .today_wrap .date{padding-left:16px;color:#fff;font-size:14px}
 .today_wrap .temp .icon_weather{display:inline-block;width:49px;height:40px;margin:-3px 0 0;background-position:-93px -222px;vertical-align:top;text-indent:0}
+
+
 /*status_wrap*/
-.status_wrap{position:absolute;bottom:0;width:100%;height:97px;padding:20px 0;background:rgba(7,132,188,0.9);box-sizing:border-box}
+.status_wrap{position:relative;width:100%;height:97px;padding:20px 0;background:rgba(7,132,188,0.9);box-sizing:border-box}
 .status_wrap .status{padding-left:45px;font-size:22px;color:#fff}
 .status_wrap .circle{display:inline-block;position:relative;width:50px;height:50px;border-radius:50%;background:#0ff3fe;vertical-align:top}
 .status_wrap .msg{position:absolute;left:100px;bottom:32px;font-size:14px;color:rgba(255,255,255,0.5)}
