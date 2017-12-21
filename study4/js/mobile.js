@@ -2,17 +2,17 @@ $(document).ready(function(){
     menuOpen();
     airplaneGo();
     //sub_imgOn();
-    //bxSlider();
+    bxSlider();
    
 });
  
  // 페이지 사이드 롤링
-// function bxSlider{
-//   $(".bxslider").bxSlider({
+function bxSlider(){
+  $(".bxslider").bxSlider({
+      auto:true
+  });
 
-//   })
-
-// }
+}
 // 사이드랩 메인메뉴  클릭이벤트
 function menuOpen() {
   $(".btn_all").on("click", function () {
