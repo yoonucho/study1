@@ -8,11 +8,24 @@ $(document).ready(function(){
  
  // 페이지 사이드 롤링
 function bxSlider(){
-  $(".bxslider").bxSlider({
-      auto:true
+  var slider= $(".bxslider").bxSlider({
+      infiniteLoop:false,
+      hideControlOnEnd:true
   });
 
+
+
+
+   // "다음" 버튼 클릭시 동작 정의
+       $('.bx-next').click(function () {
+        slider.goToNextSlide();
+       });
+       // "이전" 버튼 클릭시 동작 정의
+       $('.bx-prev').click(function () {
+        slider.goToPrevSlide();
+       });
 }
+
 // 사이드랩 메인메뉴  클릭이벤트
 function menuOpen() {
   $(".btn_all").on("click", function () {
