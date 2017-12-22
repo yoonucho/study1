@@ -48,27 +48,32 @@ function menuOpen() {
 
 function airplaneGo(){
   $(".nav .gnb>li>a").on("click",function (){
-
-   
-       // $(".nav .gnb>li").parent().children().removeClass("on");
-       // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
-         
- 
-       //   $(this).parent().addClass("on");
-
-       //    $(this).find(".sp_img").addClass("on");
-
-
+      // find
       $(".nav .gnb>li").parent().children().removeClass("on");
       $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
+         
+      $(this).parent().addClass("on");
+      $(this).find(".sp_img").addClass("on");
+  })
+}
+
+function airplaneGo(){
+  $(".nav .gnb>li>a").on("click",function (){
+      // children
+      $(".nav .gnb>li").parent().children().removeClass("on");
+      // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
+      $(".nav .gnb>li>a").children().children().removeClass("on");
          
  
       $(this).parent().addClass("on");
 
-      $(this).find(".sp_img").addClass("on");
-
+      // $(this).find(".sp_img").addClass("on");
+      $(this).children().children().addClass("on");
   })
 }
+
+
+
 
 
 function quickNav() {

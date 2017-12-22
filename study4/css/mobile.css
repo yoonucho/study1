@@ -108,15 +108,11 @@
 .bx-wrapper .bx-pager{bottom:5px}
 .bx-wrapper .bx-controls-direction a {top:14%;width:22px;height:33px}
 .bx-wrapper .bx-controls-direction a.disabled{display:none}
-.bx-wrapper .bx-prev{left:0;width:22px;height:33px;background:url(../img/m_sprite.png)no-repeat;background-size:265px 263px;background-position:-136px 0}
-.bx-wrapper .bx-next{right:0;width:22px;height:33px;background:url(../img/m_sprite.png)no-repeat;background-size:265px 263px;background-position:-174px -63px}
-.bx-wrapper .bx-next:hover,.bx-wrapper .bx-next:focus{background:none}
+.bx-wrapper .bx-prev,.bx-wrapper .bx-prev:focus,.bx-wrapper .bx-prev:hover{left:0;width:22px;height:33px;background:url(../img/m_sprite.png)no-repeat;background-size:265px 263px;background-position:-136px 0}
+.bx-wrapper .bx-next,.bx-wrapper .bx-next:focus,.bx-wrapper .bx-next:hover{right:0;width:22px;height:33px;background:url(../img/m_sprite.png)no-repeat;background-size:265px 263px;background-position:-174px -63px}
 .bx-wrapper .bx-pager.bx-default-pager a{width:12px;height:12px;border:1px solid #2baaca;border-radius:50%;background:#fff}
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus{background:#0283bc}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:focus{background:#0283bc}
 .bx-wrapper .bx-loading{background:none}
-
-
 
 /*nav*/
 .quick_nav{overflow:hidden;margin:22px}
