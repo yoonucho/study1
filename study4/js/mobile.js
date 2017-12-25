@@ -6,21 +6,20 @@ $(document).ready(function(){
    
 });
  
- // bxSlider 롤링
+ // bxslider 롤링
 function bxSlider(){
   var slider= $(".bxslider").bxSlider({
       infiniteLoop:false,
       hideControlOnEnd:true,
       touchEnabled:false
   });
-
-   // "다음" 버튼 클릭시 동작 정의
+// "다음" 버튼 클릭시 동작 정의
    $('.bx-next').click(function () {
-    slider.goToNextSlide();
+      slider.goToNextSlide();
    });
    // "이전" 버튼 클릭시 동작 정의
    $('.bx-prev').click(function () {
-    slider.goToPrevSlide();
+      slider.goToPrevSlide();
    });
 }
 
@@ -48,27 +47,39 @@ function menuOpen() {
 
 function airplaneGo(){
   $(".nav .gnb>li>a").on("click",function (){
-      // find
-      $(".nav .gnb>li").parent().children().removeClass("on");
-      $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
-         
-      $(this).parent().addClass("on");
-      $(this).find(".sp_img").addClass("on");
-  })
-}
+//     // find()
 
-function airplaneGo(){
-  $(".nav .gnb>li>a").on("click",function (){
-      // children
-      $(".nav .gnb>li").parent().children().removeClass("on");
-      // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
-      $(".nav .gnb>li>a").children().children().removeClass("on");
-         
- 
-      $(this).parent().addClass("on");
+    // $(".nav .gnb>li").parent().children().removeClass("on");
+    // $(this).parent().addClass("on");
+    // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
+    // $(this).find(".sp_img").addClass("on");
 
-      // $(this).find(".sp_img").addClass("on");
-      $(this).children().children().addClass("on");
+    // find2
+
+      // 2line
+   // $(this).parent().parent().children().siblings().removeClass("on").css({"border":"1px solid #000"}).find(".sp_img").removeClass("on");
+   //  $(this).parent().addClass("on").css({"border":"1px solid #f00"}).find(".sp_img").addClass("on"); 
+
+      // 4line
+    // $(this).parent().parent().children().siblings().removeClass("on").css({"border":"1px solid #000"})
+    // $(this).parent().addClass("on").css({"border":"1px solid #f00"})
+
+    // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
+    // $(this).find(".sp_img").addClass("on");
+
+    // children()
+       // 2line
+        $(this).parent().parent().children().siblings().removeClass("on").children().children().children().removeClass("on");
+        $(this).parent().addClass("on").children().children().children().addClass("on"); 
+
+
+       // 4line
+         // $(".nav .gnb>li>a").parent().parent().children().removeClass("on");
+//       $(".nav .gnb>li>a").children().children().removeClass("on"); 
+//       $(this).parent().addClass("on");
+//       $(this).children().children().addClass("on");
+
+
   })
 }
 
