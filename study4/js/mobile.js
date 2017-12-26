@@ -39,7 +39,7 @@ function menuOpen() {
   });
 }
 
- //비행기가 보일때 안보일때로 
+ //비행기 숨겼다가 보이
 
 //btn_all을 클릭했을때 사이드랩을 보여줘라
   
@@ -63,14 +63,24 @@ function airplaneGo(){
       // 4line
     // $(this).parent().parent().children().siblings().removeClass("on").css({"border":"1px solid #000"})
     // $(this).parent().addClass("on").css({"border":"1px solid #f00"})
-
     // $(".nav .gnb>li>a").find(".sp_img").removeClass("on");
     // $(this).find(".sp_img").addClass("on");
 
     // children()
+
        // 2line
-        $(this).parent().parent().children().siblings().removeClass("on").children().children().children().removeClass("on");
-        $(this).parent().addClass("on").children().children().children().addClass("on"); 
+       // 대표님소스
+
+ 
+     $(this).parent().addClass("on").siblings().removeClass("on");
+     $(this).children().children().addClass('on').parent().parent().parent().siblings().children().children().children().removeClass('on');
+
+
+       // 2line
+        // $(this).parent().parent().children().siblings().removeClass("on").children().children().children().removeClass("on");
+        // $(this).parent().addClass("on").children().children().children().addClass("on"); 
+        // $(this).parent().parent().children().siblings().removeClass("on").children().children().children().removeClass("on");
+        // $(this).parent().addClass("on").children().children().children().addClass("on"); 
 
 
        // 4line
