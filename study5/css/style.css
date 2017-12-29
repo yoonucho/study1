@@ -16,49 +16,49 @@
 .icon_industrial_safety.on{width:60px;height:59px;background-position:-712px -635px}
 .icon_industrial_safety{width:60px;height:59px;background-position:-652px -635px}
 .icon_little_cloudy{width:107px;height:63px;background-position:-644px -697px}
-.icon_map{width:10px;height:18px;background-position:-1299px -606px;}
-.icon_order_safety.on{width:59px;height:59px;background-position:-869px -697px;}
-.icon_order_safety{width:59px;height:59px;background-position:-772px -635px;}
-.icon_partly_cloudy{width:79px;height:76px;background-position:-832px -411px;}
-.icon_play{width:71px;height:71px;background-position:-1263px -397px;}
-.icon_rain{width:69px;height:71px;background-position:-1263px -468px;}
-.icon_sanitary_food_safety.on{width:59px;height:59px;background-position:-810px -697px;}
-.icon_sanitary_food_safety{width:59px;height:59px;background-position:-1046px -697px;}
-.icon_security_safety.on{width:59px;height:59px;background-position:-831px -635px;}
-.icon_service_location{width:12px;height:11px;background-position:-1322px -606px;}
-.icon_snow{width:69px;height:67px;background-position:-1263px -539px;}
-.icon_traffic_safety{width:58px;height:58px;background-position: -537px -760px;}
-.icon_traffic_safety.on{width:58px;height:58px;background-position: -1164px -697px;}
-.icon_use_guide{width:59px;height:59px;background-position: -1105px -697px;}
-.icon_very_cloudy{width:107px;height:63px;background-position: -537px -697px;}
-.img_accident_safety{width:120px;height:168px;background-position: -417px -697px;}
-.img_disaster_safety{width:332px;height:256px;background-position: -931px -397px;}
-.img_facilities_safety{width:120px;height:168px;background-position: -592px -411px;}
-.img_industrial_safety{width:410px;height:397px;background-position: -931px -0;}
-.img_order_safety{width:417px;height:229px;background-position: -0 -697px;}
-.img_sanitary_food_safety{width:120px;height:168px;background-position: -712px -411px;}
-.img_security_safety{width:497px;height:411px;background-position: -0 -0;}
-.img_traffic_safety{width:434px;height:411px;background-position: -497px -0;}
-.logo{width:184px;height:56px;background-position: -592px -579px;}
-.map{width:186px;height:300px;background-position: -0 -926px;}
-.icon_view_more{width:13px;height:13px;background-position: -1309px -606px;}
-.img_base{width:592px;height:286px;background-position: -0 -411px;}
+.icon_map{width:10px;height:18px;background-position:-1299px -606px}
+.icon_order_safety.on{width:59px;height:59px;background-position:-869px -697px}
+.icon_order_safety{width:59px;height:59px;background-position:-772px -635px}
+.icon_partly_cloudy{width:79px;height:76px;background-position:-832px -411px}
+.icon_play{width:71px;height:71px;background-position:-1263px -397px}
+.icon_rain{width:69px;height:71px;background-position:-1263px -468px}
+.icon_sanitary_food_safety.on{width:59px;height:59px;background-position:-810px -697px}
+.icon_sanitary_food_safety{width:59px;height:59px;background-position:-1046px -697px}
+.icon_security_safety.on{width:59px;height:59px;background-position:-831px -635px}
+.icon_service_location{width:12px;height:11px;background-position:-1322px -606px}
+.icon_snow{width:69px;height:67px;background-position:-1263px -539px}
+.icon_traffic_safety{width:58px;height:58px;background-position: -537px -760px}
+.icon_traffic_safety.on{width:58px;height:58px;background-position: -1164px -697px}
+.icon_use_guide{width:59px;height:59px;background-position: -1105px -697px}
+.icon_very_cloudy{width:107px;height:63px;background-position: -537px -697px}
+.img_accident_safety{width:120px;height:168px;background-position: -417px -697px}
+.img_disaster_safety{width:332px;height:256px;background-position: -931px -397px}
+.img_facilities_safety{width:120px;height:168px;background-position: -592px -411px}
+.img_industrial_safety{width:410px;height:397px;background-position: -931px -0}
+.img_order_safety{width:417px;height:229px;background-position: -0 -697px}
+.img_sanitary_food_safety{width:120px;height:168px;background-position: -712px -411px}
+.img_security_safety{width:497px;height:411px;background-position: -0 -0}
+.img_traffic_safety{width:434px;height:411px;background-position: -497px -0}
+.logo{width:184px;height:56px;background-position: -592px -579px}
+.map{width:186px;height:300px;background-position: -0 -926px}
+.icon_view_more{width:13px;height:13px;background-position: -1309px -606px}
+.img_base{width:592px;height:286px;background-position: -0 -411px}
 
 
 /*모바일*/
-.btn_all{width:41px;height:37px;background-position: -0 -60px;}
-.arrow_up{width:21px;height:13px;background-position: -106px -60px;}
-.btn_all_on{width:41px;height:37px;background-position: -41px -60px;}
-.logo_m{width:195px;height:60px;background-position: -0 -0;}
-.view_more_m{width:24px;height:25px;background-position: -82px -60px;}
+.btn_all{width:41px;height:37px;background-position: -0 -60px}
+.arrow_up{width:21px;height:13px;background-position: -106px -60px}
+.btn_all_on{width:41px;height:37px;background-position: -41px -60px}
+.logo_m{width:195px;height:60px;background-position: -0 -0}
+.view_more_m{width:24px;height:25px;background-position: -82px -60px}
 
 
 
 .wrap{position:relative;width:100%}
 
 /*sprite css*/
-.sp_img{display:block;background:url(../img/sprites.png)no-repeat}
-.sp_img_m{display:block;background:url(../img/sprites_m.png)no-repeat}
+.sp_img{display:block;width:1341px;height:1226px;background:url(../img/sprites.png)no-repeat}
+.sp_img_m{display:block;width:195px;height:97px;background:url(../img/sprites_m.png)no-repeat}
 
 /*헤더*/
 .header_wrap {overflow:hidden;position:absolute;z-index:99;width:100%;min-width:990px;height:122px;border-bottom:1px solid #7f9bba;background:#fff}
