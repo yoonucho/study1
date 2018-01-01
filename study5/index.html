@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width">
+	<!-- <meta name="viewport" content="width=device-width"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<title>생활안전지도</title>
 	<meta name="keywords" content="생활안전지도">
 	<meta name="description" content="생활안전지도">
@@ -13,7 +14,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/main.js"></script>
+<!-- 	<script src="js/main.js"></script> -->
 </head>
 <body>
 	<div class="wrap">
@@ -25,12 +26,15 @@
 				</h1>
 				<div class="nav"> 
 					<h2 class="blind">공통 전체메뉴</h2>
+					<div class="btn_all">
+						<a href="#"><span class="sp_img_m icon_btn_all" ></span>메뉴</a>
+					</div>
 					<ul class="gnb">
 						<li>
 							<a href="#">서비스안내</a>
-							<div class="sub_wrap">
+							<div class="sub_wrap on">
 								<ul class="sub">
-									<li><a href="#">생활안전지도란?</a></li>
+									<li class="on"><a href="#">생활안전지도란?</a></li>
 									<li><a href="#">이용가이드</a></li>
 									<li><a href="#">지도문제해결 </a></li>
 									<li><a href="#">세이프티매거진</a></li>		
@@ -38,7 +42,7 @@
 							</div>
 						</li>
 						<li>
-							<a href="#">지도바로가기</a>
+							<a href="#"><span class="sp_img icon_map"></span>지도바로가기</a>
 							<div class="sub_wrap">
 								<ul class="sub">
 									<li><a href="#">지도바로가기1</a></li>
@@ -74,76 +78,127 @@
 		<!-- 컨테이너 --> 
 		<div class="container">
 			<!-- 메인 컨텐츠-->
+			<div class="base_wrap">
+				<div class="base_visual">
+					<div class="text_wrap">
+						<h4 class="title">언제 어디서나 보면서 지키는 <span>생활안전지도</span></h4>
+						<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+						<a href="#">서비스안내</a>			
+					</div>
+					<span class="sp_img img_base"></span>
+				</div>
+			</div>
 				<!-- 퀵메뉴 -->
-			<div class="quick_nav">
-				<h3 class="blind">메뉴 바로가기</h3>
-				<a class="sp_img btn_all mobile" href="#"></a>
-				<ul>
-					<li>
-						<a href="#"><span class="sp_img icon_traffic_safety"></span>교통안전</a>
-						<div>
-							<h4 class="title">교통안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-					<li>
-						<a href="#"><span class="sp_img icon_disaster_safety"></span>재난안전</a>
-						<div>
-							<h4 class="title">재난안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-					<li>
-						<a href="#"><span class="sp_img icon_security_safety"></span>치안안전</a>
-						<div>
-							<h4 class="title">치안안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-					<li>
-						<a href="#"><span class="sp_img icon_order_safety"></span>맞춤안전</a>
-						<div>
-							<h4 class="title">맞춤안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">서비스안내</a>
-						</div>
-					</li>
-					<li>
-						<a href="#"><span class="sp_img icon_facilities_safety"></span>시설안전</a>
-						<div>
-							<h4 class="title">시설안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-					<li>
-						<a href="#"><span class=""></span>산업안전</a>
-						<div>
-							<h4 class="title">산업안전정보 생활안전지도에서 확인하세요<</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-					<li>
-						<a href="">보건식품안전</a>
-						<div>
-							<h4 class="title">보건식품안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-					<li>
-						<a href="#"><span class="sp_img icon_accident_safety"></span>사고안전</a>
-						<div>
-							<h4 class="title">사고안전정보 생활안전지도에서 확인하세요</h4>
-							<p>생활 속 안전정보를 확인하여 위험과 피해를 예방할 수 있습니다.</p>
-							<a href="#">지도 바로가기</a>
-						</div>
-					</li>
-				</ul>
+			<div class="quick_nav_wrap">
+				<div class="quick_nav">
+					<h3 class="blind">메뉴 바로가기</h3>
+					<ul>
+						<li>
+							<a href="#"><span class="sp_img icon_traffic_safety"></span>교통안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap traffic_safety">
+										<h4 class="title">교통안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_traffic_safety"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="sp_img icon_disaster_safety"></span>재난안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap disaster_safety">
+										<h4 class="title">재난안전정보  <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_disaster_safety"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="sp_img icon_security_safety"></span>치안안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap security_safety">
+										<h4 class="title">치안안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_security_safety"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="sp_img icon_order_safety"></span>맞춤안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap order_safety">
+										<h4 class="title">맞춤안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_order_safety"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="sp_img icon_facilities_safety"></span>시설안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap facilities_safety">
+										<h4 class="title">시설안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_facilities_safety"></span>
+								</div>
+							</div>
+						</li>
+						<li class="v1">
+							<a href="#"><span class="sp_img icon_industrial_safety"></span>산업안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap industrial_safety">
+										<h4 class="title">산업안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_industrial_safety on"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a class="v1" href="#"><span class="sp_img icon_sanitary_food_safety"></span>보건식품안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap sanitary_food_safety">
+										<h4 class="title">보건식품안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_sanitary_food_safety"></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#"><span class="sp_img icon_accident_safety"></span>사고안전</a>
+							<div class="content_wrap">
+								<div>
+									<div class="text_wrap accident_safety">
+										<h4 class="title">사고안전정보 <span>생활안전지도에서 확인하세요</span></h4>
+										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
+										<a href="#">지도 바로가기</a>
+									</div>
+									<span class="sp_img img_accident_safety"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="main_con">
 				<div class="service_location">
@@ -170,7 +225,7 @@
 					 </div>
 					 <div class="location_popup">
 					 	<h4>서비스지역 선택</h4>
-					 	<a class="btn_close" href="#" ></a>
+					 	<a class="sp_img btn_close" href="#" ></a>
 						 	<h5>경상북도</h5>
 						 	<ul class="location_lst">
 						 		<li><a href="#">구미시</a></li>
@@ -225,12 +280,13 @@
 					<h3>공지사항</h3>
 					<p>생활안전지도 서비스 점검안내입니다.</p>
 					<span class="date">2014.03.20</span>
-					<a class="sp_img" href="#">더보기</a>
+					<a class="sp_img icon_view_more" href="#">더보기</a>
 				</div>
 				<div class="disaster_flash_news">
 					<h3>재난뉴스속보</h3>
 					<p>전북소방본부 "담뱃불 화재 주의하세요"</p>
 					<span class="date">2014.06.13</span>
+					<a class="sp_img icon_view_more" href="#">더보기</a>
 				</div>
 			</div>
 			<div class="banner_wrap">
