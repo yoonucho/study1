@@ -24,13 +24,13 @@
 				<h1> 
 					<a href="/" class="sp_img logo">생활안전지도</a>
 				</h1>
-				<div class="nav"> 
+				<div class="nav">
 					<h2 class="blind">공통 전체메뉴</h2>
 					<div class="btn_all">
 						<a href="#"><span class="sp_img_m icon_btn_all" ></span>메뉴</a>
 					</div>
 					<ul class="gnb">
-						<li>
+						<li class="on">
 							<a href="#">서비스안내</a>
 							<div class="sub_wrap on">
 								<ul class="sub">
@@ -93,8 +93,8 @@
 				<div class="quick_nav">
 					<h3 class="blind">메뉴 바로가기</h3>
 					<ul>
-						<li>
-							<a href="#"><span class="sp_img icon_traffic_safety"></span>교통안전</a>
+						<li class="on">
+							<a href="#"><span class="sp_img icon_traffic_safety on"></span>교통안전</a>
 							<div class="content_wrap">
 								<div>
 									<div class="text_wrap traffic_safety">
@@ -201,10 +201,11 @@
 				</div>
 			</div>
 			<div class="main_con">
-				<div class="service_location">
+				<div class="con_lst service_location">
 					<h3>서비스지역보기</h3>
-					<p>서비스지역에 대한 생활안전지도를 볼 수 있습니다.지역을 선택하시면 해당 지역 지도로 이동합니다.</p>
-					 <div class="location_wrap">
+					<p>서비스지역에 대한 생활안전지도를 볼 수 있습니다. <br />
+					지역을 선택하시면 해당 지역 지도로 이동합니다.</p>
+					 <div class="sp_img location_wrap">
 					 		<a href="#">서울</a>
 					 		<a href="#">경기</a>
 					 		<a href="#">인천</a>
@@ -219,80 +220,84 @@
 					 		<a href="#">경북</a>
 					 		<a href="#">대구</a>
 					 		<a href="#">경남</a>
-					 		<a href="#">울산</a>ㄴ
+					 		<a href="#">울산</a>
 					 		<a href="#">부산</a>
 						  <a href="#">제주</a>
 					 </div>
 					 <div class="location_popup">
-					 	<h4>서비스지역 선택</h4>
-					 	<a class="sp_img btn_close" href="#" ></a>
-						 	<h5>경상북도</h5>
-						 	<ul class="location_lst">
-						 		<li><a href="#">구미시</a></li>
-						 		<li><a href="#">포항시 남구</a></li>
-						 		<li><a href="#">지역명03</a></li>
-						 		<li><a href="#">지역명04</a></li>
-						 		<li><a href="#">지역명05</a></li>
-						 		<li><a href="#">지역명06</a></li>
-						 		<li><a href="#">지역명07</a></li>
-						 		<li><a href="#">지역명08</a></li>
-						 		<li><a href="#">지역명09</a></li>
-						 		<li><a href="#">지역명10</a></li>
-						 		<li><a href="#">지역명11</a></li>
-						 		<li><a href="#">지역명12</a></li>
-						 		<li><a href="#">지역명13</a></li>
-						 		<li><a href="#">지역명14</a></li>
-						 	</ul>
+					 	<h4><span class="sp_img icon_service_location"></span>서비스지역 선택</h4>
+						<h5>경상북도</h5>
+					 	<ul class="location_lst">
+					 		<li><a href="#">구미시</a></li>
+					 		<li><a href="#">포항시 남구</a></li>
+					 		<li><a href="#">지역명03</a></li>
+					 		<li><a href="#">지역명04</a></li>
+					 		<li><a href="#">지역명05</a></li>
+					 		<li><a href="#">지역명06</a></li>
+					 		<li><a href="#">지역명07</a></li>
+					 		<li><a href="#">지역명08</a></li>
+					 		<li><a href="#">지역명09</a></li>
+					 		<li><a href="#">지역명10</a></li>
+					 		<li><a href="#">지역명11</a></li>
+					 		<li><a href="#">지역명12</a></li>
+					 		<li><a href="#">지역명13</a></li>
+					 		<li><a href="#">지역명14</a></li>
+					 	</ul>
+						<a class="sp_img btn_close" href="#" >닫기</a>
 					 </div>
 				</div>
-				<div class="location_weather">
-					<h3>지역날씨</h3>
-					<div class="weather_warp location">
-						<span class="location_text">서울</span>
-						<div class="icon_weather"></div>
-						<span class="bind">구름 조금</span>
-						<span class="temp">7.6°</span>
+				<div class="con_lst second">
+					<div class="location_weather">
+						<h3>지역날씨</h3>
+						<div class="weather_warp location">
+							<span class="location_text">서울</span>
+							<div class="icon_weather"></div>
+							<span class="bind">구름 조금</span>
+							<span class="temp">7.6°</span>
+						</div>
+						<div class="weather_warp today">
+							<span>오늘</span>
+							<span class="icon_weather"></span>
+							<span class="bind">구름 조금</span>
+							<span class="temp">26°</span>
+						</div>
+						<div class="weather_warp tomorrow">
+							<span>내일</span>
+							<span class="icon_weather"></span>
+							<span class="bind">비</span>
+							<span class="temp">26°</span>
+						</div>
+						<a class="btn_prev" href="#">앞으로</a>
+						<a class="btn_next" href="#">뒤로</a>
 					</div>
-					<div class="weather_warp today">
-						<span>오늘</span>
-						<span class="icon_weather"></span>
-						<span class="bind">구름 조금</span>
-						<span class="temp">26°</span>
+					<div class="promotional_video">
+						<img src="img/movie_thumb.png" alt="홍보동영상 썸네일">
+						<a href="#" class="sp_img icon_play">플레이버튼</a>
 					</div>
-					<div class="weather_warp tomorrow">
-						<span>내일</span>
-						<span class="icon_weather"></span>
-						<span class="bind">비</span>
-						<span class="temp">26°</span>
+				</div>
+				<div class="con_lst">
+					<div class="use_guide">
+						<h3>이용가이드</h3>
+						<p>생활안전지도를 활용하는방법을 확인하세요</p>
 					</div>
-					<a class="btn_prev" href="#">앞으로</a>
-					<a class="btn_next" href="#">뒤로</a>
-				</div>
-				<div class="promotional_video">
-					<img src="" alt="홍보동영상 썸네일">
-					<a href="#" class="sp_img icon_play">플레이버튼</a>
-				</div>
-				<div class="use_guide">
-					<h3>이용가이드</h3>
-					<p>생활안전지도를 활용하는방법을 확인하세요</p>
-				</div>
-				<div class="main_notice">
-					<h3>공지사항</h3>
-					<p>생활안전지도 서비스 점검안내입니다.</p>
-					<span class="date">2014.03.20</span>
-					<a class="sp_img icon_view_more" href="#">더보기</a>
-				</div>
-				<div class="disaster_flash_news">
-					<h3>재난뉴스속보</h3>
-					<p>전북소방본부 "담뱃불 화재 주의하세요"</p>
-					<span class="date">2014.06.13</span>
-					<a class="sp_img icon_view_more" href="#">더보기</a>
+					<div class="main_notice">
+						<h3>공지사항</h3>
+						<p>생활안전지도 서비스 점검안내입니다.</p>
+						<span class="date">2014.03.20</span>
+						<a class="sp_img icon_view_more" href="#">더보기</a>
+					</div>
+					<div class="disaster_flash_news">
+						<h3>재난뉴스속보</h3>
+						<p>전북소방본부 "담뱃불 화재 주의하세요"</p>
+						<span class="date">2014.06.13</span>
+						<a class="sp_img icon_view_more" href="#">더보기</a>
+					</div>
+					<div class="banner_wrap">
+						<h3 class="blind">배너 바로가기</h3>
+						<a href="#"><img src="img/banner1.png" alt="행복한 대한민국을 여는 정부 3.0 개방, 공유, 소통, 협력으로 희망의 새시대를 열어가겠습니다."></a>
+					</div> 	
 				</div>
 			</div>
-			<div class="banner_wrap">
-				<h3 class="blind">배너 바로가기</h3>
-				<a href="#"><img src="img/banner1.png" alt="행복한 대한민국을 여는 정부 3.0 개방, 공유, 소통, 협력으로 희망의 새시대를 열어가겠습니다."></a>
-			</div> 
 		</div>	
 		<!-- 푸터 -->
 		<div class="footer">
