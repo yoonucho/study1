@@ -116,8 +116,6 @@ h1{float:left;width:auto}
 .content_wrap .img_industrial_safety{top:-40px;width:410px;height:397px;background-position: -931px -0}
 
 /*보건식품안전정보*/
-/*.quick_nav li.on>a.v1{padding:21px 22px 17px}
-*/
 .quick_nav li>a.v1{width:76px;padding:21px 22px 17px}
 .quick_nav li>a.v1>span{margin-left:4px}
 .icon_sanitary_food_safety.on{width:59px;height:59px;background-position:-810px -697px}
@@ -137,24 +135,37 @@ h1{float:left;width:auto}
 /*메인컨텐츠*/
 .main_con{position:relative;width:960px;margin:20px auto}
 .main_con:after{display:block;clear:both;visibility:hidden;content:''}
-.con_lst{position:relative;float:left;width:202px;height:417px;padding:23px 18px 0;border:1px solid #ddd}
+.con_lst{position:relative;float:left;width:202px;height:440px;padding:0 18px;border:1px solid #ddd}
 
 /*서비스지역보기*/
 .service_location{width:312px}
-.con_lst h3{font-size:20px;color:#333}
-.con_lst p{font-family:'NanumGothic',sans-serif;font-size:12px}
+.con_lst h3{margin-top:23px;font-size:20px;color:#333}
+.con_lst p{font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px}
 .location_wrap{position:relative;width:186px;height:300px;background-position: -0 -926px;text-indent:0}
 .location_wrap>a{display:block;width:30px;height:19px;border-radius:3px;background:#555;font-size:12px;color:#fff;text-align:center}
 /*서비스지역 선택*/
-.con_lst h4{height:47px;background:#f1f1f1;font-family:'NanumGothic',sans-serif;font-size:12px;line-height:47px}
-.location_popup{overflow-y:auto;position:absolute;z-index:99;top:0;right:-251px;width:251px;height:400px;border:1px solid #ddd;background:#fff}
-.btn_close{position:absolute;top:22px;right:10px;width:11px;height:11px;margin-top:-6px;background-position:-1263px -624px}
-
+.con_lst h4{height:36px;background:#f1f1f1;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;line-height:36px}
+.con_lst h4:before{display:block;position:absolute;z-index:99;top:16px;left:-6px;width:6px;height:12px;background:url(../img/popup_arrow.png)no-repeat;content:''}
+.location_popup{display:none;position:absolute;z-index:99;top:0;right:-251px;width:251px;height:400px;border:1px solid #ddd;border-top:none;background:#fff}
+.location_popup.on{display:block}
+.btn_close{position:absolute;top:5%;right:10px;width:11px;height:11px;margin-top:-6px;background-position:-1263px -624px}
+.con_lst h5{height:35px;border-top:1px solid #cfcfd3;border-bottom:1px solid #ddd;background:#fbfbfb;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;text-align:center;line-height:35px}
+.location_lst{overflow-y:auto;height:329px}
+.location_lst>li{height:31px;border-bottom:1px dotted #ddd;line-height:31px}
+.location_lst>li:last-child{border-bottom:none}
+.location_lst>li>a{padding-left:13px;font-family:'돋움',dotum,'NanumGothic',sans-serif;color:#555;font-size:12px;}
+.location_lst>li>a:before{display:inline-block;width:3px;height:3px;margin-right:5px;background:url(../img/bullet.png)no-repeat;content:'';vertical-align:middle}
+.location_lst>li>a:hover{color:#2cb084}
 /*second*/
 /*지역날씨*/
 .second{width:370px;padding:0;border-left:none;border-right:none}
-.location_weather{height:220px}
-.icon_service_location{display:inline-block;width:12px;height:11px;margin:0 5px 0 12px;background-position:-1322px -606px}
+.location_weather{overflow:hidden;height:220px}
+.weather_warp.location{width:132px;height:100%;padding:0 21px;background:#f7f7f7}
+.weather_warp{float:left;width:196px;height:50%;background:#fff}
+.icon_service_location{display:inline-block;width:12px;height:11px;margin:0 5px 0 12px;background-position:-1322px -606px;vertical-align:middle}
+.icon_little_cloudy{width:79px;height:76px;background-position:-832px -411px}
+.icon_partly_cloudy{width:107px;height:63px;background-position:-644px -697px}
+
 
 /*홍보영상*/
 .promotional_video{position:relative}
@@ -162,14 +173,11 @@ h1{float:left;width:auto}
 .icon_play{width:71px;height:71px;background-position:-1263px -397px}
 
 
-
 .bx_prev{width:18px;height:18px;background-position:-1281px -606px}
 .bx_next{width:18px;height:18px;background-position:-1263px -606px}
 /*.arrow.on{width:7px;height:4px;background-position:-1334px -404px}*/
 .btn_arrow{width:4px;height:7px;background-position:-1334px -397px}
-.bullet{width:3px;height:3px;background-position:-1338px -397px}
-.icon_little_cloudy{width:107px;height:63px;background-position:-644px -697px}
-.icon_partly_cloudy{width:79px;height:76px;background-position:-832px -411px}
+/*.bullet{width:3px;height:3px;background-position:-1338px -397px}*/
 .icon_rain{width:69px;height:71px;background-position:-1263px -468px}
 .icon_snow{width:69px;height:67px;background-position:-1263px -539px}
 .icon_use_guide{width:59px;height:59px;background-position: -1105px -697px}
