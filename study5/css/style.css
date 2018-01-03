@@ -67,7 +67,7 @@ h1{float:left;width:auto}
 .quick_nav li .content_wrap{display:none}
 .quick_nav li.on .content_wrap{display:block;overflow:hidden;position:absolute;top:100px;left:0;width:100%;height:320px;background:#f7f7f7}
 .content_wrap>div{width:960px;height:320px;margin:0 auto}
-.content_wrap .sp_img{position:absolute;top:27px;right:95px}
+.content_wrap .sp_img{position:absolute;top:27px;right:244px}
 
 /*교통안전*/
 .icon_traffic_safety{width:58px;height:58px;background-position: -537px -760px}
@@ -136,10 +136,28 @@ h1{float:left;width:auto}
 
 /*서비스지역보기*/
 .service_location{width:312px}
-.con_lst h3{padding-top:23px;font-size:20px;color:#333;font-weight:normal}
-.con_lst p{font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px}
-.location_wrap{position:relative;width:186px;height:300px;background-position: -0 -926px;text-indent:0}
-.location_wrap>a{display:block;width:30px;height:19px;border-radius:3px;background:#555;font-size:12px;color:#fff;text-align:center}
+.con_lst h3{padding-top:18px;font-size:20px;color:#333;font-weight:normal}
+.con_lst p{font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;color:#767676}
+.location_wrap{position:relative;width:186px;height:300px;margin:20px auto;background-position: -0 -926px;text-indent:0}
+.location_wrap>a{position:absolute;display:block;width:30px;height:19px;border-radius:3px;background:#555;font-size:12px;color:#fff;text-align:center}
+/*전국지도*/
+.seoul{top:39px;left:40px}
+.gyeonggi{top:68px;left:51px}
+.gangwon{top:38px;left:107px}
+.incheon{top:35px;left:-8px}
+.chungbuk{top:98px;left:80px}
+.chungnam{top:104px;left:26px}
+.sejong{top:148px;left:84px}
+.daejeon{top:130px;left:46px}
+.gyeongbuk{top:119px;left:128px}
+.gyeongnam{top:182px;left:99px}
+.daegu{top:149px;left:123px}
+.jeonbuk{top:163px;left:46px}
+.jeonnam{top:224px;left:32px}
+.gwangju{top:195px;left:16px}
+.ulsan{top:165px;left:170px}
+.busan{top:198px;left:154px}
+.jeju{top:282px;left:28px}
 /*서비스지역 선택*/
 .con_lst h4{height:36px;background:#f1f1f1;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;line-height:36px}
 .con_lst h4:before{display:block;position:absolute;z-index:99;top:16px;left:-6px;width:6px;height:12px;background:url(../img/popup_arrow.png)no-repeat;content:''}
@@ -156,7 +174,7 @@ h1{float:left;width:auto}
 /*second*/
 /*지역날씨*/
 .second{width:370px;padding:0;border-left:none;border-right:none}
-.location_weather{overflow:hidden;height:220px}
+.location_weather{overflow:hidden;position:relative;height:220px}
 .weather_warp{float:left;position:relative;width:159px;height:35px;padding:37px 15px 37px 21px;background:#fff}
 .weather_warp.location{position:relative;width:132px;height:100%;padding:0 21px;border-right:1px dashed #e4e4e4;background:#f7f7f7}
 .location_text{display:inline-block;padding-top:100px;font-size:20px;color:#333}
@@ -174,6 +192,9 @@ h1{float:left;width:auto}
 /*모레*/
 .twodays_later{border-bottom:1px solid #ddd}
 .icon_rain_s{display:inline-block;width:34px;height:35px;background:url(../img/icon_rain_s.png)no-repeat}
+/*앞으로 뒤로*/
+.bx_prev{position:absolute;top:22px;left:115px;width:18px;height:18px;background-position:-1281px -606px}
+.bx_next{position:absolute;top:22px;left:135px;width:18px;height:18px;background-position:-1263px -606px}
 /*홍보영상*/
 .promotional_video{position:relative}
 .promotional_video p{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:16px;position:absolute;bottom:37px;width:100%;color:#fff;text-align:center}
@@ -182,8 +203,6 @@ h1{float:left;width:auto}
 
 
 .icon_rain{width:69px;height:71px;background-position:-1263px -468px}
-.bx_prev{width:18px;height:18px;background-position:-1281px -606px}
-.bx_next{width:18px;height:18px;background-position:-1263px -606px}
 /*.arrow.on{width:7px;height:4px;background-position:-1334px -404px}*/
 .btn_arrow{width:4px;height:7px;background-position:-1334px -397px}
 /*.bullet{width:3px;height:3px;background-position:-1338px -397px}*/
@@ -209,8 +228,8 @@ h1{float:left;width:auto}
 
 
 /*푸터*/
-.footer_wrap{width:100%;height:101px;background:#f7f7f7;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;color:#555}
-.footer{position:relative;width:960px;margin:0 auto;padding:24px 0 35px}
+.footer_wrap{width:100%;height:101px;padding:24px 0 35px;background:#f7f7f7;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;color:#555}
+.footer{position:relative;width:960px;margin:0 auto;}
 .bottom_menu{overflow:hidden}
 .bottom_menu li{float:left;height:25px;line-height:25px}
 .cooperator_lst>li{margin-right:19px}
@@ -221,9 +240,6 @@ h1{float:left;width:auto}
 .side_menu>li>a{font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;color:#555;font-weight:600}
 .select_wrap{float:right;height:28px}
 .select_wrap>select{height:28px;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px}
-/*푸터로고*/
-.footer_logo_wrap{float:left;width:115px}
-.footer_logo{width:92px;height:22px;background-position:-236px -13px;text-indent:-999em}
 /*어드레스*/
 .address_wrap{width:450px;margin:0 auto;text-align:left}
 
