@@ -197,9 +197,9 @@ h1{float:left;width:auto}
 .icon_rain_s{display:inline-block;width:34px;height:35px;background:url(../img/icon_rain_s.png)no-repeat}
 /*앞으로 뒤로*/
 .bx_prev{position:absolute;top:22px;left:115px;width:18px;height:18px;background-position:-1281px -606px}
-.bx_next{position:absolute;top:22px;left:135px;width:18px;height:18px;background-position:-1263px -606px}
+.bx_next{position:absolute;top:22px;right:216px;width:18px;height:18px;background-position:-1263px -606px}
 /*홍보영상*/
-.promotional_video{position:relative}
+.promotional_video{position:relative;background:none}
 .promotional_video p{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:16px;position:absolute;bottom:37px;width:100%;color:#fff;text-align:center}
 .promotional_video>a{position:absolute;left:50%;top:50%;margin:-35px 0 0 -35px}
 .icon_play{display:inline-block;width:71px;height:71px;background-position:-1263px -397px}
@@ -229,6 +229,8 @@ h1{float:left;width:auto}
 
 /*배너*/
 .bbs .banner_wrap{padding:0}
+.banner1{background:none}
+.banner1_m{display:none}
 
 
 /*푸터*/
@@ -236,6 +238,7 @@ h1{float:left;width:auto}
 .footer{position:relative;width:960px;margin:0 auto;}
 .bottom_menu{overflow:hidden}
 .bottom_menu li{float:left;height:25px;line-height:25px}
+.cooperator_lst_m{display:none}
 .cooperator_lst>li{margin-right:19px}
 .side_menu{width:450px;margin:0 auto;text-align:left}
 .side_menu>li{margin-right:16px}
@@ -247,21 +250,15 @@ h1{float:left;width:auto}
 /*어드레스*/
 .address_wrap{width:450px;margin:0 auto;text-align:left}
 
-.bg-arrow_down{width:21px;height:13px;background:url('css_sprites.png') -390px -146px;}
-.bg-banner1_m{width:640px;height:140px;background:url('css_sprites.png') -2px -2px;}
-.bg-arrow_up{width:21px;height:13px;background:url('css_sprites.png') -415px -146px;}
-.bg-logo_mois_m{width:170px;height:53px;background:url('css_sprites.png') -201px -196px;}
-.bg-logo_ndmi_m{width:266px;height:46px;background:url('css_sprites.png') -2px -146px;}
-.bg-view_more_m{width:24px;height:25px;background:url('css_sprites.png') -362px -146px;}
+
 
 
 /*미디어쿼리*/
 
 /*해상도 767px 이하*/
 @media only screen and (max-width : 767px){
-	img{max-width:100%;vertical-align:top}
-	.sp_img_m{display:block;background:url(../img/sprites_m.png)no-repeat;background-size:322px 129px;text-indent:-999em}
-	.sp_img_m2{display:block;background:url(../img/sprites_m2.png)no-repeat;background-size:95.5px 94.5px;text-indent:-999em}
+	img{max-width:100%;height:auto;vertical-align:top}
+	.sp_img_m{display:block;background:url(../img/sprites_m.png)no-repeat;background-size:322px 200px;text-indent:-999em}
 	/*헤더*/
 	.header_wrap *{box-sizing:border-box}
 	.header_wrap{top:0;min-width:320px}
@@ -269,17 +266,17 @@ h1{float:left;width:auto}
 	.header{width:100%;height:auto}
 	h1{width:40%;height:48px;background:#fff}
 	/*로고*/
-	.logo_m{width:97.5px;height:30px;margin-top:5px;margin-left:12px;background-position:-1px -98px}
+	.logo{width:97.5px;height:30px;margin-top:5px;margin-left:12px;background-position:-1px -98px}
 	/*유틸메뉴*/
-	.user_menu{display:block;float:left;width:60%;height:48px;background:#fff}
+	.user_menu{display:block;float:right;width:60%;height:48px;background:#fff}
 	.user_menu li{float:left;line-height:48px}
-	.user_menu li>a{display:block;padding:0 7px;color:#4f4f4f}
+	.user_menu li>a{display:block;padding:0 6px;color:#4f4f4f}
 	/*gnb*/
 	.nav{float:none}
 	.btn_all{display:block;width:100%;height:100%;background:#4f4f4f}
 	.btn_all>a{display:inline-block;position:relative;width:50px;height:50px;background:#474747;vertical-align:middle}
-	.icon_btn_all{position:absolute;top:50%;left:50%;width:20px;height:18px;background-position:-158.5px -73px;transform:translate(-50%,-50%)}
-	.icon_btn_all:hover{background-position: -136px -73px}
+	.icon_btn_all{position:absolute;top:50%;left:50%;width:20.5px;height:18.5px;background-position:-224px -73px;transform:translate(-50%,-50%)}
+	.icon_btn_all:hover{background-position:-246.8px -73px}
 	.btn_all>span{margin-left:16px;font-size:15px;color:#ccc}
 	.gnb.on{display:block}
 	.gnb{display:none}
@@ -288,7 +285,8 @@ h1{float:left;width:auto}
 	.gnb>li>a{padding:18px 15px;font-family:'굴림','Gulim','돋움',dotum,'NanumGothic',sans-serif;font-size:15px;color:#fff}
 	.gnb>li>a>span{display:none}
 	.gnb li .sub_wrap.on{display:none}
-	/*기본비쥬얼*/
+	.container{padding:100px 0 0 0}
+	/*기본비주얼*/
 	.base_wrap{min-width:320px;box-sizing:border-box}
 	.base_wrap *{box-sizing:border-box}
 	.base_visual{width:100%;height:118px}
@@ -296,38 +294,144 @@ h1{float:left;width:auto}
 	.text_wrap h4{margin-bottom:13px;font-size:15px}
 	.text_wrap p{font-size:14px}
 	.text_wrap a{display:none}
-	.img_base{top:0;width:127px;height:109px;background:url(../img/img_base_m.png)no-repeat;background-size:contain}
-	
+	.img_base{top:0;width:127px;height:109px;background:url(../img/img_base_m.png)no-repeat;background-size:cover}
+	/*안내메세지*/
 	.msg{display:block;width:100%;height:60px;padding:12px 0;background:#868b91;color:#fff;font-size:14px;box-sizing:border-box}
 	.msg>p{text-align:center}
 
 
-	.bg-icon_accident_safety_on{width:58px;height:58px;background:url('css_sprites.png') -2px -129px;}
-	.bg-icon_disaster_safety_on{width:60px;height:60px;background:url('css_sprites.png') -2px -2px;}
-	.bg-icon_facilities_safety_on{width:59px;height:59px;background:url('css_sprites.png') -2px -66px;}
-	.bg-icon_industrial_safety_on{width:60px;height:59px;background:url('css_sprites.png') -66px -2px;}
-	.bg-icon_order_safety_on{width:59px;height:59px;background:url('css_sprites.png') -65px -66px;}
-	.bg-icon_sanitary_food_safety_on{width:59px;height:59px;background:url('css_sprites.png') -130px -2px;}
-	.bg-icon_security_safety_on{width:59px;height:59px;background:url('css_sprites.png') -130px -65px;}
-	.bg-icon_traffic_safety_on{width:58px;height:58px;background:url('css_sprites.png') -64px -129px;}
-
-
 	/*메인컨텐츠*/
 	/*퀵메뉴*/
-	.quick_nav_wrap{width:100%;padding:20px 0;background:#f7f7f7}
-	.quick_nav *{box-sizing:border-box}
-	.quick_nav{width:100%}
-	.quick_nav li{width:50%;height:51px;margin-bottom:10px;border:1px solid #ddd}
+	.quick_nav_wrap{width:100%;height:100%;padding:20px 0 10px;border:1px solid #ddd;background:#f7f7f7}
+	.quick_nav_wrap *{box-sizing:border-box}
+	.quick_nav{width:100%;padding:0 20px}
+	.quick_nav li{width:48%;height:51px;margin-bottom:10px;border:1px solid #ddd}
 	.quick_nav li:nth-child(even){margin-left:10px}
-	.quick_nav li>a{width:100%;padding:10px 11px;font-size:15px;color:#333}
-	.quick_nav li>a>span{display:inline-block;margin-right:9px;vertical-align:middle}
+	.quick_nav li>a,.quick_nav li>a.v1{width:100%;height:100%;padding:10px 11px;border:1px solid #ddd;background:#fff;font-size:15px;color:#333;text-align:left}
+	.quick_nav li>a.v1{padding:10px 0 10px 11px;letter-spacing:-1px}
+	.quick_nav li>a>span{display:inline-block;vertical-align:middle}
+	.quick_nav li>a>.sp_img_m,.quick_nav li>a.v1>.sp_img_m{margin:0 9px 0 0}
+	 /*교통안전*/
+	.icon_traffic_safety{width:29px;height:29px;background-position:-32px -170px}
+	/*재난안전*/
+	.icon_disaster_safety{width:30px;height:30px;background-position:-80px -130px}
+	/*치안안전*/
+	.icon_security_safety{width:29.5px;height:29.5px;background-position:-144px -130px}
+	/*맞춤안전*/
+	.icon_order_safety{width:29.5px;height:29.5px;background-position:-270px -130px}
+	/*시설안전*/
+	.icon_facilities_safety{width:29.5px;height:29.5px;background-position:-238.5px -130px}
+	/*산업안전*/
+	.icon_industrial_safety{width:30px;height:29.5px;background-position:-112px -130px}
+	/*보건식품안전*/
+	.icon_sanitary_food_safety{width:29.5px;height:29.5px;background-position:-207px -130px}
+	/*사고안전*/
+	.icon_accident_safety{width:29px;height:29px;background-position:-1px -170px}
+
 	.content_wrap{display:none}
-	.main_con{width:100%}
-	.con_lst{float:none;width:100%}
+
+	.main_con{width:100%;margin:0}
+	.main_con *{box-sizing:border-box}
+	.con_lst{float:none;width:100%;border:none}
 	.service_location{display:none}
+
+	/*second*/
+	.second{height:100%}
+	.location_weather{height:70px;padding:15px 0 16px}
+	.weather_warp{height:100%;padding:0;border:none}
+	.weather_warp.location{width:35%;padding:0 0 0 15px;border-right:none;background:#fff}
+	.weather_warp.location h3{display:none}
+	.weather_warp span{position:absolute;}
+		/*지역날씨*/
+
+	.icon_little_cloudy{left:30px;top:0;width:39.5px;height:38px;margin-left:0;background-position:-1px -130px}
+	.icon_little_cloudy_s{left:4px;bottom:5px;width:17px;height:17.5px;background-position:-269px -73px}
+	.icon_rain_s{bottom:5px;width:17px;height:17.5px;background-position:-288px -73px}
+  .location_text{right:20px;top:-10px;padding:0;font-size:15px}
+  .temp{right:30px;bottom:-7px;font-size:17px}
+	.location .temp{right:0;font-size:25px;line-height:normal}
+	.temp_info{float:none;width:100%}
+  .day,.temp_text{top:-10px;font-size:14px}
+	.temp_text{right:5px;min-width:35px;max-height:60px;text-align:left}
+	/*내일*/
+	.tomorrow{width:30%;}
+  .tomorrow .day{left:4px}
+	/*모레*/
+	.twodays_later{width:35%;padding:0 0 0 5px}
+	.twodays_later .temp_text{right:20px}
+	.twodays_later .temp{right:50px}
+	/*앞으로 뒤로*/
+	.bx_prev.on{width:20px;height:20px;background-position:-180px -73px}
+	.bx_prev{left:0;width:20px;height:20px;background-position:-158px -73px}
+	.bx_next.on{width:20px;height:20px;background-position:-136px -73px}
+	.bx_next{right:0;width:20px;height:20px;background-position:-202px -73px}
+
+	/*홍보영상*/
+	.promotional_video{display:block;width:100%;height:69px;background:url(../img/movie_thumb_m.png)no-repeat;background-size:cover}
+	.promotional_video img{display:none}
+	.promotional_video>a{left:26%;margin:-17.8px 0 0 -17.8px}
+	.promotional_video p{top:50%;bottom:auto;margin-top:-12px}
+	.icon_play{width:36px;height:35.5px;background-position:-42.5px -130px}
+
+	/*bbs*/
+	.con_lst.bbs{width:100%;height:100%}
+	.con_lst.bbs h3{padding-top:0;font-size:15px}
+	.bbs>div{height:100%;min-height:80px;padding:14px 20px}
+	.bbs p{overflow:hidden;float:left;max-width:90%;width:74%;font-size:14px;text-overflow:ellipsis;white-space: nowrap}
+
+.tab_lst .author{margin-left:13px;font-size:14px;color:#626262}
+	.bbs .date{float:right;font-size:14px}
+	/*이용가이드*/
+	.bbs>.use_guide{min-height:70px;padding:14px 20px 14px 87px}
+	.bbs>.use_guide p{float:none;width:100%}
+	.icon_use_guide{left:30px;width:30px;height:29.5px;margin-top:-15px;background-position:-175.5px -130px}
+
+	/*더보기*/
+	.icon_view_more{top:13%;width:12px;height:12.5px;background-position:-307px -73px}
+	/*협력사이트*/
+	/*.logo_mois{width:85px;height:26.5px;background-position:-100.5px -98px}
+	.logo_ndmi{width:133px;height:23px;background-position:-1px -73px}
+*/
+
+	/*배너*/
+	.bbs>.banner_wrap{min-height:70px}
+	.banner1 img{display:none}
+	.banner1_m{display:block;position:relative;width:100%;height:69px;padding:10px 20px;background:url(../img/banner1_m.png)no-repeat;background-size:cover}
+	.banner1_m img{position:absolute;width:76px;height:auto}
+	.banner1_m span{display:inline-block;padding-left:100px;color:#767676}
+
 	/*푸터*/
+	.footer_wrap{height:100%;padding:0;font-size:14px;box-sizing:border-box}
+	.footer_wrap *{box-sizing:border-box}
 	.footer{width:100%;min-width:320px}
-	.side_menu,.address_wrap{width:100%}
+	/*협력사이트*/
+	.cooperator_lst{display:none}
+	.cooperator_lst_m{display:block;overflow:hidden;height:66px;padding:10px 40px}
+	.cooperator_lst_m>li{width:45%;height:100%}
+	.cooperator_lst_m>li:last-child{margin-left:20px}
+	.cooperator_lst_m img{vertical-align:middle}
+	.cooperator_lst_m .mois img{width:85px}
+	.cooperator_lst_m .ndmi img{width:133px}
+	/*사이드메뉴*/
+	.side_menu{overflow:hidden;height:100%;padding:0 20px}
+	.side_menu>li{margin-right:6px}
+	.side_menu>li:after{margin-left:6px}
+	.side_menu>li>a{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
+	/*어드레스*/
+	.address_wrap{width:100%;height:100%;padding:10px 20px;font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
+	/*패밀리사이트*/
+	.select_wrap{float:none;padding:0 20px}
+	/*위로 아래로*/
+	.arrow_down{width:10.5px;height:6.5px;background-position:-200px -98px}
+	.arrow_up{width:10.5px;height:6.5px;background-position:-187.5px -98px}
+
+
+
+
+
+
+
+
 
 
 
@@ -342,3 +446,6 @@ h1{float:left;width:auto}
 @media only screen  (min-width:1025px) {
 	.sp_img_m{display:none}
 }
+
+
+
