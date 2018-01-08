@@ -18,17 +18,18 @@ h1{float:left;width:auto}
 /*gnb메뉴 */
 .nav{float:right}
 .btn_all{display:none}
-.gnb>li{float:left;margin-left:16px}
+.gnb>li{position:relative;float:left;margin-left:16px}
 .gnb>li>a{display:block;padding:20px 29px 10px;font-size:18px;color:#333;font-weight:600;line-height:18px}
 .gnb>li:hover>a{text-decoration:none}
 .icon_map{display:inline-block;width:10px;height:18px;margin-right:10px;background-position:-1299px -606px;vertical-align:top}
 /*sub*/
-.gnb li .sub_wrap{display:none;overflow:hidden;position:absolute;left:376px;width:360px}
-.gnb li .sub_wrap.on{display:block}
+.gnb li .sub_wrap{display:none;overflow:hidden;position:absolute;left:0;width:360px}
+.gnb li:last-child .sub_wrap{left:-128px}
+.gnb > li.on > .sub_wrap{display:block}
 .sub li{position:relative;float:left;padding:0 10px;line-height:30px}
 .sub li a{display:block;position:relative;font-size:13px;color:#767676;letter-spacing:-1px}
 .sub li.on{color:#2cb084;text-decoration:none}
-.sub li.on:hover:after{display:block;position:absolute;left:50%;bottom:0;margin-left:-3.5px;width:7px;height:4px;background:url(../img/arrow.on.png) no-repeat;content:''}
+.gnb li.on .sub li>a:hover:after{display:block;position:absolute;left:50%;bottom:0;margin-left:-3.5px;width:7px;height:4px;background:url(../img/arrow.on.png) no-repeat;content:''}
 .sub li a:hover {color:#2cb084;text-decoration:none}
 
 
@@ -274,9 +275,10 @@ h1{float:left;width:auto}
 	/*gnb*/
 	.nav{float:none}
 	.btn_all{display:block;width:100%;height:100%;background:#4f4f4f}
-	.btn_all>a{display:inline-block;position:relative;width:50px;height:50px;background:#474747;vertical-align:middle}
+	.btn_all>a{display:inline-block;position:relative;width:50px;height:50px;background:#333;vertical-align:middle}
+	.btn_all>a.on{background:#474747}
 	.icon_btn_all{position:absolute;top:50%;left:50%;width:20.5px;height:18.5px;background-position:-224px -73px;transform:translate(-50%,-50%)}
-	.icon_btn_all:hover{background-position:-246.8px -73px}
+	.btn_all>a.on .icon_btn_all{background-position:-246.8px -73px}
 	.btn_all>span{margin-left:16px;font-size:15px;color:#ccc}
 	.gnb.on{display:block}
 	.gnb{display:none}
@@ -378,8 +380,6 @@ h1{float:left;width:auto}
 	.con_lst.bbs h3{padding-top:0;font-size:15px}
 	.bbs>div{height:100%;min-height:80px;padding:14px 20px}
 	.bbs p{overflow:hidden;float:left;max-width:90%;width:74%;font-size:14px;text-overflow:ellipsis;white-space: nowrap}
-
-.tab_lst .author{margin-left:13px;font-size:14px;color:#626262}
 	.bbs .date{float:right;font-size:14px}
 	/*이용가이드*/
 	.bbs>.use_guide{min-height:70px;padding:14px 20px 14px 87px}

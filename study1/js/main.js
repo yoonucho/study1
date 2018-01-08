@@ -19,7 +19,7 @@ function gnbOpen() {
 }
 // 탭키이동  서브메뉴 마지막이벤트 
 function subClose(){
-  $(".gnb li:last-child .sub_wrap li:last-child>a").on ("focusout",function(){
+  $(".gnb li:last-child .sub_wrap li:last-child>a").on ("mouseleave focusout",function(){
    $(".header_wrap").stop().animate({height:122},500);
   })
 }
