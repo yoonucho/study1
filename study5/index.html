@@ -11,10 +11,12 @@
 	<meta property="og:title" content="생활안전지도">
 	<meta property="og:type" content="생활안전지도">
 	<meta property="og:description" content="생활안전지도">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -115,7 +117,9 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img img_traffic_safety"></span>
+									<div class="img_wrap">
+										<span class="sp_img img_traffic_safety"></span>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -128,7 +132,10 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img img_disaster_safety"></span>
+									<div class="work">
+										<span class="sp_img img_disaster_safety"></span>
+										<p>(작업중)</p>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -141,7 +148,9 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img_m2 sp_img img_security_safety"></span>
+									<div class="img_wrap">
+										<span class="sp_img_m2 sp_img img_security_safety"></span>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -154,7 +163,9 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img_m2 sp_img img_order_safety"></span>
+									<div class="img_wrap">
+										<span class="sp_img_m2 sp_img img_order_safety"></span>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -167,7 +178,10 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img_m2 sp_img img_facilities_safety"></span>
+									<div class="work">
+										<span class="sp_img_m2 sp_img img_facilities_safety"></span>
+										<p>(작업중)</p>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -180,7 +194,9 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img img_industrial_safety"></span>
+									<div class="img_wrap">
+										<span class="sp_img img_industrial_safety"></span>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -193,7 +209,10 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img_m2 sp_img img_sanitary_food_safety"></span>
+									<div class="work">
+										<span class="sp_img_m2 sp_img img_sanitary_food_safety"></span>								
+										<p>(작업중)</p>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -206,7 +225,10 @@
 										<p>생활 속 안전정보를 확인하여 <br />위험과 피해를 예방할 수 있습니다.</p>
 										<a href="#">지도 바로가기</a>
 									</div>
-									<span class="sp_img_m sp_img img_accident_safety"></span>
+									<div class="work">
+										<span class="sp_img_m sp_img img_accident_safety"></span>
+										<p>(작업중)</p>
+									</div>
 								</div>
 							</div>
 						</li>
@@ -260,32 +282,85 @@
 					 </div>
 				</div>
 				<div class="con_lst second">
-					<div class="location_weather">
-						<div class="weather_warp location">
-							<h3>지역날씨</h3>
-							<span class="location_text">서울</span>
-							<div class="icon_weather sp_img_m sp_img icon_little_cloudy"></div>
-							<span class="blind">구름 조금</span>
-							<span class="temp">7.6°</span>
-						</div>
-						<div class="weather_warp tomorrow">
-							<div class="temp_info">
-								<span class="day">내일</span>
-								<span class="temp_text">구름 조금</span>
+					<div class="bxslider">
+						<div class="location_weather">
+							<div class="weather_warp location">
+								<h3>지역날씨</h3>
+								<span class="location_text">서울</span>
+								<div class="icon_weather sp_img_m sp_img icon_little_cloudy">
+								</div>
+								<span class="blind">구름 조금</span>
+								<span class="temp">7.6°</span>
 							</div>
-							<span class="sp_img_m sp_img icon_weather icon_little_cloudy_s"></span>
-							<span class="temp">26°</span>
-						</div>
-						<div class="weather_warp  twodays_later">
-							<div class="temp_info">
-								<span class="day">모레</span>
-								<span class="temp_text">비</span>
+							<div class="weather_warp tomorrow">
+								<div class="temp_info">
+									<span class="day">내일</span>
+									<span class="temp_text">구름 조금</span>
+								</div>
+								<span class="sp_img_m sp_img icon_weather icon_little_cloudy_s"></span>
+								<span class="temp">26°</span>
 							</div>
-							<span class="sp_img sp_img_m icon_weather icon_rain_s"></span>
-							<span class="temp">26°</span>
+							<div class="weather_warp  twodays_later">
+								<div class="temp_info">
+									<span class="day">모레</span>
+									<span class="temp_text">비</span>
+								</div>
+								<span class="sp_img sp_img_m icon_weather icon_rain_s"></span>
+								<span class="temp">26°</span>
+							</div>
 						</div>
-						<a class="sp_img sp_img_m bx_prev" href="#">앞으로</a>
-						<a class="sp_img sp_img_m bx_next" href="#">뒤로</a>
+						<div class="location_weather">
+							<div class="weather_warp location">
+								<h3>지역날씨</h3>
+								<span class="location_text">인천</span>
+								<div class="icon_weather sp_img_m sp_img icon_little_cloudy">
+								</div>
+								<span class="blind">구름 조금</span>
+								<span class="temp">7.6°</span>
+							</div>
+							<div class="weather_warp tomorrow">
+								<div class="temp_info">
+									<span class="day">내일</span>
+									<span class="temp_text">구름 조금</span>
+								</div>
+								<span class="sp_img_m sp_img icon_weather icon_little_cloudy_s"></span>
+								<span class="temp">26°</span>
+							</div>
+							<div class="weather_warp  twodays_later">
+								<div class="temp_info">
+									<span class="day">모레</span>
+									<span class="temp_text">비</span>
+								</div>
+								<span class="sp_img sp_img_m icon_weather icon_rain_s"></span>
+								<span class="temp">26°</span>
+							</div>
+						</div>
+						<div class="location_weather">
+							<div class="weather_warp location">
+								<h3>지역날씨</h3>
+								<span class="location_text">경기</span>
+								<div class="icon_weather sp_img_m sp_img icon_little_cloudy">
+								</div>
+								<span class="blind">구름 조금</span>
+								<span class="temp">7.6°</span>
+							</div>
+							<div class="weather_warp tomorrow">
+								<div class="temp_info">
+									<span class="day">내일</span>
+									<span class="temp_text">구름 조금</span>
+								</div>
+								<span class="sp_img_m sp_img icon_weather icon_little_cloudy_s"></span>
+								<span class="temp">26°</span>
+							</div>
+							<div class="weather_warp  twodays_later">
+								<div class="temp_info">
+									<span class="day">모레</span>
+									<span class="temp_text">비</span>
+								</div>
+								<span class="sp_img sp_img_m icon_weather icon_rain_s"></span>
+								<span class="temp">26°</span>
+							</div>
+						</div>
 					</div>
 					<div class="promotional_video">
 						<img src="img/movie_thumb.png" alt="홍보동영상 썸네일">
@@ -296,18 +371,18 @@
 				<div class="con_lst bbs">
 					<div class="use_guide">
 						<h3>이용가이드</h3>
-						<p>생활안전지도를 활용하는방법을 확인하세요</p>
+						<p><a href="#">생활안전지도를 활용하는방법을 확인하세요</a></p>
 						<span class="sp_img_m sp_img icon_use_guide"></span>
 					</div>
 					<div class="main_notice">
 						<h3>공지사항</h3>
-						<p>생활안전지도 서비스 점검안내입니다.</p>
+						<p><a href="#">생활안전지도 서비스 점검안내입니다.</a></p>
 						<span class="date">2014.03.20</span>
 						<a class="sp_img_m sp_img icon_view_more" href="#">더보기</a>
 					</div>
 					<div class="disaster_flash_news">
 						<h3>재난뉴스속보</h3>
-						<p>전북소방본부 "담뱃불 화재 주의하세요"</p>
+						<p><a href="#">전북소방본부 "담뱃불 화재 주의하세요"</a></p>
 						<span class="date">2014.06.13</span>
 						<a class="sp_img_m sp_img icon_view_more" href="#">더보기</a>
 					</div>

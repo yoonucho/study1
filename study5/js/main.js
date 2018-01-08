@@ -1,5 +1,6 @@
 $(document).ready(function(){
   	gnbOpen();
+    bxSlider();
     //subClose();
   	//searchOpen();
     //searchClose();
@@ -56,13 +57,25 @@ function gnbOpen(){
           });
       
       }
-
-
 }
 
-
-
-
+// bxslider 롤링
+function bxSlider(){
+  var slider= $(".bxslider").bxSlider({
+      pager: false,
+      infiniteLoop:false,
+      hideControlOnEnd:true,
+      touchEnabled:false
+  });
+// "다음" 버튼 클릭시 동작 정의
+   $('.bx-next').click(function () {
+      slider.goToNextSlide();
+   });
+   // "이전" 버튼 클릭시 동작 정의
+   $('.bx-prev').click(function () {
+      slider.goToPrevSlide();
+   });
+}
 // gnb메뉴 마우스이벤트 
 // function gnbOpen() {     
 //   $(".gnb >li>a").on("mouseenter focusin",function(){
