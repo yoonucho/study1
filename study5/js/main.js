@@ -16,7 +16,7 @@ function gnbOpen(){
       if(windowWidth >=768) {
          //창 가로 크기가 767보다 클경우
           // 헤더
-          $(".gnb.on").css({"display":"block"})
+          $(".gnb").css({"display":"block"})
           $(".gnb > li>a").on("mouseleave", function () {
             $(this).find(".sub_wrap").stop().slideUp(300);
 
@@ -52,6 +52,7 @@ function gnbOpen(){
 
           })
       }else{
+        $(".msg").css({"display":"block"})
          //창 가로 크기가 767 미만일 경우 
         // $(".gnb").css({"display":"none"})
         // $(".btn_all>a").on("click keyup", function () {
