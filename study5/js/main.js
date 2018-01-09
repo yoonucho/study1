@@ -40,6 +40,8 @@ function gnbOpen(){
             $(this).parent().addClass("on")
             $(this).find(".sp_img").addClass("on");
           });
+          // 메세지
+           $(".msg").css({"display":"none"})
           // 전국지도
           $(".location_wrap>a").on("click focusin",function(){
               
@@ -52,7 +54,11 @@ function gnbOpen(){
 
           })
       }else{
+        $(".gnb").css({"display":"none"})
         $(".msg").css({"display":"block"})
+         $(".quick_nav li").parent().children().removeClass("on");
+            $(".quick_nav li>a").find(".sp_img").removeClass("on");
+          
          //창 가로 크기가 767 미만일 경우 
         // $(".gnb").css({"display":"none"})
         // $(".btn_all>a").on("click keyup", function () {
@@ -117,8 +123,7 @@ function gnbOpen(){
 
 
 function btnOpen(){
-  $(".gnb").css({"display":"none"})
-  // $(".gnb.on").css({"display":"block"})
+  // $(".gnb").css({"display":"none"})
    $(".gnb").removeClass("on");     
   $(".btn_all>a").on("click keyup", function () {
     $(this).toggleClass("on").parent().next().slideToggle();
