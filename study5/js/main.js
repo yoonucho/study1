@@ -10,11 +10,12 @@ $(document).ready(function(){
 
 
 function gnbOpen(){
-
+  $(window).resize(function (){
     var windowWidth = $( window ).width();
-      if(windowWidth >767) {
+      if(windowWidth >=768) {
          //창 가로 크기가 767보다 클경우
           // 헤더
+          $(".gnb").css({"display":"block"})
           $(".gnb > li>a").on("mouseleave", function () {
             $(this).find(".sub_wrap").stop().slideUp(300);
 
@@ -26,7 +27,7 @@ function gnbOpen(){
           });
 
           // 탭키이동  서브메뉴 마지막이벤트 
-          $(".gnb li:last-child .sub_wrap li:last-child>a").on ("mouseleave focusout",function(){
+          $(".gnb li:last-child .sub_wrap li:last-child>a").on ("focusout",function(){
             $(this).parents("li").removeClass("on");
           })
           // 퀵메뉴
@@ -49,14 +50,19 @@ function gnbOpen(){
             $(this).parent().fadeOut();
 
           })
-        } else{
-           //창 가로 크기가 768 미만일 경우 
-          $(".btn_all>a").on("click", function () {
-            $(this).toggleClass("on").parent().next().slideToggle();
-             
-          });
+      }else{
+         //창 가로 크기가 767 미만일 경우 
+        $(".gnb").css({"display":"none"})
+        $(".btn_all>a").on("click", function () {
+          // $(this).addClass("on").siblings().removeClass("on");
+          $(this).parent().next().slideDown();
+          $(".btn_all>a").parent().next().slideUp();
+           
+        });
       
       }
+     
+  }).resize();  
 }
 
 // bxslider 롤링
