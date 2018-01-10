@@ -223,14 +223,14 @@ h1{float:left;width:auto}
 .icon_play{display:inline-block;width:71px;height:71px;background-position:-1263px -397px}
 
 
-/*.icon_rain{width:69px;height:71px;background-position:-1263px -468px}
+/*.icon_rain{width:69px;height:71px;background-position:-1263px -468px}*/
 .arrow.on{width:7px;height:4px;background-position:-1334px -404px}
 .btn_arrow{width:4px;height:7px;background-position:-1334px -397px}
-.bullet{width:3px;height:3px;background-position:-1338px -397px}
+/*.bullet{width:3px;height:3px;background-position:-1338px -397px}
 .icon_snow{width:69px;height:67px;background-position:-1263px -539px}
-.icon_very_cloudy{width:107px;height:63px;background-position: -537px -697px}
-.map{width:186px;height:300px;background-position: -0 -926px}
-*/
+.icon_very_cloudy{width:107px;height:63px;background-position: -537px -697px}*/
+/*.map{width:186px;height:300px;background-position: -0 -926px}*/
+
 
 /*bbs*/
 .con_lst.bbs{width:238px;padding:0}
@@ -264,10 +264,23 @@ h1{float:left;width:auto}
 .side_menu>li:after{margin-left:15px;border-right:1px solid #ddd;content:''}
 .side_menu>li:last-child:after{border-right:none}
 .side_menu>li>a{font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;color:#555;font-weight:600}
-.select_wrap{float:right;height:28px}
-.select_wrap>select{height:28px;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px}
+/*패밀리사이트*/
+.select_wrap{position:absolute;z-index:99;right:0;width:184px;height:28px;border:1px solid #ccc;background:#fff}
+.select_wrap h3{position:relative;padding-left:10px;font-family:'돋움',dotum,'NanumGothic',sans-serif;font-size:12px;color:#767676;line-height:30px}
+.select_wrap h3>span{display:inline-block;vertical-align:middle}
+.select_wrap h3>.keywords{max-width:85px}
+.select_wrap h3>.keywords>a{color:#767676}
+.icon_arrow{position:absolute;right:10px;top:50%;width:10px;height:6px;margin-top:-3px;background:url(../img/arrow_up.png)no-repeat}
+ h3.on .icon_arrow{background:url(../img/arrow_down.png)no-repeat}
+
+.site_lst{display:none;position:absolute;top:30px;width:184px;background:#fff}
+/*.site_lst.on{display:block}*/
+.site_lst li{float:none;line-height:30px}
+.site_lst li>a{padding-left:10px;color:#767676}
+
 /*어드레스*/
 .address_wrap{width:450px;margin:0 auto;text-align:left}
+
 
 
 
@@ -329,8 +342,11 @@ h1{float:left;width:auto}
 	.quick_nav li:nth-child(even){margin-left:10px}
 	.quick_nav li>a,.quick_nav li>a.v1{width:100%;height:100%;padding:10px 11px;border:1px solid #ddd;background:#fff;font-size:15px;color:#333;text-align:left}
 	.quick_nav li>a.v1{padding:10px 0 10px 11px;letter-spacing:-1px}
+	.quick_nav li.on>a:before{display:none}
 	.quick_nav li>a>span{display:inline-block;vertical-align:middle}
-	.quick_nav li>a>.sp_img_m,.quick_nav li>a.v1>.sp_img_m{margin:0 9px 0 0}
+	.quick_nav li>a>.sp_img_m,.quick_nav li>a.v1>.sp_img_m{display:inline-block;margin:0 9px 0 0}
+	.quick_nav li.on .content_wrap{display:none}
+
 	 /*교통안전*/
 	.icon_traffic_safety{width:29px;height:29px;background-position:-32px -170px}
 	/*재난안전*/
@@ -347,9 +363,7 @@ h1{float:left;width:auto}
 	.icon_sanitary_food_safety{width:29.5px;height:29.5px;background-position:-207px -130px}
 	/*사고안전*/
 	.icon_accident_safety{width:29px;height:29px;background-position:-1px -170px}
-
 	.content_wrap{display:none}
-
 	.main_con{width:100%;margin:0}
 	.main_con *{box-sizing:border-box}
 	.con_lst{float:none;width:100%;border:none}
@@ -434,32 +448,29 @@ h1{float:left;width:auto}
 	.footer{width:100%;min-width:320px}
 	/*협력사이트*/
 	.cooperator_lst{display:none}
-	.cooperator_lst_m{display:block;overflow:hidden;height:66px;padding:10px 40px}
+	.cooperator_lst_m{display:block;overflow:hidden;padding:10px 40px}
 	.cooperator_lst_m>li{width:45%;height:100%}
 	.cooperator_lst_m>li:last-child{margin-left:20px}
 	.cooperator_lst_m img{vertical-align:middle}
 	.cooperator_lst_m .mois img{width:85px}
 	.cooperator_lst_m .ndmi img{width:133px}
 	/*사이드메뉴*/
-	.side_menu{overflow:hidden;height:100%;padding:0 20px}
+	.side_menu{overflow:hidden;width:100%;height:100%;padding:0 20px}
 	.side_menu>li{margin-right:6px}
 	.side_menu>li:after{margin-left:6px}
 	.side_menu>li>a{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
 	/*어드레스*/
-	.address_wrap{width:100%;height:100%;padding:10px 20px;font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
+	.address_wrap{width:100%;height:100%;padding:50px 20px 10px;font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
 	/*패밀리사이트*/
-	.select_wrap{float:none;padding:0 20px}
+	.select_wrap{float:none;left:20px;width:118px;height:auto;max-height:100px;margin-top:12px}
+	.select_wrap h3{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px;line-height:30px}
+	.site_lst{top:26px;width:100%}
+	/*.site_lst.on{display:block}*/
+	.site_lst li{float:none;line-height:30px}
+	.site_lst li>a{display:block;font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
 	/*위로 아래로*/
-	.arrow_down{width:10.5px;height:6.5px;background-position:-200px -98px}
-	.arrow_up{width:10.5px;height:6.5px;background-position:-187.5px -98px}
-
-
-
-
-
-
-
-
+  .icon_arrow{width:10.5px;height:6.5px;background:url(../img/sprites_m.png)no-repeat;background-size:322px 200px;background-position:-187.5px -98px}
+	h3.on .icon_arrow{width:10.5px;height:6.5px;background:url(../img/sprites_m.png)no-repeat;background-size:322px 200px;background-position:-200px -98px}
 
 
 
@@ -470,6 +481,11 @@ h1{float:left;width:auto}
 	.gnb{display:block}
 	.msg{display: none}
 }
+@media only screen (min-width:784px) and (max-width:801px) {
+	.gnb{display:block}
+	.msg{display: none}
+}
+
 
 /* 해상도가 1025px 이상*/
 @media only screen  (min-width:1025px) {
