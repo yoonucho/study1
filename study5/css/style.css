@@ -477,12 +477,16 @@ h1{float:left;width:auto}
 }
 
 /* 해상도가 768px 이상이고 1024px 이하*/
-@media only screen (min-width:768px) and (max-width:1024px) {
-	.gnb{display:block}
-	.msg{display: none}
-}
-@media only screen (min-width:784px) and (max-width:801px) {
-	.gnb{display:block}
+@media all and (min-width:768px) and (max-width:1024px)  {
+	.header_wrap{min-width:768px}
+	.header_wrap *{box-sizing:border-box}
+	.header{width:100%;padding:0 20px}
+	h1{width:30%}
+	.nav{width:70%}
+	.gnb{display:block;width:100%}
+	.gnb li{width:25%;margin-left:0}
+	.gnb li>a{padding:20px 0;text-align:center}
+	.gnb>li.on >.sub_wrap{display:block}
 	.msg{display: none}
 }
 
@@ -492,6 +496,8 @@ h1{float:left;width:auto}
 	.sp_img_m{display:none}
 	.gnb{display:block}
 	.msg{display: none}
+}
+none}
 }
 
 

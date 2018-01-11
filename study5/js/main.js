@@ -62,9 +62,9 @@ function gnbOpen(){
           })
       }
       else if (windowWidth < 767) {
-        $(".gnb").css({"display":"none"})
+        // $(".gnb").css({"display":"none"})
          //헤더
-        // $(".gnb").css({"display":"block"})
+        $(".gnb").css({"display":"block"})
         //메세지
         $(".msg").css({"display":"block"})
          // 퀵메뉴
