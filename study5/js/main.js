@@ -3,10 +3,6 @@ $(document).ready(function(){
     bxSlider();
     btnOpen();
     selectMenu();
-    //subClose();
-  	//searchOpen();
-    //searchClose();
-  	//tab();
 });
 
 
@@ -66,10 +62,19 @@ function gnbOpen(){
           })
       }
       else if (windowWidth < 767) {
+        $(".gnb").css({"display":"none"})
          //헤더
         // $(".gnb").css({"display":"block"})
         //메세지
-        // $(".msg").css({"display":"none"})
+        $(".msg").css({"display":"block"})
+         // 퀵메뉴
+        $(".quick_nav li").removeClass("on");
+        $(".quick_nav li>a").find(".sp_img").removeClass("on");
+        $(".quick_nav li>a").on("click focusin", function () {
+          $(this).parent().removeClass("on");
+          $(".quick_nav li>a").find(".sp_img").removeClass("on");
+        });
+      
  
       } else{
         //헤더
@@ -83,11 +88,6 @@ function gnbOpen(){
           $(this).parent().removeClass("on");
           $(".quick_nav li>a").find(".sp_img").removeClass("on");
         });
-        // 패밀리사이트
-        //  $(".select_wrap h3").on("click", function () {
-        //     $(".select_wrap").css({"height":"100px"})
-        
-        // });
       }
   }).resize();  
 }
