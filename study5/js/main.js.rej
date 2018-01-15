@@ -1,0 +1,9 @@
+diff a/study5/js/main.js b/study5/js/main.js	(rejected hunks)
+@@ -46,6 +46,7 @@
+           });
+          
+ 
++          // 탭키이동  퀵메뉴 마지막이벤트 
+           // $(".quick_nav li:last-child").on ("focusout",function(){
+           //   $(this).removeClass("on");
+           //    $(this).find(".sp_img").removeClass("on");
