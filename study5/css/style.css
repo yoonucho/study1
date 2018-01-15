@@ -300,7 +300,7 @@ h1{float:left;width:auto}
 	.sp_img_m{display:block;background:url(../img/sprites_m.png)no-repeat;background-size:322px 200px;text-indent:-999em}
 	/*헤더*/
 	/*.header_wrap *{box-sizing:border-box}*/
-	.header_wrap{top:0;min-width:320px;height:auto;padding-bottom:20px}
+	.header_wrap{top:0;min-width:320px}
 	.header_wrap:after{display:none}
 	.header{width:100%;height:auto}
 	h1{width:40%;height:48px;background:#fff}
@@ -312,14 +312,14 @@ h1{float:left;width:auto}
 	.user_menu li>a{display:block;padding:0 6px;color:#4f4f4f}
 	/*gnb*/
 	.nav{float:none}
-	.btn_all{display:block;width:100%;height:100%;background:#4f4f4f}
+	.btn_all{display:block;width:100%;height:100%;padding-top:50px;background:#4f4f4f}
 	.btn_all>a{display:inline-block;position:relative;width:50px;height:50px;background:#333;vertical-align:middle}
 	.btn_all>a.on{background:#474747}
 	.icon_btn_all{position:absolute;top:50%;left:50%;width:20.5px;height:18.5px;background-position:-224px -73px;transform:translate(-50%,-50%)}
 	.btn_all>a.on .icon_btn_all{background-position:-246.8px -73px}
 	.btn_all>span{margin-left:16px;font-size:15px;color:#ccc}
 	.gnb{display:none}
-/*	.gnb{display:none}*/
+	.gnb.on{display:block;border:1px solid #f00}
 /*.gnb>li{display:none}*/
 	.gnb>li{display:block;float:none;width:100%;height:53px;margin-left:0;border-top:1px solid #999;background:#4f4f4f}
 	.gnb>li>a{padding:18px 15px;font-family:'굴림','Gulim','돋움',dotum,'NanumGothic',sans-serif;font-size:15px;color:#fff}
