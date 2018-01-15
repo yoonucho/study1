@@ -72,6 +72,12 @@ $(document).ready(function(){
         $(this).stop().animate({height:80},500);
          $(".gnb >li>a").parent().removeClass("on")
       }); 
+
+      // 탭키이동  서브메뉴 마지막이벤트 
+           $(".gnb li:last-child .sub_wrap li:last-child>a").on ("focusout",function(){
+             $(this).parents("li").removeClass("on");
+       });
+         
       // 퀵메뉴 함수
       quickMenu(); 
     }
