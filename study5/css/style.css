@@ -299,17 +299,17 @@ h1{float:left;width:auto}
 	/*.header_wrap *{box-sizing:border-box}*/
 	.header_wrap{top:0;min-width:320px}
 	.header_wrap:after{display:none}
-	.header{width:100%;height:auto}
-	h1{width:40%;height:48px;background:#fff}
+	.header{width:100%;height:auto;margin-left:-1px}
+	h1{position:relative;width:40%;height:48px;background:#fff}
 	/*로고*/
-	.logo{width:97.5px;height:30px;margin-top:5px;margin-left:12px;background-position:-1px -98px}
+	.logo{position:absolute;top:50%;width:97.5px;height:30px;margin-top:-15px;margin-left:12px;background-position:-1px -98px}
 	/*유틸메뉴*/
 	.user_menu{display:block;float:right;width:60%;height:48px;background:#fff}
-	.user_menu li{float:left;line-height:48px}
+	.user_menu li{float:left;line-height:52px}
 	.user_menu li>a{display:block;padding:0 6px;color:#4f4f4f}
 	/*gnb*/
 	.nav{float:none}
-	.btn_all{display:block;width:100%;height:100%;padding-top:48px;background:#4f4f4f}
+	.btn_all{display:block;width:100%;height:100%;background:#4f4f4f;clear:both}
 	.btn_all>a{display:inline-block;position:relative;width:50px;height:50px;background:#333;vertical-align:middle}
 	.btn_all>a.on{background:#474747}
 	.icon_btn_all{position:absolute;top:50%;left:50%;width:20.5px;height:18.5px;background-position:-224px -73px;transform:translate(-50%,-50%)}
@@ -375,7 +375,7 @@ h1{float:left;width:auto}
 
 	/*second*/
 	.second{height:100%}
-	.location_weather{height:70px;padding:15px 0 16px}
+	.location_weather{height:70px;padding:20px 0 16px}
 	.weather_warp{height:100%;padding:0;border:none}
 	.weather_warp.location{width:35%;padding:0 0 0 15px;border-right:none;background:#fff}
 	.weather_warp.location h3{display:none}
@@ -386,8 +386,8 @@ h1{float:left;width:auto}
 	.icon_little_cloudy_s{left:4px;bottom:5px;width:17px;height:17.5px;background-position:-269px -73px}
 	.icon_rain_s{bottom:5px;width:17px;height:17.5px;background-position:-288px -73px}
 	.location_text{right:20px;top:-10px;padding:0;font-size:15px}
-	.temp{right:30px;bottom:-7px;font-size:17px}
-	.location .temp{right:0;font-size:25px;line-height:normal}
+	.temp{top:5px;right:30px;bottom:-7px;font-size:17px}
+	.location .temp{top:10px;right:0;font-size:25px;line-height:normal}
 	.temp_info{float:none;width:100%}
 	.day,.temp_text{top:-10px;font-size:14px}
 	.temp_text{right:5px;min-width:35px;max-height:60px;text-align:left}
@@ -466,7 +466,7 @@ h1{float:left;width:auto}
 	.side_menu>li:after{margin-left:6px}
 	.side_menu>li>a{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
 	/*어드레스*/
-	.address_wrap{width:100%;height:100%;padding:50px 20px 10px;font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px}
+	.address_wrap{width:100%;height:100%;padding:50px 20px 10px;font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px;letter-spacing:-1px}
 	/*패밀리사이트*/
 	.select_wrap{float:none;left:20px;width:118px;height:auto;max-height:100px;margin-top:12px}
 	.select_wrap h3{font-family:'NanumBarunGothic','NanumGothic','맑은 고딕','돋움',dotum,sans-serif;font-size:14px;line-height:30px}
