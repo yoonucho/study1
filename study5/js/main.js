@@ -28,7 +28,7 @@ $(document).ready(function(){
   
 
   function smallDevice_Event(){
-    console.log('mobile');
+    // console.log('mobile');
 
     large = false;
     small = true;
@@ -53,7 +53,7 @@ $(document).ready(function(){
   
 
   function largeDevice_Event (){
-    console.log('pc');
+    // console.log('pc');
 
     small = false;
     large = true;

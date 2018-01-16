@@ -383,10 +383,10 @@ h1{float:left;width:auto}
 		/*지역날씨*/
 
 	.icon_little_cloudy{left:30px;top:0;width:39.5px;height:38px;margin-left:0;background-position:-1px -130px}
-	.icon_little_cloudy_s{left:4px;bottom:5px;width:17px;height:17.5px;background-position:-269px -73px}
-	.icon_rain_s{bottom:5px;width:17px;height:17.5px;background-position:-288px -73px}
+	.icon_little_cloudy_s{left:4px;bottom:0;width:17px;height:17.5px;background-position:-269px -73px}
+	.icon_rain_s{bottom:0;width:17px;height:17.5px;background-position:-288px -73px}
 	.location_text{right:20px;top:-10px;padding:0;font-size:15px}
-	.temp{top:5px;right:30px;bottom:-7px;font-size:17px}
+	.temp{top:8px;right:30px;bottom:-7px;font-size:17px}
 	.location .temp{top:10px;right:0;font-size:25px;line-height:normal}
 	.temp_info{float:none;width:100%}
 	.day,.temp_text{top:-10px;font-size:14px}
