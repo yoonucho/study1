@@ -34,10 +34,10 @@ $(document).ready(function(){
     small = true;
 
      // 헤더 마우스이벤트 제거
-      $(".gnb >li>a").off();
       $(".header_wrap").off("mouseleave");
-      $(".header_wrap").css({"height":"auto"});
       $(".gnb").css({"display":"none"});  
+      $(".header_wrap").css({"height":"auto"});
+      $(".gnb >li>a").off();
       // 버튼클릭시 gnb open
       $(".btn_all").on("click keyup" , function() {  
         $(this).children().toggleClass("on").parent().next().slideToggle();

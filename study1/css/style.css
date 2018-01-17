@@ -5,7 +5,7 @@
 .sp_img{display:block;background:url(../img/sprites.png)no-repeat}
 
 /*헤더*/
-.header_wrap {overflow:hidden;position:absolute;z-index:99;width:100%;min-width:990px;height:122px;border-bottom:1px solid #7f9bba;background:#fff}
+.header_wrap {overflow:hidden;position:absolute;z-index:99;width:100%;min-width:990px;height:auto;border-bottom:1px solid #7f9bba;background:#fff}
 .header_wrap:after{display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background:url(../img/bg_shadow.png)repeat-x;background-size:100% 2px;content:''}
 .header{position:relative;width:990px;margin:0 auto}
 
