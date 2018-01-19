@@ -4,15 +4,10 @@
 
 
 /*헤더*/
-.header_wrap {width:100%;min-width:1060px;height:60px;background:#00c2fa}
-.header{position:relative;width:1060px;margin:0 auto}
-
-
-
+.header_wrap {width:100%;min-width:1060px;background:#00c2fa}
+.header{position:relative;width:1060px;margin:0 auto;padding:17px 0 117px}
 /*로고*/
-h1 .logo{width:120px;height:35px}
-
-
+h1 .logo{position:absolute;right:0;width:120px;height:35px}
 
 
 /*컨테이너*/
@@ -21,14 +16,59 @@ h1 .logo{width:120px;height:35px}
 
 /*메인컨텐츠*/
 /*.main_wrap{width:1060px;margin:0 auto}*/
-
+.section *{box-sizing:border-box}
 .section .con{width:1060px;margin:0 auto}
 h2{text-align:center}
+h3{text-align:center}
 h2>img{margin-top:30px}
+h2+p>strong:first-child{color:#ffee32}
+h2+p>strong:last-child{font-size:24px}
 .section p{margin:20px 0;font-size:22px;color:#fff}
+
 /*섹션1*/
-.section1{padding-top:117px;background:#00c2fa;text-align:center}
-.main_visual_wrap{position:relative;margin-top:44px}
+.section1{position:relative;width:100%;height:694px;background:#00c2fa;text-align:center;box-sizing:border-box}
+.section1:after{display:block;position:absolute;bottom:-46px;width:100%;height:60px;background:url(../img/bg_wave.png) no-repeat;background-size:cover;content:''}
+.main_visual_wrap{position:relative;z-index:99;margin-top:44px}
+
+/*꽃잎*/
+/*.flower_wrap { animation:flower 2s infinite; -webkit-animation:flower 2s infinite; }
+		@-webkit-keyframes flower {
+			0% { transform:rotate(0deg); }
+			50% { transform:rotate(50deg); }
+			100% { transform:rotate(0deg); }
+		}
+		@keyframes flower {
+			0% { transform:rotate(0deg); }
+			50% { transform:rotate(50deg); }
+			100% { transform:rotate(0deg); }
+		}*/
+
+
+
+		.flower_wrap {
+    -webkit-animation: flower 1000ms linear infinite alternate;
+    -moz-animation: flower 1000ms linear infinite alternate;
+    -ms-animation: flower 1000ms linear infinite alternate;
+    animation: flower 1000ms linear infinite alternate;
+		}
+@keyframes flower {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(10deg); }
+	}
+
+/*왼쪽 */
+.left{position:absolute;left:-55px}
+.left .flower_wrap{position:absolute;top:-103px;left:-100px}
+
+/*나비*/
+
+/*오른쪽*/
+.right{position:absolute;right:0}
+.right .flower_wrap{position:absolute;top:-177px;right:-100px}
+.right .butterfly_wrap{position:relative;top:-84px}
+/*꽃잎*/
+/*나비*/
+
 /*보노보노*/
 .bonobono_wrap{position:absolute;bottom:-60px;left:-25px;width:253px;height:263px}
 .bonobono_wrap img:first-child{position:absolute;top:-90px;left:41px}
@@ -40,15 +80,15 @@ h2>img{margin-top:30px}
 
 /*포로리*/
 .chipmunk_wrap{position:absolute;top:-32px;right:138px}
-/*탭메뉴*/
-.tab{position:relative;margin:0 35px}
-.tab:after{display:block;clear:both;visibility:hidden;content:''}
-.tab div .view_more{top:-85px;right:-10px}
-.tab>li{float:left;width:50%}
-.tab>li>a{display:block;height:40px;background:#d7dee6;font-size:16px;color:#6a7a8a;font-weight:600;line-height:37px;text-decoration:none;text-align:center}
-.tab>li.on>a{height:37px;border:3px solid #475c9b;border-bottom:none;background:#fff;color:#475c9b;line-height:34px;text-decoration:none}
-.tab>li.on>a:before{display:inline-block;width:6px;height:10px;margin-right:10px;background:url(../img/arrow_on.png)no-repeat;content:''}
 
+
+
+/*섹션2*/
+.section2{padding-top:166px}
+.section2_title{position:relative;width:857px;margin:0 auto 30px}
+.section2_title span{display:block}
+.section2_title span:first-child{margin-bottom:13px}
+.icon_with{position:absolute;top:33px;right:-62px}
 /*컨텐츠 리스트*/
 .tab>li div{display:none}
 .tab>li.on div{display:block;position:absolute;left:0;width:100%;padding:14px 0}
@@ -64,6 +104,17 @@ h2>img{margin-top:30px}
 
 /*나의 교육과정*/
 .edu_process{background:#f8fafb}
+
+
+
+/*탭메뉴*/
+.tab{position:relative;margin:0 35px;box-sizing:border-box}
+.tab:after{display:block;clear:both;visibility:hidden;content:''}
+.tab div .view_more{top:-85px;right:-10px}
+.tab>li{float:left;width:140px;margin-right:4px}
+.tab>li>a{display:block;height:40px;background:#d7dee6;font-size:16px;color:#6a7a8a;font-weight:600;line-height:37px;text-decoration:none;text-align:center}
+.tab>li.on>a{height:37px;border:3px solid #475c9b;border-bottom:none;background:#fff;color:#475c9b;line-height:34px;text-decoration:none}
+
 
 /*탭메뉴 v1*/
 .tab.v1{margin:0;padding-left:36px}
