@@ -11,8 +11,11 @@
 	<meta property="og:type" content="좋은책신사고 이벤트페이지">
 	<meta property="og:description" content="좋은책신사고 이벤트페이지">
 	<link rel="stylesheet" href="css/common.css">
+	<!-- <link rel="stylesheet" href="css/imageslider.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/imageslider.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -73,130 +76,141 @@
 					</div>
 				</div>
 				<div class="section section2">
+					<h3 class="section2_title">
+						<span><img src="img/planner_prev.png" alt="플래너 미리보기"></span>
+						<img src="img/section2_title.png" alt="장안의 화제~ 2018 신사고 플래너">
+						<span class="icon_with"><img src="img/with.png" alt="width 보노보노"></span>
+					</h3>
 					<div class="con">
-						<h3 class="section2_title">
-							<span><img src="img/planner_prev.png" alt="플래너 미리보기"></span>
-							<img src="img/section2_title.png" alt="장안의 화제~ 2018 신사고 플래너">
-							<span class="icon_with"><img src="img/with.png" alt="width 보노보노"></span>
-						</h3>
-						<div class="tab_wrap">
-							<ul class="tab bxslider">
-								<li class="on">
-									<a href="#none">목표관리</a>
-									<div>
-										<img src="img/tab_con1.png" alt="2018년 계획을 월별로 고민하고 작성하다 보면 목표가 분명해질 거야!">	
-									</div>
-								</li>
-								<li>
-									<a href="#none">월간 계획</a>
-									<div>
-										<img src="img/tab_con2.png" alt="중요한 일정을 적어봐! 매달 3가지 포인트는 적어두고 수시로 보기!">	
-									</div>
-								</li>
-								<li>
-									<a href="#none">주간 계획</a>
-									<div>
-										<img src="img/tab_con3.png" alt="매일매일 쌓여가는 성취의 즐거움, 이제 너도 느껴볼 차례!">	
-									</div>
-								</li>
-								<li>
-									<a href="#none">내신 대비</a>
-									<div>
-										<img src="img/tab_con4.png" alt="꼼꼼히 준비한 자에게 100점 눈이 내려와~! 내신관리도 철저히~">	
-									</div>
-								</li>
-								<li>
-									<a href="#none">비교와 활동</a>
-									<div>
-										<img src="img/tab_con5.png" alt="학교활동을 그때그때 적어두는 건 내일을 바꾸는 사람의 바람직한 자세">	
-									</div>
-								</li>
-								<li>
-									<a href="#none">선배의 나바힘</a>
-									<div>
-										<img src="img/tab_con6.png" alt="선배들의 주옥 같은 노하우를 배우자! 내 마음을 읽은 듯한 취향저격 칼럼이 빵빵!">	
-									</div>
-								</li>
-								<li>
-									<a href="#none">귀여운 보노보노와 함께</a>
-									<div>
-										<img src="img/tab_con7.png" alt="귀여운 보노보노와 함께 2018년도 즐겁고 활기차게 파이팅!">	
-									</div>
-								</li>
-							</ul>
-							<a class="bx-prev" href="#">앞으로</a>
-							<a class="bx-next" href="#">뒤</a>
+						<div class="image-slider">
+							<div class="tab_wrap slider-body">
+								<ul class="tab index-nav">
+									<li class="tab1">
+										<a href="#none">목표관리</a>
+										<div>
+											<img src="img/tab_con1.png" alt="2018년 계획을 월별로 고민하고 작성하다 보면 목표가 분명해질 거야!">	
+										</div>
+									</li>
+									<li class="tab2">
+										<a href="#none">월간 계획</a>
+										<div>
+											<img src="img/tab_con2.png" alt="중요한 일정을 적어봐! 매달 3가지 포인트는 적어두고 수시로 보기!">	
+										</div>
+									</li>
+									<li class="tab3">
+										<a href="#none">주간 계획</a>
+										<div>
+											<img src="img/tab_con3.png" alt="매일매일 쌓여가는 성취의 즐거움, 이제 너도 느껴볼 차례!">	
+										</div>
+									</li>
+									<li class="tab4">
+										<a href="#none">내신 대비</a>
+										<div>
+											<img src="img/tab_con4.png" alt="꼼꼼히 준비한 자에게 100점 눈이 내려와~! 내신관리도 철저히~">	
+										</div>
+									</li>
+									<li class="tab5">
+										<a href="#none">비교와 활동</a>
+										<div>
+											<img src="img/tab_con5.png" alt="학교활동을 그때그때 적어두는 건 내일을 바꾸는 사람의 바람직한 자세">	
+										</div>
+									</li>
+									<li class="tab6">
+										<a href="#none">선배의 나바힘</a>
+										<div>
+											<img src="img/tab_con6.png" alt="선배들의 주옥 같은 노하우를 배우자! 내 마음을 읽은 듯한 취향저격 칼럼이 빵빵!">	
+										</div>
+									</li>
+									<li class="tab7">
+										<a href="#none">귀여운 보노보노와 함께</a>
+										<div>
+											<img src="img/tab_con7.png" alt="귀여운 보노보노와 함께 2018년도 즐겁고 활기차게 파이팅!">	
+										</div>
+									</li>
+								</ul>
+							</div>
+							 <a class="slider-btn-prev" href="#"><img src="img/btn_prev.png"></a>
+        			 <a class="slider-btn-next" href="#"><img src="img/btn_next.png"></a>
 						</div>
+						
 						<div class="banner_wrap">
-							<h4><img src="" alt="2018 신사고 플래너 나만 없다구?"></h4>
-							<a href="#"><img src="" alt="yes24"></a>
-							<a href="#"><img src="" alt="인터파크"></a>
-							<a href="#"><img src="" alt="알라딘"></a>
+							<h4><img src="img/banner_text.png" alt="2018 신사고 플래너 나만 없다구? 서점에서 바로 받자!"></h4>
+							<a href="http://www.yes24.com/eWorld/EventWorld/Event?eventno=150140" target="_blank"><img src="img/yes24.png" alt="yes24" ></a>
+							<a href="http://book.interpark.com/book/genbookeventaction.do?_method=EventPlan&sc.evtNo=219348" target="_blank"><img src="img/interpark.png" alt="인터파크"></a>
+							<a href="http://www.aladin.co.kr/events/wevent.aspx?EventId=172538" target="_blanks"><img src="img/aladin.png" alt="알라딘"></a>
 						</div>
 					</div>
 				</div>
 				<div class="section section3">
 					<div class="con">
-						<h3>
-							<span>EVENT</span>
-							<span>신사고의 새 학기 응원 선물~</span>
-							2018 신사고 플래너 인증만 하면 선물이 <img src="" alt="팡팡텍스트 ">
-						</h3>
-						 <p><span>대상</span>2018 신사고 플래너를 사용하는 모든 학생 <a href="#">회원정보 수정</a>
-						 </p>
-						 <p>
-						 	<span>기간</span>
-						 2018.1.15(월)~2.25(월)	
-						</p>
-						<p><span>발표</span>
-						 2018.3.6(화), 공지사항 확인
-						</p>
-					  <ul>
-					 	 <li>
-					 		<div>
-					 			<img src="" alt="1등 선물이미지">
-					 			<span>사이즈만큼 든든한 내 친구!</span>
-					 			<span>보노보노 50cm 대형인형 <strong>1명</strong> </span>
-					 		</div>
-					 	 </li>
-					 	 <li>
-					 		<div>
-					 			<img src="" alt="2등 선물이미지">
-					 			<span>새학기엔 너로 정했다! </span>
-					 			<span>보노보노 필통<strong>3명</strong> </span>
-					 			<span>※ 캐릭터 中 1종 랜덤 증정 </span>
-					 		</div>
-					 	 </li>
-					 	 <li>
-					 		<div>
-					 			<img src="" alt="3등 선물이미지">
-					 			<span>빠른 두뇌회전을 위한 당충전! </span>
-					 			<span>트윅스 교환권<strong>100명</strong> </span>
-					 		</div>
-					 	 </li>
-					  </ul>
-					  <h4>2018 신사고 플래너 <strong>인증 </strong>참여방법</h4>
-						 <ul>
-						 	<li>
-						 		<h5>STEP 1. 플래너 사용 인증 </h5>
-						 		<img src="" alt="sns 사용인증
-						 		">
-						 		<p>본인의 블로그나 SNS에  <br />2018 신사고 플래너 사용 인증을 한다 </p>
-						 	</li>
-						 	<li>
-						 		<h5>STEP 2. URL 등록 </h5>
-						 		<img src="" alt="URL 등록 ">
-						 		<p>선물 받을 개인정보를 먼저 확인하고,  <br />URL주소를 등록하면 참여 끝! </p>
-						 	</li>
-						 </ul>
-					 	<span>우측 화살</span>
-						<div class="input_wrap">
-							<input type="text">
-							<a href="#">추가
-							 버튼</a>
+						<div class="bonobono_wrap2">
+							<img src="img/with_bonobono.png" alt="보노보노,포로리">
 						</div>
-						<a href="#">URL 등록하기</a>
-						<h4>반짝반짝 빛나는 새 학기 <img src="" alt="2018 신사고 플래너 난 이렇게 쓰고 있어!"></h4>
+						<h3>
+							<span><img src="img/img_event.png" alt="EVENT"></span>
+							<img src="img/section3_title.png" alt="신사고의 새 학기 응원 선물~ 2018 신사고 플래너 인증만 하면 선물이 팡팡">
+						</h3>
+						<div>
+							<p>
+								<span><img src="img/section3_btn1.png" alt="대상"></span>
+								2018 신사고 플래너를 사용하는 모든 학생 
+								<a href="#"><img src="img/btn_mem_edit.png" alt="회원정보 수정"></a>
+							</p>
+							<p>
+								<span><img src="img/section3_btn2.png" alt="기간"></span>
+								2018.1.15(월)~2.25(월)	
+							</p>
+							<p>
+								<span><img src="img/section3_btn3.png" alt="발표"></span>
+								2018.3.6(화), 공지사항 확인
+							</p>						
+						</div>
+						<div class="winner_wrap">
+						  <ul>
+						 	 <li>
+						 		<div>
+						 			<img src="img/win1_img.png" alt="1등 선물이미지">
+						 			<span>
+						 				<img src="img/win1_text.png" alt="사이즈만큼 든든한 내 친구! 보노보노 50cm 대형인형 1명">
+						 			</span>
+						 			 <img class="circle" src="img/win1_circle.png" alt="1등">
+						 		</div>
+						 	 </li>
+						 	 <li>
+						 		<div>
+						 			<img src="img/win2_img.png" alt="2등 선물이미지">
+						 			<span>
+						 				<img src="img/win2_text.png" alt="새학기엔 너로 정했다! 보노보노 필통 3명 ※ 캐릭터 中 1종 랜덤 증정 ">
+						 			</span>
+						 			 <img class="circle" src="img/win2_circle.png" alt="2등">
+						 		</div>
+						 	 </li>
+						 	 <li>
+						 		<div>
+						 			<img src="img/win3_img.png" alt="3등 선물이미지">
+						 			<span><img src="img/win3_text.png" alt="빠른 두뇌회전을 위한 당충전! 트윅스 교환권 100명"></span>
+						 			 <img class="circle"src="img/win3_circle.png" alt="3등">
+						 		</div>
+						 	 </li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+				<div class="section section4">
+					<div class="con">
+	  				<h3>2018 신사고 플래너 <strong>인증 </strong>참여방법</h3>
+					 	<img src="img/step.png" alt="인증방법 이미지">
+						<div class="input_wrap">
+							<input type="text" placeholder="http://">
+							<a href="#"><img src="img/icon_plus.png" alt="추가버튼">
+							 </a>
+						</div>
+						<a href="#"><img src="img/btn_url.png" alt="URL 등록하기"></a>
+					</div>
+				</div>
+				<div class="section section5">
+					<div class="con">
+						<h3>반짝반짝 빛나는 새 학기 <img src="img/section5_title.png" alt="2018 신사고 플래너 난 이렇게 쓰고 있어!"></h3>
 						<ul>
 							<li>
 								<div>
@@ -281,38 +295,37 @@
 
 								</div>
 							</li>
-						
 						</ul>
 						<div class="paging-wrap">
-              <ul>
+		          <ul>
 							  <li class="first"><a href="#"><img src="" alt="처음으로"></a></li>
-	          		<li class="prev"><a href="#"><img src="" alt="이전 "></a></li>
-              	<li class="active">1</li>
-              	<li><a name="pageLink" href="#">2</a></li>
-	              <li><a name="pageLink" href="#">3</a></li>
-	              <li><a name="pageLink" href="#">4</a></li>
-	              <li><a name="pageLink" href="#">5</a></li>
-	              <li><a name="pageLink" href="#">6</a></li>
-	              <li><a name="pageLink" href="#">7</a></li>
-	              <li><a name="pageLink" href="#">8</a></li>
-	              <li><a name="pageLink" href="#">9</a></li>
-	              <li><a name="pageLink" href="#">10</a></li>
-	              <li class="next"><a href="#"><img src="" alt="다음"></a></li>
-	          		<li class="last"><a href="#"><img src="" alt="맨끝으로 "></a></li>
-              </ul>
- 						</div>	
-					</div>
-					<div class="info_wrap">
-						<h5>알아두세요</h5>
-						<ul>
-							<li>* URL 입력은 중복 참여가 가능하며, 상품은 1인당 1개 당첨으로 제한됩니다.  </li>
-							<li>* 해당 응모내용은 모두 공개처리되며, 공개를 원하지 않을 경우 응모내용을 직접 삭제해 주세요. </li>
-							<li>* 중복 아이디 및 부정한 아이디 참여시 당첨자에서 제외될 수 있습니다. </li>
-							<li>* 상품은 선택할 수 없으며, 제공되는 캐릭터 중 랜덤발송됩니다.</li>
-							<li>* 상품은 업체의 사정에 따라 동종동가의 상품으로 변경되어 지급될 수 있습니다. </li>
-							<li>* 상품은 회원정보에 기입된 주소와 연락처로 발송되며, 주소오류로 받지 못한 상품은 재발송되지 않습니다.</li>
-							<li>* 응모완료 전 [회원정보수정] 페이지의 배송주소, 휴대전화 정보를 확인해 주세요! <a href="#">회원정보 수정</a></li>
-						</ul>
+		        		<li class="prev"><a href="#"><img src="" alt="이전 "></a></li>
+		          	<li class="active">1</li>
+		          	<li><a name="pageLink" href="#">2</a></li>
+		            <li><a name="pageLink" href="#">3</a></li>
+		            <li><a name="pageLink" href="#">4</a></li>
+		            <li><a name="pageLink" href="#">5</a></li>
+		            <li><a name="pageLink" href="#">6</a></li>
+		            <li><a name="pageLink" href="#">7</a></li>
+		            <li><a name="pageLink" href="#">8</a></li>
+		            <li><a name="pageLink" href="#">9</a></li>
+		            <li><a name="pageLink" href="#">10</a></li>
+		            <li class="next"><a href="#"><img src="" alt="다음"></a></li>
+		        		<li class="last"><a href="#"><img src="" alt="맨끝으로 "></a></li>
+		          </ul>
+						</div>	
+						<div class="info_wrap">
+							<h4>알아두세요</h4>
+							<ul>
+								<li>* URL 입력은 중복 참여가 가능하며, 상품은 1인당 1개 당첨으로 제한됩니다.  </li>
+								<li>* 해당 응모내용은 모두 공개처리되며, 공개를 원하지 않을 경우 응모내용을 직접 삭제해 주세요. </li>
+								<li>* 중복 아이디 및 부정한 아이디 참여시 당첨자에서 제외될 수 있습니다. </li>
+								<li>* 상품은 선택할 수 없으며, 제공되는 캐릭터 중 랜덤발송됩니다.</li>
+								<li>* 상품은 업체의 사정에 따라 동종동가의 상품으로 변경되어 지급될 수 있습니다. </li>
+								<li>* 상품은 회원정보에 기입된 주소와 연락처로 발송되며, 주소오류로 받지 못한 상품은 재발송되지 않습니다.</li>
+								<li>* 응모완료 전 [회원정보수정] 페이지의 배송주소, 휴대전화 정보를 확인해 주세요! <a href="#">회원정보 수정</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

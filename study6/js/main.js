@@ -1,18 +1,27 @@
 $(document).ready(function(){
-  	
-  	tab();
+  	imageSlider();
+  	//tab();
 });
 
 
 
 
-// 탭
-function tab() {
-	$(".tab>li>a").on("click focusin", function () {
-   $(this).parent().addClass("on").siblings().removeClass("on");
-   // $(this).parent().addClass("on")
-   // $(this).parent().siblings().removeClass("on");
-	
-	});
+
+
+
+function imageSlider(){
+
+    var $imageSlider = $(".image-slider").imageSlider({
+        startIndex: 0
+    });
+ 
+    $imageSlider.showImage(0);
+
+    $imageSlider.on("change", function(e) {
+        console.log("e.oldIndex= ", e.oldIndex, "e.newIndex= " + e.newIndex);
+    })
 }
+
+       
+
 
