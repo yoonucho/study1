@@ -287,6 +287,19 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .section5{padding-top:79px;background:#f2f2f2}
 .section5 h3{margin-bottom:35px;font-size:44px;color:#252525;font-weight:500}
 .section5 h3>span{display:block}
+table{border-collapse:separate;border-spacing:0 10px}
+td{height:100%;min-height:102px;padding:11px 0;background:#fff;border:1px solid #e0e0e0;font-size:16px;color:#333}
+.img_2018{padding:11px 28px;border-right:none;text-align:center}
+.link_address{padding-left:19px;border-left:none;border-right:none}
+.link_address a{display:block;font-size:16px;color:#333}
+.user_info{padding-left:10px;border-left:none;border-right:none;font-size:14px;color:#999}
+.mem_delete{padding-left:5px;border-left:none}
+td>span{font-size:14px;color:#999}
+/*페이징*/
+.paging-wrap{overflow:hidden;margin-top:20px}
+.paging-wrap li{float:left;margin-right:7px}
+.paging-wrap li.active a{color:#ed5436}
+.paging-wrap li>a{font-family:'돋움',dotum,sans-serif;font-size:12px;color:#777}
 /*푸터*/
 .footer{position:relative;width:990px;height:102px;margin:0 auto;padding:30px 0 40px;font-size:13px}
 .footer_in{overflow:hidden}
