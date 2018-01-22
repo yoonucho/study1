@@ -15,7 +15,7 @@ h1 .logo{position:absolute;right:0;width:120px;height:35px}
 
 /*메인컨텐츠*/
 /*.main_wrap{width:1060px;margin:0 auto}*/
-.section{box-sizing:border-box}
+.section{width:100%;box-sizing:border-box}
 .section *{box-sizing:border-box}
 .section .con{width:1060px;margin:0 auto}
 h2{text-align:center}
@@ -27,7 +27,7 @@ h2+p>strong:last-child{font-size:24px}
 .section p{margin:20px 0;font-size:22px;color:#fff}
 
 /*섹션1*/
-.section1{position:relative;width:100%;height:694px;background:#00c2fa;text-align:center}
+.section1{position:relative;height:694px;background:#00c2fa;text-align:center}
 .section1:after{display:block;position:absolute;bottom:-46px;width:100%;height:60px;background:url(../img/bg_wave.png) no-repeat;background-size:cover;content:''}
 .main_visual_wrap{position:relative;z-index:99;margin-top:44px}
 
@@ -71,18 +71,29 @@ animation: flower 1000ms linear infinite alternate
     to { -webkit-transform: rotate(10deg)}
 }
 
+/*나비공통*/
+.butterfly_wrap{position:relative}
+.butterfly_wrap{
+
+}
+
+.butterfly_wrap img:last-child{margin-left:-4px}
+.butterfly_wrap img:first-child{}
+.butterfly_wrap img:last-child{}
 /*왼쪽 */
 .left{position:absolute;left:-55px}
 .left .flower_wrap{position:absolute;top:-103px;left:-100px}
 
-/*나비*/
 
 /*오른쪽*/
 .right{position:absolute;right:0}
 .right .flower_wrap{position:absolute;top:-177px;right:-100px}
-.right .butterfly_wrap{position:relative;top:-84px}
-/*꽃잎*/
 /*나비*/
+.right .butterfly_wrap{top:-84px}
+.right .butterfly_wrap2{position:relative;top:-64px;right:-66px}
+.right .butterfly_wrap2 img:last-child{margin-left:-9px;margin-top:-3px}
+
+
 
 /*보노보노*/
 
@@ -274,7 +285,7 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .winner_wrap .circle{position:absolute;top:0;left:31px}
 
 /*섹션4*/
-.section4{height:783px;padding-top:80px}
+.section4{height:100%;min-height:783px;padding-top:80px}
 .section4 .con{width:1000px;text-align:center}
 .section4 h3{margin-bottom:35px;font-size:52px;color:#252525;font-weight:500}
 .section4 h3>strong{color:#ff6177}
@@ -284,37 +295,34 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .input_wrap input::placeholder {color:#999}
 
 /*섹션5*/
-.section5{height:1495px;padding-top:79px;background:#f2f2f2}
-.section5 .con{width:1000px}
+.section5{height:1550px;padding-top:79px;background:#f2f2f2}
+.section5 .con{width:1000px;height:1126px}
 .section5 h3{margin-bottom:35px;font-size:44px;color:#252525;font-weight:500}
 .section5 h3>span{display:block}
-table{border-collapse:separate;border-spacing:0 10px}
-td{height:100%;min-height:102px;padding:11px 0;background:#fff;border:1px solid #e0e0e0;font-size:16px;color:#333}
-.img_2018{padding:11px 28px;border-right:none;text-align:center}
-.link_address{padding-left:19px;border-left:none;border-right:none}
-.link_address a{display:block;font-size:16px;color:#333}
-.user_info{padding-left:10px;border-left:none;border-right:none;font-size:14px;color:#999}
-.mem_delete{padding-left:5px;border-left:none}
-td>span{font-size:14px;color:#999}
+.section5 table{border-collapse:separate;border-spacing:0 10px}
+.section5 td{height:100%;min-height:102px;padding:11px 0;background:#fff;border:1px solid #e0e0e0;font-size:16px;color:#333}
+.section5 .img_2018{padding:11px 28px;border-right:none;text-align:center}
+.section5 .link_address{padding-left:19px;border-left:none;border-right:none}
+.section5 .link_address a{display:block;font-size:16px;color:#333}
+.section5 .user_info{padding-left:10px;border-left:none;border-right:none;font-size:14px;color:#999}
+.user{position:relative;padding-right:9px}
+.user:after{display:inline-block;position:absolute;top:6px;width:1px;height:9px;border-right:1px solid #999;content:''}
+.section5 .mem_delete{border-left:none}
+.section5 .mem_delete a{display:block;line-height:17px}
+.section5 .mem_delete img{vertical-align:middle}
+.section5 td>span{font-size:14px;color:#999}
 /*페이징*/
 .paging-wrap{overflow:hidden;width:220px;margin:0 auto;padding:10px 0 20px;text-align:center}
 .paging-wrap li{float:left;margin-right:7px;line-height:11px}
 .paging-wrap li.active a{color:#ed5436;text-decoration:underline}
 .paging-wrap li>a{font-family:'돋움',dotum,sans-serif;font-size:12px;color:#777}
 /*.paging-wrap li img{vertical-align:middle}*/
-.info_wrap{width:100%;height:369px;padding:60px 0 50px;background:#fff}
+.info_wrap{width:100%;height:345px;padding:60px 0 50px;background:#fff}
 .info{width:1000px;margin:0 auto}
 .info_wrap h4{display:inline-block;padding:0 5px;border-bottom:1px solid #2e2e2e;font-size:25px;color:#2e2e2e;line-height:30px}
+.info_wrap li{font-size:15px;color:#666;font-weight:600;line-height:30px}
+.info_wrap li span{margin-left:16px}
 /*푸터*/
-.footer{position:relative;width:990px;height:102px;margin:0 auto;padding:30px 0 40px;font-size:13px;box-sizing:border-box}
-.footer_in{overflow:hidden}
-/*푸터로고*/
-.footer_logo_wrap{float:left;width:115px}
-.footer_logo{width:92px;height:22px;background-position:-236px -13px;text-indent:-999em}
-/*어드레스*/
-.address_wrap{float:left}
-address{margin-top:0}
-.address_wrap p{margin:10px 0}
-a.mail_to{position:absolute;right:0;width:168px;height:29px;border-radius:20px;background:#909090;font-size:13px;color:#fff;line-height:25px;text-decoration:none;text-align:center}
-.icon_mailto{display:inline-block;width:30px;height:15px;margin-right:5px;background-position:-154px -120px;text-indent:-999em;vertical-align:middle}
+.footer{width:100%;height:125px;position:relative;padding:25px 0;font-size:12px;color:#888;box-sizing:border-box}
+.footer_in{width:1000px;margin:0 auto;text-align:center}
 
