@@ -4,7 +4,7 @@
 
 /*헤더*/
 .header_wrap {width:100%;min-width:1060px;background:#00c2fa}
-.header{position:relative;width:1060px;margin:0 auto;padding:17px 0 117px}
+.header{position:relative;width:1060px;margin:0 auto;padding:17px 0 101px}
 /*로고*/
 h1 .logo{position:absolute;right:0;width:120px;height:35px}
 
@@ -72,27 +72,199 @@ animation: flower 1000ms linear infinite alternate
 }
 
 /*나비공통*/
-.butterfly_wrap{position:relative}
-.butterfly_wrap{
+.butterfly_wrap{position:absolute;z-index:99;width:33px;height:35px}
+
+
+@keyframes flap {
+     0% {
+    transform: translate(0) ;
+    backface-visibility:hidden;
+    }
+     10% {
+    transform: translate(0) ;
+    backface-visibility:hidden;
+    }
+
+     20% {
+    transform: translate(45px, 108px) ;
+    backface-visibility:hidden;
+    }
+
+     30% {
+    transform: translate(43px, 103px) ;
+    backface-visibility:hidden;
+    }
+
+     35% {
+    transform: translate(109px, 18px) ;
+    backface-visibility:hidden;
+    }
+
+     50% {
+    transform: translate(109px, 18px) ;
+    backface-visibility:hidden;
+    }
+
+     70% {
+        transform: translate(109px, 18px) ;
+    backface-visibility:hidden;
+        }
+
+    /* 85% {
+    transform: translate(131px, 85px) ;
+    backface-visibility:hidden;
+    }*/
+
+    85% {
+    transform: translate(140px,95px) ;
+    backface-visibility:hidden;
+    }
+
+
+     100% {
+    transform: translate(0);
+        }
+}
+
+
+@keyframes flapL {
+  0% {
+    -moz-transform: rotateY(75deg);
+    -ms-transform: rotateY(75deg);
+    -webkit-transform: rotateY(75deg);
+    transform: rotateY(75deg);
+  }
+  100% {
+    -moz-transform: rotateY(-30deg);
+    -ms-transform: rotateY(-30deg);
+    -webkit-transform: rotateY(-30deg);
+    transform: rotateY(-30deg);
+  }
+}
+@keyframes flapR {
+  0% {
+    -moz-transform: rotateY(-75deg);
+    -ms-transform: rotateY(-75deg);
+    -webkit-transform: rotateY(-75deg);
+    transform: rotateY(-75deg);
+  }
+  100% {
+    -moz-transform: rotateY(30deg);
+    -ms-transform: rotateY(30deg);
+    -webkit-transform: rotateY(30deg);
+    transform: rotateY(30deg);
+  }
+}
+
+
+
+
+.yellow_left,.yellow_right{
+  position: absolute;
+  top: 0;
+-moz-transform-style: preserve-3d;
+-ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.yellow_left {
+  left: 0;
+  width: 16px;
+  height: 35px;
+  background: url(../img/yellow_butterfly_left.png)no-repeat;
+  background-position: left 0;
+  -moz-animation: flapL 1.1s ease infinite alternate;
+  -ms-animation: flapL 1.1s ease infinite alternate;
+  -webkit-animation: flapL 1.1s ease infinite alternate;
+  animation: flapL 1.1s ease infinite alternate;
+  -moz-transform-origin: right 50%;
+  -ms-transform-origin: right 50%;
+  -webkit-transform-origin: right 50%;
+  transform-origin: right 50%;
+}
+
+.yellow_right {
+  right: 0;
+   width: 17px;
+  height: 35px;
+   background: url(../img/yellow_butterfly_right.png)no-repeat;
+  background-position: right 0;
+  -moz-animation: flapR 1.1s ease infinite alternate;
+  -ms-animation: flapR 1.1s ease infinite alternate;
+  -webkit-animation: flapR 1.1s ease infinite alternate;
+  animation: flapR 1.1s ease infinite alternate;
+  -moz-transform-origin: left 50%;
+  -ms-transform-origin: left 50%;
+  -webkit-transform-origin: left 50%;
+  transform-origin: left 50%;
+}
+
+
+
+
+/*왼쪽 */
+.left{position:absolute;left:-55px}
+
+/*꽃잎*/
+.left .flower_wrap{position:absolute;top:-103px;left:-100px}
+/*나비*/
+.left .butterfly_wrap{
+    -moz-animation: flap 15s infinite cubic-bezier(0.3, 0, 0.7, 1);
+    -webkit-animation: flap 15s infinite cubic-bezier(0.3, 0, 0.7, 1);
+    -ms-animation: flap 15s infinite cubic-bezier(0.3, 0, 0.7, 1);
+    animation: flap 15s infinite cubic-bezier(0.3, 0, 0.7, 1);
+    animation-delay:2s;
+    -webkit-animation-delay:2s;
+    -moz-animation-delay:2s;
+    -ms-animation-delay:2s;
 
 }
 
-.butterfly_wrap img:last-child{margin-left:-4px}
-.butterfly_wrap img:first-child{}
-.butterfly_wrap img:last-child{}
-/*왼쪽 */
-.left{position:absolute;left:-55px}
-.left .flower_wrap{position:absolute;top:-103px;left:-100px}
-
-
 /*오른쪽*/
 .right{position:absolute;right:0}
+/*꽃잎*/
 .right .flower_wrap{position:absolute;top:-177px;right:-100px}
 /*나비*/
-.right .butterfly_wrap{top:-84px}
-.right .butterfly_wrap2{position:relative;top:-64px;right:-66px}
-.right .butterfly_wrap2 img:last-child{margin-left:-9px;margin-top:-3px}
+.right .butterfly_wrap{top:-84px;left:52px}
+.right .butterfly_wrap2{position:absolute;top:-37px;right:-33px;width:36px;height:37px}
 
+
+
+.butterfly_wrap2 {
+    animation:pink 5s infinite alternate;
+    -webkit-animation:pink 5s infinite alternate;
+    -moz-animation:pink 5s infinite alternate;
+    -ms-animation:pink 5s infinite alternate;
+}
+
+@-webkit-keyframes pink {
+    0% { transform:rotate(20deg)}
+    50% { transform:rotate(0deg)}
+    100% { transform:rotate(-20deg)}
+}
+
+
+@-moz-keyframes pink {
+    0% { transform:rotate(20deg)}
+    50% { transform:rotate(0deg)}
+    100% { transform:rotate(-20deg)}
+}
+
+@-ms-keyframes pink {
+    0% { transform:rotate(20deg)}
+    50% { transform:rotate(0deg)}
+    100% { transform:rotate(-20deg)}
+}
+
+@keyframes pink {
+    0% { transform:rotate(20deg)}
+    50% { transform:rotate(0deg)}
+    100% { transform:rotate(-20deg)}
+}
+
+.pink_left{position:absolute;left:0;top:-1px;width:23px;height:37px;background:url(../img/pink_butterfly_left.png)no-repeat;background-position:left 0;}
+.pink_right{position:absolute;right:1px;width:20px;height:37px;background:url(../img/pink_butterfly_right.png)no-repeat;background-position:right 0;}
 
 
 /*보노보노*/
@@ -127,10 +299,10 @@ animation: flower 1000ms linear infinite alternate
 
 .bonobono_wrap{position:absolute;bottom:-60px;width:253px;height:263px}
 .bonobono_wrap img:first-child{
--webkit-animation: spinBonobono 1000ms linear infinite alternate;
--moz-animation: spinBonobono 1000ms linear infinite alternate;
--ms-animation: spinBonobono 1000ms linear infinite alternate;
-animation: spinBonobono 1000ms linear infinite alternate
+-webkit-animation: spinBonobono 1500ms linear infinite alternate;
+-moz-animation: spinBonobono 1500ms linear infinite alternate;
+-ms-animation: spinBonobono 1500ms linear infinite alternate;
+animation: spinBonobono 1500ms linear infinite alternate
 }
 
 @-webkit-keyframes spinBonobono {
@@ -194,7 +366,7 @@ animation: spinRaccoon 1000ms linear infinite alternate
 
 @-webkit-keyframes spinRaccoon {
     from { -webkit-transform: rotate(10deg)}
-    to { -webkit-transform: rotate(00deg)}
+    to { -webkit-transform: rotate(0deg)}
 }
 
 @-moz-keyframes spinRaccoon {
@@ -204,7 +376,7 @@ animation: spinRaccoon 1000ms linear infinite alternate
 
 @-ms-keyframes spinRaccoon {
     from { -ms-transform: rotate(10deg)}
-    to { -ms-transform: rotate(00deg)}
+    to { -ms-transform: rotate(0deg)}
 }
 
 @keyframes spinRaccoon {
@@ -221,7 +393,7 @@ animation: spinRaccoon 1000ms linear infinite alternate
 
 
 /*섹션2*/
-.section2{position:relative;height:1276px;margin-top:206px;background:#ffd93f}
+.section2{position:relative;height:1276px;margin-top:186px;background:#ffd93f}
 .section2 .con{}
 .section2_title{position:relative;width:100%;height:210px;margin-bottom:-79px;background:#fff}
 .section2_title span{display:block}
@@ -261,21 +433,22 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .tab>li.tab6>a.on{background:url(../img/tab6_on.png)no-repeat}
 .tab>li.tab7>a.on{background:url(../img/tab7_on.png)no-repeat}
 
-.tab>li>div{display:block;position:absolute;top:100px;left:0;width:1060px;height:757px;padding:14px 0}
+.tab>li>div{display:block;position:absolute;top:100px;left:0;width:1060px;height:757px;padding:21px 0}
 
 
 /*.배너*/
-.banner_wrap{margin:30px auto 80px;text-align:center}
+.banner_wrap{margin:45px auto 70px;text-align:center}
 .banner_wrap a{display:inline-block;margin-right:10px}
 .banner_wrap a.last{margin-right:0}
 
 /*섹션3*/
-.section3{height:950px;padding-top:80px;background:#ff687d}
+.section3{height:950px;padding-top:60px;background:#ff687d}
 .section3 .con{position:relative}
-.section3 .bonobono_wrap2{position:absolute;top:-237px;right:-300px}
+.section3 .bonobono_wrap2{position:absolute;top:-216px;right:-300px}
 .section3 h3 img{margin-top:24px}
-.section3 h3+div{width:706px;margin:33px auto}
+.section3 h3+div{width:706px;margin:33px auto 26px}
 .section3 p{margin:10px 0;font-size:20px;color:#111;font-weight:600}
+.section3 p:first-child{margin-bottom:0}
 .section3 p:not(:nth-of-type(1)){display:inline-block}
 .section3 p>span{}
 .winner_wrap{overflow:hidden;width:1000px;height:462px;margin:0 auto;padding:53px 20px;border-radius:20px;background:#fff;text-align:center;box-sizing:border-box}
@@ -285,7 +458,7 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .winner_wrap .circle{position:absolute;top:0;left:31px}
 
 /*섹션4*/
-.section4{height:100%;min-height:783px;padding-top:80px}
+.section4{height:100%;min-height:793px;padding-top:60px}
 .section4 .con{width:1000px;text-align:center}
 .section4 h3{margin-bottom:35px;font-size:52px;color:#252525;font-weight:500}
 .section4 h3>strong{color:#ff6177}
@@ -295,10 +468,10 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .input_wrap input::placeholder {color:#999}
 
 /*섹션5*/
-.section5{height:1550px;padding-top:79px;background:#f2f2f2}
-.section5 .con{width:1000px;height:1126px}
-.section5 h3{margin-bottom:35px;font-size:44px;color:#252525;font-weight:500}
-.section5 h3>span{display:block}
+.section5{height:1470px;padding-top:59px;background:#f2f2f2}
+.section5 .con{width:1000px;height:1070px}
+.section5 h3{font-size:44px;color:#252525;font-weight:500}
+.section5 h3>span{display:block;line-height:57px}
 .section5 table{border-collapse:separate;border-spacing:0 10px}
 .section5 td{height:100%;min-height:102px;padding:11px 0;background:#fff;border:1px solid #e0e0e0;font-size:16px;color:#333}
 .section5 .img_2018{padding:11px 28px;border-right:none;text-align:center}
@@ -312,12 +485,12 @@ animation: spinRaccoon 1000ms linear infinite alternate
 .section5 .mem_delete img{vertical-align:middle}
 .section5 td>span{font-size:14px;color:#999}
 /*페이징*/
-.paging-wrap{overflow:hidden;width:220px;margin:0 auto;padding:10px 0 20px;text-align:center}
+.paging-wrap{overflow:hidden;width:220px;margin:0 auto;padding:20px 0;text-align:center}
 .paging-wrap li{float:left;margin-right:7px;line-height:11px}
 .paging-wrap li.active a{color:#ed5436;text-decoration:underline}
 .paging-wrap li>a{font-family:'돋움',dotum,sans-serif;font-size:12px;color:#777}
 /*.paging-wrap li img{vertical-align:middle}*/
-.info_wrap{width:100%;height:345px;padding:60px 0 50px;background:#fff}
+.info_wrap{width:100%;height:345px;padding:50px 0 50px;background:#fff}
 .info{width:1000px;margin:0 auto}
 .info_wrap h4{display:inline-block;padding:0 5px;border-bottom:1px solid #2e2e2e;font-size:25px;color:#2e2e2e;line-height:30px}
 .info_wrap li{font-size:15px;color:#666;font-weight:600;line-height:30px}
@@ -325,4 +498,4 @@ animation: spinRaccoon 1000ms linear infinite alternate
 /*푸터*/
 .footer{width:100%;height:125px;position:relative;padding:25px 0;font-size:12px;color:#888;box-sizing:border-box}
 .footer_in{width:1000px;margin:0 auto;text-align:center}
-
+.footer_in p{margin-top:10px}
