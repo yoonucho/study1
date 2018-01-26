@@ -18,10 +18,10 @@ $(document).ready(function(){
     clearTimeout(smallDevice);  // resize 이벤트 발생시 각 setTimeout clear
     clearTimeout(largeDevice);
 
-    if ( windowWidth < 768 && small == false  ) {
-      smallDevice = setTimeout(smallDevice_Event , 1000);
-    } else if ( windowWidth >= 768 &&  large == false ){
-      largeDevice = setTimeout(largeDevice_Event , 1000);
+    if ( windowWidth < 750 && small == false  ) {
+      smallDevice = setTimeout(smallDevice_Event , 100);
+    } else if ( windowWidth >= 750 &&  large == false ){
+      largeDevice = setTimeout(largeDevice_Event , 100);
     }
   });
 
@@ -36,11 +36,13 @@ $(document).ready(function(){
      // 헤더 마우스이벤트 제거
       $(".header_wrap").off("mouseleave");
       $(".gnb").css({"display":"none"});  
-      $(".header_wrap").css({"height":"auto"});
+      $(".header_wrap").css({"height":"97px"});
       $(".gnb >li>a").off();
       // 버튼클릭시 gnb open
-      $(".btn_all").on("click keyup" , function() {  
-        $(this).children().toggleClass("on").parent().next().slideToggle();
+      $(".btn_all").on("click keyup" , function() {
+         $(".header_wrap").css({"height":"auto"});  
+        $(this).children("a").toggleClass("on");
+        $(this).next().slideToggle();
       return false;
       });
       // 퀵메뉴 이벤트 제거
@@ -63,13 +65,13 @@ $(document).ready(function(){
       $(".btn_all").off();  
        var header_wrap= $(".header_wrap");
       $(".gnb >li>a").on("mouseenter focusin",function(){
-        header_wrap.stop().animate( {height:97},500); 
+        header_wrap.stop().animate( {height:117},500); 
         $(this).parent().addClass("on").siblings("li").removeClass("on");
                    
       });
 
       header_wrap.on("mouseleave",function(){
-        $(this).stop().animate({height:80},500);
+        $(this).stop().animate({height:97},500);
          $(".gnb >li>a").parent().removeClass("on")
       }); 
 
